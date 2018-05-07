@@ -3,10 +3,14 @@
 	margin: 0px;
 	padding: 0px;
 }
-nav{
+nav
+{
+	display:flex;
+	justify-content: center;
 	width: 100%;
 	background-color: rgba(66, 69, 88, 0.6);
 }
+
 nav > ul{   /* on utilise '>' pour ne cible que la liste ul qui est enfant direct de nav */
 	margin: 0px;
 	padding: 0px;
@@ -21,6 +25,7 @@ nav > ul > li{    /* affiche seulement les li correspondant à nos onglets de me
 	float: left;
 	position: relative;
 }
+
 nav> ul::after{
 	content:"";
 	display: table;

@@ -6,7 +6,7 @@
 </div>
 -->
 <div class="menuL1">
-  <img id="logo" src="images/Logo.png" alt="Logo Log.Home" />
+  <img id="logo" src="images/Logo.png" alt="Logo Log.home" />
   <h1 id="titre">Bienvenue chez DOMISEP</h1>
   <div style="width: 220px;display: flex; justify-content: center;">
 
