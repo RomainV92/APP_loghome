@@ -47,14 +47,19 @@ header
   grid-template-columns: 314px auto 314px;
 */
 
+
+
+}
+
+.menuL1
+{
   display: flex;
   flex-direction: inline;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
-  background-color: #f7f1e3;
-
+  background-color: rgba(247, 241, 227, 0.6);
 }
 /*
 .logo_titre

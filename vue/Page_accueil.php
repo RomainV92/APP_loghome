@@ -4,6 +4,7 @@
     <title>DOMISEP</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="vue/style.css" />
+    <link rel="stylesheet" href="vue/menu/menu.css" />
   </head>
 
   <body>
