@@ -26,3 +26,5 @@ else
 }
 
 include('controleur/' . $url . '.php');
+
+?>

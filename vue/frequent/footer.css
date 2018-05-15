@@ -1,0 +1,50 @@
+
+
+
+footer div{
+position: fixed;
+  width:100%;
+  	text-align:center;
+  	display:table-row;
+  	justify-content: space-around;
+ 	font-family: Verdana, Calibri, sans-serif;
+	margin: 0px;
+	padding: 0px;
+  bottom: 0px;
+  height: 60px;
+
+
+
+
+
+}
+footer div nav{
+	width: 100%;
+	background-color: #424558;
+}
+
+footer nav li {
+	list-style-type: none;
+	text-align: center;
+ 	display:inline;
+
+ 	padding-left: 30px;
+ 	padding-right: 30px;
+
+
+}
+
+footer nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+footer nav  ul li a{
+
+	color: #FFF;
+
+}
+footer nav  ul li:hover{
+	border-top: 5px solid RGB(100,128,192);
+	background-color: rgba(100,128,192,0.2);
+}

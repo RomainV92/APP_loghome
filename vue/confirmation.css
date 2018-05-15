@@ -1,0 +1,76 @@
+body .maison{
+	display: flex;
+	flex-direction: column;
+
+}
+
+<head .logo{
+	float: right;
+}
+ body header >h1 {
+ 	float: left;
+ 	padding-left: 30px;
+  }
+
+	body div li{
+	   list-style-type: none;
+	   list-style-position: inside;
+	 }
+
+	 body div a{
+	 	display: inline-block;
+	 	text-decoration: none;
+	 	color: rgb(0,128,192);
+	 }
+
+	 body .maison{
+	 	display: flex;
+	 	flex-direction: row;
+	 	justify-content: space-evenly;
+	 	flex-wrap : wrap
+
+	 }
+
+		body .salon{
+				border: 2px solid black;
+				display: block;
+				color: #FFF;
+				background-color: rgb(143,221,250);
+				text-align: center;
+				width: 30%;
+				font-size: 23px;
+				margin:20px;
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+
+					body .ajouter_une_piece{
+							border: 2px solid black;
+							display: block;
+							color: #FFF;
+							background-color: rgb(143,221,250);
+							text-align: center;
+							width: 80%;
+							font-size: 23px;
+							margin:20px;
+							padding-left: 30px;
+							padding-right: 30px;
+						}
+
+						body div ul li{
+							margin-top: 8px;
+							margin-bottom: 8px;
+							margin-left: 50px;
+							margin-right: 80px;
+							background-color:rgb(240,240,240);
+							border: 2px solid rgb(160,160,160);
+							padding-top: 20px;
+							padding-bottom: 20px;
+						}
+
+body div ul li:hover{
+
+	background-color:rgba(240,240,240,0.9);
+	border: 2px solid rgb(100,100,100);
+
+}

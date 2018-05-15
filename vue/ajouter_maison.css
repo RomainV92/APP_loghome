@@ -1,0 +1,78 @@
+body{
+	display: flex;
+	flex-direction: column;	
+	font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.logo{
+	float: right;
+}
+
+ header >h1 {
+ 	float: left;
+ 	padding-left: 30px;
+ 	
+  }
+
+ * {
+    box-sizing: border-box;
+} 
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    float: left;
+    margin-left: 20%;
+}
+
+input[name='adresse'],input[name='nom'],input[name='superficie']{
+	border: 2px solid black;
+	width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+
+ }
+
+input[type="submit"]{
+	margin: 15px;
+	background-color: rgb(252,252,252);
+	width: 50%;
+	padding: 12px 20px;
+    border: 1px solid  rgb(0,128,192);
+    border-radius: 4px;
+    cursor: pointer;
+}   
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-55 {
+    float: left;
+    width: 55%;
+    margin-top: 6px;
+}
+.col-10 {
+    float: left;
+    width: 10%;
+    margin-top: 6px;
+}
+form {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color:rgb(230,230,230);
+	border: 2px solid rgb(160,160,160);
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

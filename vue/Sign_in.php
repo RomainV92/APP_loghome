@@ -3,17 +3,22 @@
   <head>
     <title>Connexion</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="vue/style_login.css" />
   </head>
 
   <body>
-    <div>
-      <p>Veuillez entrer vos identifiants</p>
-      <form method="post" action="../index.php?cible=check_identifiants">
-        <p> <label for="nickname">Login : </label> <input id="nickname" type="text" name="nickname" required />
-            <label for="password">Mot de passe : </label> <input id="password" type="password" name="password" required />
+    <div class="loginbox">
+      <img src="images/image_Log.png" class="avatar">
+      <h1> Connexion </h1>
+      <form method="post" action="index.php?cible=check_identifiants">
+        <p> Pseudo </p>
+       <input id="Pseudo" type="text" name="Pseudo" placeholder="Pseudo" required />
+      <p> Mot de passe </p>
+      <input id="Password" type="password" name="Password" placeholder="Mot de passe" required />
+
             <input type="submit" value="Connexion" />
-        </p>
+        <a href=""> Mot de passe oublié/perdu?</a><br>
+        <a href="index.php?cible=CreerCompte">Vous n'avez pas de compte?</a>
       </form>
     </div>
   </body>
