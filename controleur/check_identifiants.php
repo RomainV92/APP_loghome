@@ -1,18 +1,18 @@
 <?php
-
+session_start();
 include 'modele/bdd_access.php';
 include 'modele/identification.php';
 
 $bdd = appel_bdd();
 
-if(isset($_POST['nickname']) AND isset($_POST['password']))
+
+if(isset($_POST['Pseudo']) AND isset($_POST['Password']))
 {
-  $data = validation_identifiants($bdd, $_POST['nickname'], $_POST['password']);
+  $data = validation_identifiants($bdd, $_POST['Pseudo'], $_POST['Password']);
   if($data != '0')
   {
-    session_start();
-    $_SESSION['id_user'] = $data['id'];
-    $_SESSION['user'] = $data['prénom'] . ' ' . $data['nom'];
+
+
     header('Location:vue/Page_compte.php');
     exit();
   }

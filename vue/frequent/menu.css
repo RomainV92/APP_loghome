@@ -1,0 +1,154 @@
+.Menu body{
+	font-family: Verdana, Calibri, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+.Menu nav{
+	width: 100%;
+	background-color: #424558;
+
+}
+.Menu nav  ul{   /* on utilise '>' pour ne cible que la liste ul qui est enfant direct de nav */
+	margin: 0px;
+	padding: 0px;
+
+
+}
+
+.Menu nav li{ /* enleve les puces devant tous les li appartenant a nav */
+	list-style-type: none;
+	text-align: center;
+
+}
+
+.Menu nav  ul  li{    /* affiche seulement les li correspondant à nos onglets de menu en ligne*/
+	display:inline-block;
+	position: relative;
+
+	padding-left: 30px;
+ 	padding-right: 30px;
+}
+.Menu nav ul::after{
+	content:"";
+	display: table;
+	clear: both;
+}
+.Menu .submenu{
+	display: none;
+}
+
+.Menu nav input[type=checkbox]{ /*case à cocher invisible*/
+	display: none;
+}
+
+.Menu nav label{
+	display: none;
+}
+
+.Menu nav a{
+	display: inline-block;
+	text-decoration: none;
+
+}
+
+.Menu nav ul li >a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+.Menu nav ul li:hover a{
+	padding: 15px 30px 20px 30px;
+
+}
+
+.Menu .menu-mobile{ /*cache bouton affichant le menu mobile*/
+	display: none;
+}
+
+
+
+
+.Menu nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+
+.Menu .submenu li a{
+	padding: 15px 30px;
+	font-size:  15px;
+	color: white;
+	width: 270px;
+}
+.Menu .submenu li{
+	border-bottom: 1px solid #CCC;
+}
+
+.Menu .menu-home:hover{
+	border-top: 5px solid RGB(100,128,192);
+	background-color: rgba(100,128,192,0.2);
+}
+.Menu .menu-myhouses:hover{
+	border-top: 5px solid RGB(100,128,192);
+	background-color: rgba(100,128,192,0.2);
+}
+
+.Menu .menu-myaccount:hover{
+	border-top: 5px solid RGB(100,128,192);
+	background-color: rgba(100,128,192,0.2);
+}
+
+.Menu .menu-about:hover{
+	border-top: 5px solid RGB(100,128,192);
+	background-color: rgba(100,128,192,0.2);
+
+}
+
+
+
+.Menu .menu-home .submenu{
+	background-color:  RGB(100,128,192);
+}
+.Menu .menu-myhouses .submenu{
+	background-color:  RGB(100,128,192);
+}
+.Menu .menu-myaccount .submenu{
+	background-color:  RGB(100,128,192);
+}
+.Menu .menu-about .submenu{
+	background-color:  RGB(100,128,192);
+}
+.Menu nav input[type=checkbox]:checked ~ ul{ /*case à cocher invisible*/
+	display: block;
+}
+.Menu @media screen and (max-width: 780px){
+	.menu-mobile{
+		display: block;
+		color: #FFF;
+		background-color: rgba(29,197,151,0.97);
+		text-align: center;
+		padding: 12px 0px;
+	}
+
+	.Menu nav ul{
+		display: none;
+	}
+
+	 .Menu nav ul li, nav ul li a{
+		width: 100%;
+		text-align: center;
+		padding: 10px 0px 10px 0px;
+	}
+	.Menu nav ul li, nav ul li:hover a{
+		padding: 10px 0px 10px 0px;
+
+	}
+	.Menu nav li:hover .submenu{
+		display: black;
+		position: static;
+		width: 100%;
+	}
+}

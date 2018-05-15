@@ -1,0 +1,142 @@
+body{
+	display: flex;
+	flex-direction: column;	
+	font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.logo{
+	float: right;
+}
+ header >h1 {
+ 	float: left;
+ 	padding-left: 30px;
+ 	
+
+  }
+ 
+li{
+   list-style-type: none;
+   list-style-position: inside;
+ }
+
+div a{
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(0,128,192);
+}
+
+.maison{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap : wrap
+
+}
+
+
+.chambre_1{
+		border: 2px solid black;
+		display: block;
+		color: #FFF;
+		background-color: rgb(143,221,250);
+		text-align: center;
+		width: 30%;
+		font-size: 23px;
+		margin:20px;
+		padding-left: 30px;
+		padding-right: 30px;
+
+	}
+.chambre_2{
+		border: 2px solid black;
+		display: block;
+		color: #FFF;
+		background-color: rgb(143,221,250);
+		text-align: center;
+		width: 30%;
+		font-size: 23px;
+		margin:20px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+.chambre_3{
+		border: 2px solid black;
+		display: block;
+		color: #FFF;
+		background-color: rgb(143,221,250);
+		text-align: center;
+		width: 30%;
+		font-size: 23px;
+		margin:20px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+.salon{
+		border: 2px solid black;
+		display: block;
+		color: #FFF;
+		background-color: rgb(143,221,250);
+		text-align: center;
+		width: 30%;
+		font-size: 23px;
+		margin:20px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+.cuisine{
+		border: 2px solid black;
+		display: block;
+		color: #FFF;
+		background-color: rgb(143,221,250);
+		text-align: center;
+		width: 30%;
+		font-size: 23px;
+		margin:20px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+.salle_de_bain{
+		border: 2px solid black;
+		display: block;
+		color: #FFF;
+		background-color: rgb(143,221,250);
+		text-align: center;
+		width: 30%;
+		font-size: 23px;
+		margin:20px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+.ajouter_une_piece{
+		border: 2px solid black;
+		display: block;
+		color: #FFF;
+		background-color: rgb(143,221,250);
+		text-align: center;
+		width: 80%;
+		font-size: 23px;
+		margin:20px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+div ul li{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 50px;
+	margin-right: 80px;
+	background-color:rgb(240,240,240);
+	border: 2px solid rgb(160,160,160);
+	padding-top: 20px;
+	padding-bottom: 20px;
+} 
+
+div ul li:hover{
+
+	background-color:rgba(240,240,240,0.9);
+	border: 2px solid rgb(100,100,100);
+
+} 

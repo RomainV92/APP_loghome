@@ -9,7 +9,7 @@
 
   <body>
 
-    <p>Bienvenue chez vous, <?php echo($_SESSION['user']); ?></p>
+    <p>Bienvenue chez vous, <?php echo $_SESSION['id_user']; ?></p>
     <a class="button" href="../index.php">Retour menu</a>
   </body>
 </html>

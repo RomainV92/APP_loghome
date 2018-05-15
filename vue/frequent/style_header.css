@@ -1,28 +1,3 @@
-body
-{
-  display: grid;
-  grid-template-rows: 0.1fr 1fr 2fr 0.1fr;
-  grid-template-columns: 2fr 5fr 10fr 5fr 2fr;
-  background-color: #d1ccc0;
-
-  background-image: url("../images/image_fond.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  background-position: top center;
-  background-size: 100%;
-}
-
-h2
-{
-  display: inline;
-  /*background-color: rgba(210,210,210,0.3);
-*/
-  padding-left: 10px;
-}
-
-
-
 header
 {
   grid-row: 1/2;
@@ -86,7 +61,7 @@ header
 }
 
 .paragraphe
-{ 
+{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
