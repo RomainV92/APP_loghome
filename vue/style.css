@@ -12,9 +12,11 @@ body
   background-position: top center;
   background-size: 100%;
 }
+
 p
 {
-  font-family: monospace,"Trebuchet MS", Impact, Georgia, sans-serif;
+  font-family: Tahoma,  sans-serif;
+
 }
 
 h2
@@ -23,17 +25,6 @@ h2
   /*background-color: rgba(210,210,210,0.3);
 */
   padding-left: 10px;
-}
-
-footer
-{
-  grid-row: 4/5;
-  grid-column: 1/6;
-
-  display : grid;
-  grid-template-columns: 3fr 3fr 3fr 2fr;
-
-  background-color : #f7f1e3;
 }
 
 header
@@ -99,7 +90,7 @@ header
   justify-content: flex-start;
   width: 50%;
 
-  background-color: rgba(34, 112, 147,0.7);
+  background-color: rgba(34, 112, 147,0.8);
   padding-left: 10px;
   padding-right: 10px;
   text-align: left;

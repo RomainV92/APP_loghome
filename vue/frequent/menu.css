@@ -48,16 +48,15 @@
 .Menu nav a{
 	display: inline-block;
 	text-decoration: none;
-
 }
 
-.Menu nav ul li >a{
+.Menu nav ul li a{
 	padding: 20px 30px;
 	color: #FFF;
 }
+
 .Menu nav ul li:hover a{
 	padding: 15px 30px 20px 30px;
-
 }
 
 .Menu .menu-mobile{ /*cache bouton affichant le menu mobile*/
@@ -70,8 +69,8 @@
 .Menu nav li:hover .submenu{
 	display: inline-block;
 	position: absolute;
-	top: 100%;
-	left: 0px;
+	top: 0%;
+	left: 80%;
 	padding: 0px;
 	z-index: 1000;
 }
