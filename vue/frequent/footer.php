@@ -1,7 +1,7 @@
 
 <html>
 <footer>
-        <link rel='stylesheet' href='vue/frequent/footer.css'/>
+        <link rel='stylesheet' href='../vue/frequent/footer.css'/>
 
 
     <div class="wrapper">

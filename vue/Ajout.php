@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <title> Page ajout </title>
-  <link rel="stylesheet" href="vue/inscription.css"/>
+  <link rel="stylesheet" href="../vue/inscription.css"/>
 </head>
 <body>
 <div class="InBox">
-    <img src="images/image_Log.png" class="avatar">
+    <img src="../images/image_Log.png" class="avatar">
 <h1> Inscription </h1>
 <form method="post" action=<?php echo $Direction; ?>>
 <p>Votre Prenom </p>

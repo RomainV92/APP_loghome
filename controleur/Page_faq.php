@@ -1,4 +1,4 @@
 <?php
-include('vue/faq.php');
+include('../vue/faq.php');
 
 ?>

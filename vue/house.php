@@ -3,7 +3,7 @@
     <head>
         <title>Maison</title>
         <meta charset= "utf-8">
-        <link rel='stylesheet' href='vue/style_house.css'>
+        <link rel='stylesheet' href='../vue/house.css'>
         <script type="text/javascript">
               function toggle_visibility(id){
                 var e = document.getElementById(id);
@@ -25,8 +25,59 @@
         <div id="popup-box" class="popup-position">
           <div id="popup-wrapper">
             <div id="popup-container">
-              <h3>popup box 1</h3>
-              <p>Bravo voila un popup</p>
+              <form action="../modele/ajouter_maison_post.php" method="post">
+
+              <div class="row">
+                  <div class="col-25">
+                      <label for="nom">Nom</label>
+                  </div>
+
+                  <div class="col-25">
+                      <input type="text" name="nom" id="nom" /><br />
+                  </div>
+              </div>
+
+
+              <div class="row">
+                  <div class="col-25">
+                      <label for="adresse">Adresse</label>
+                  </div>
+                  <div class="col-55">
+                      <input type="text" name="adresse" id="adresse" /><br />
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-25">
+                      <label for="adresse">Rue</label>
+                  </div>
+                  <div class="col-55">
+                      <input type="text" name="adresse" id="Street" /><br />
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-25">
+                      <label for="adresse">Code Postal</label>
+                  </div>
+                  <div class="col-55">
+                      <input type="text" name="adresse" id="Postal" /><br />
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-25">
+                      <label for="superficie">Superficie (m²)</label>
+                  </div>
+                  <div class="col-10">
+                      <input type="number" name="superficie" id="superficie" /><br />
+                  </div>
+              </div>
+
+
+              <input type="submit" value="Ajouter une nouvelle maison" />
+
+
+              </form>
               <p><a href="javascript:void(0)"onclick="toggle_visibility('popup-box')">close popup</a></p>
             </div>
           </div>

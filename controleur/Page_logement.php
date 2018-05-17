@@ -1,11 +1,11 @@
 <?php
 session_start();
-include('modele/Recherche_capteurs.php');
+include('../modele/Recherche_maisons.php');
 
-include('modele/bdd_access_maison.php');
-include('vue/frequent/menu.php');
-include('vue/house.php');
-include('vue/frequent/footer.php');
+include('../modele/bdd_access_maison.php');
+include('../vue/frequent/menu.php');
+include('../vue/house.php');
+include('../vue/frequent/footer.php');
 
 
 function bdd_maisons($Infos_maisons){
@@ -13,9 +13,9 @@ function bdd_maisons($Infos_maisons){
     <div class="salon">
       <h2>Maison : <?php echo $Dif_maisons['nom'];?></h2>
        <ul>
-           <?php echo $Dif_maisons['adresse'].', '.$Dif_maisons['Street'];?>
+           <?php echo $Dif_maisons['adresse'].', '.$Dif_maisons['Street'].$Dif_maisons['ID'];?>
            <p><?php echo $Dif_maisons['Postal']?></p>
-           <li ><a href="controleur/Page_capteurs.php" value='<?php $Dif_maisons['ID']?>' formmethod='post'>Capteurs</a></li>
+           <li ><a href="../controleur/Page_Pieces.php?cible=<?php echo $Dif_maisons['ID']?>">Pieces</a></li>
        </ul>
    </div><?php
   }

@@ -7,10 +7,10 @@ $subject = "Confirmation Compte LOG.HOME";
 $txt = "Votre compte a bien été creé";
 $headers = "From: tissotm@hotmail.com" . "\r\n" ;
 mail($to,$subject,$txt,$headers);*/
-include('modele/bdd_access_maison.php');
-include('vue/frequent/menu.php');
-include('vue/Ajout.php');
-include('vue/frequent/footer.php');
+include('../modele/bdd_access_maison.php');
+include('../vue/frequent/menu.php');
+include('../vue/Ajout.php');
+include('../vue/frequent/footer.php');
 
 
 /*$reponse = $bdd->Prepare('SELECT ID from login Where Nom=?');

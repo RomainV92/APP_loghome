@@ -1,11 +1,11 @@
 <?php
 session_start();
-include 'modele/bdd_access.php';
-include 'modele/identification.php';
+include '../modele/bdd_access.php';
+include '../modele/identification.php';
 
 $bdd = appel_bdd();
 
-
+echo $_POST['Pseudo'];
 if(isset($_POST['Pseudo']) AND isset($_POST['Password']))
 {
   $data = validation_identifiants($bdd, $_POST['Pseudo'], $_POST['Password']);
@@ -13,7 +13,7 @@ if(isset($_POST['Pseudo']) AND isset($_POST['Password']))
   {
 
 
-    header('Location:vue/Page_compte.php');
+    header('Location:../controleur/Page_logement.php');
     exit();
   }
   else

@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Ajouter une maison</title>
-        <link rel='stylesheet' href='vue/ajouter_maison.css'>
+        <link rel='stylesheet' href='../vue/ajouter_maison.css'>
     </head>
 
     <body>
@@ -20,7 +20,7 @@
 
          <!--Formulaire-->
 
-        <form action="modele/ajouter_maison_post.php" method="post">
+        <form action="../modele/ajouter_maison_post.php" method="post">
 
         <div class="row">
             <div class="col-25">
