@@ -12,9 +12,12 @@ body
   background-position: top center;
   background-size: 100%;
 }
+
 p
 {
   font-family: monospace,"Trebuchet MS", Impact, Georgia, sans-serif;
+  font-family: Tahoma,  sans-serif;
+
 }
 
 h2
@@ -100,6 +103,7 @@ header
   width: 50%;
 
   background-color: rgba(34, 112, 147,0.7);
+  background-color: rgba(34, 112, 147,0.8);
   padding-left: 10px;
   padding-right: 10px;
   text-align: left;

@@ -18,6 +18,7 @@
     else
     {
       echo '<a id="login_button" class="button" href="controleur/deconnexion.php">Se déconnecter</a>';
+      echo '<a id="login_button" class="button" href="index.php?cible=deconnexion">Se déconnecter</a>';
     }
     ?>
 
