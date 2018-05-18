@@ -97,12 +97,11 @@ header
 
 .paragraphe
 {
-  display: flex; //cccc
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 50%;
 
-  background-color: rgba(34, 112, 147,0.7);
   background-color: rgba(34, 112, 147,0.8);
   padding-left: 10px;
   padding-right: 10px;

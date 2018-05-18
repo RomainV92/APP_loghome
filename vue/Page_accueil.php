@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DOMISEP</title>
     <title>Bienvenue chez DOMISEP</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../vue/style.css" />
