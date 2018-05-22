@@ -10,7 +10,13 @@ body div ul li:hover{
 
 }
 */
+.salon nav li{
+	list-style: none;
 
+}
+.salonn nav ul li{
+	display: inline-block;
+}
 #conteneur {
 	display: flex;
 
@@ -40,10 +46,11 @@ height: 100%;}
  .maison li{
 	   list-style-type: none;
 	   list-style-position: inside;
+
 	 }
 
 	  .maison a{
-	 	display: inline-block;
+	 	display: inline-bloc;
 	 	text-decoration: none;
 	 	color: rgb(0,128,192);
 	 }
@@ -57,7 +64,7 @@ height: 100%;}
 	 }
 
 		.salon{
-				background-image: url("../images/maison3.jpg");
+				background-image: url("../images/login_image.jpg");
 				border: 2px solid black;
 				display: block;
 				color: #FFF;
