@@ -12,7 +12,7 @@
     <!--<img id="pic_accueil" src="../images/image_accueil.jpg" alt="image d'acceuil" />-->
     <div class="§principal">
       <div class="presentation">
-        <img class="pic_pub" src="../images/Cnou.png" alt="L'équipe" />
+        <img class="pic_pub1" src="../images/equipe.jpg" alt="L'équipe" />
         <div class="paragraphe">
           <h2 style="width:200px;">Qui sommes nous?</h2>
           <p>
@@ -28,21 +28,21 @@
       <div class="presentation">
         <div class="paragraphe">
           <h2 style="width:150px;">Notre système</h2>
-          <p>Notre système, composé d'un microcontroleur à la pointe de
-            la technologie, ainsi que de capteurs d'une qualité inégalée,
+          <p>Composé d'un microcontroleur à la pointe de
+            la technologie, ainsi que de capteurs d'une qualité inégalée, notre système
             vous permettra d'automatiser certaines parties de votre maison
-            comme jamais auparavant. kappa. <br />
-            En effet, ce système, capable de réagir à un son,
+            comme jamais auparavant. <br />
+                En effet, ce système, capable de réagir à un son,
             peut être activé ou désactivé très simplement.
             Vous aurez ainsi la possibilité d'allumer des lumière ou faire tourner
             des moteurs. Sa facilité d'installation vous libérera l'esprit,
             branchez le et il sera prêt à être utilisé.</p>
           </div>
-          <img class="pic_pub" src="../images/CeMAC.png" alt="Notre système" />
+          <img class="pic_pub2" src="../images/architecture.jpg" alt="Notre système" />
         </div>
 
       <div class="presentation">
-        <img class="pic_pub" src="../images/Bode_Rauch.png" alt="Le panneau de contrôle" />
+        <img class="pic_pub" src="../images/control.jpg" alt="Le panneau de contrôle" />
         <div class="paragraphe">
           <h2 style="width:250px;">Contrôler vos appareils</h2>
           <p>Une configuration de base est installée sur notre système,
