@@ -15,6 +15,8 @@
    $nom=$_POST['nom'];
    $superficie=$_POST['superficie'];
    $adresse=$_POST['adresse'];
+   $rue=$_POST['Street'];
+   $Postal=$_POST['Postal'];
    //$id_user=$_SESSION['id_user'];
    $ajout = $bdd->prepare('INSERT INTO maison(ID_user,nom,superficie,adresse,Street,Postal) VALUES(:ID_user,:nom,:superficie,:adresse,:Street,:Postal)');
    // Requête d'insertion,
@@ -23,8 +25,8 @@
      'nom' => $nom,
      'superficie' => $superficie,
      'adresse' => $adresse,
-     'Street' => 'hey',
-     'Postal' => '75015',
+     'Street' => $rue,
+     'Postal' => $Postal,
    ));
 
 

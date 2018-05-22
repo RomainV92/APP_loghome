@@ -8,10 +8,10 @@
 
   <body>
     <?php //include 'frequent/header.html'; ?>
-    <!--<img id="pic_accueil" src="images/image_accueil.jpg" alt="image d'acceuil" />-->
+    <!--<img id="pic_accueil" src="../images/image_accueil.jpg" alt="image d'acceuil" />-->
     <div class="§principal">
       <div class="presentation">
-        <img class="pic_pub" src="images/Cnou.png" alt="L'équipe" />
+        <img class="pic_pub" src="../images/Cnou.png" alt="L'équipe" />
         <div class="paragraphe">
           <h2 style="width:200px;">Qui sommes nous?</h2>
           <p>
@@ -37,11 +37,11 @@
             des moteurs. Sa facilité d'installation vous libérera l'esprit,
             branchez le et il sera prêt à être utilisé.</p>
           </div>
-          <img class="pic_pub" src="images/CeMAC.png" alt="Notre système" />
+          <img class="pic_pub" src="../images/CeMAC.png" alt="Notre système" />
         </div>
 
       <div class="presentation">
-        <img class="pic_pub" src="images/Bode_Rauch.png" alt="Le panneau de contrôle" />
+        <img class="pic_pub" src="../images/Bode_Rauch.png" alt="Le panneau de contrôle" />
         <div class="paragraphe">
           <h2 style="width:250px;">Contrôler vos appareils</h2>
           <p>Une configuration de base est installée sur notre système,

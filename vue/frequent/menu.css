@@ -1,28 +1,34 @@
+.Menu
+{
+	grid-row: 1/2;
+	grid-column : 1/6;
+}
+
 .Menu body{
-	font-family: Verdana, Calibri, sans-serif;
+	font-family: Verdana, sans-serif;
 	margin: 0px;
 	padding: 0px;
 }
 .Menu nav{
 	width: 100%;
-	background-color: #424558;
+	background-color: rgb(66, 69, 88);
 
 }
-.Menu nav  ul{   /* on utilise '>' pour ne cible que la liste ul qui est enfant direct de nav */
+.Menu nav  ul
+{   /* on utilise '>' pour ne cible que la liste ul qui est enfant direct de nav */
+	display : flex;
+	justify-content: space-between;
 	margin: 0px;
 	padding: 0px;
-
-
 }
 
 .Menu nav li{ /* enleve les puces devant tous les li appartenant a nav */
 	list-style-type: none;
 	text-align: center;
-
 }
 
 .Menu nav  ul  li{    /* affiche seulement les li correspondant à nos onglets de menu en ligne*/
-	display:inline-block;
+	display: inline-block;
 	position: relative;
 
 	padding-left: 30px;
@@ -48,34 +54,29 @@
 .Menu nav a{
 	display: inline-block;
 	text-decoration: none;
-
 }
 
-.Menu nav ul li >a{
+.Menu nav ul li a{
 	padding: 20px 30px;
 	color: #FFF;
 }
+
 .Menu nav ul li:hover a{
 	padding: 15px 30px 20px 30px;
-
 }
 
 .Menu .menu-mobile{ /*cache bouton affichant le menu mobile*/
 	display: none;
 }
 
-
-
-
 .Menu nav li:hover .submenu{
 	display: inline-block;
 	position: absolute;
 	top: 100%;
-	left: 0px;
+	left: 0%;
 	padding: 0px;
 	z-index: 1000;
 }
-
 
 .Menu .submenu li a{
 	padding: 15px 30px;
@@ -87,41 +88,32 @@
 	border-bottom: 1px solid #CCC;
 }
 
-.Menu .menu-home:hover{
-	border-top: 5px solid RGB(100,128,192);
-	background-color: rgba(100,128,192,0.2);
-}
-.Menu .menu-myhouses:hover{
-	border-top: 5px solid RGB(100,128,192);
-	background-color: rgba(100,128,192,0.2);
+#droite
+{
+	margin-right: 0px;
 }
 
-.Menu .menu-myaccount:hover{
+.Menu .menu-main:hover{
 	border-top: 5px solid RGB(100,128,192);
 	background-color: rgba(100,128,192,0.2);
 }
 
-.Menu .menu-about:hover{
-	border-top: 5px solid RGB(100,128,192);
-	background-color: rgba(100,128,192,0.2);
-
-}
-
-
-
-.Menu .menu-home .submenu{
+.Menu .menu-main .submenu
+{
 	background-color:  RGB(100,128,192);
 }
-.Menu .menu-myhouses .submenu{
-	background-color:  RGB(100,128,192);
-}
-.Menu .menu-myaccount .submenu{
-	background-color:  RGB(100,128,192);
-}
+<<<<<<< HEAD
 .Menu .menu-about .submenu{
 	background-color:  RGB(100,128,192);
 	
+=======
+
+.Menu .menu-main .submenu li:hover
+{
+	background-color:  rgba(66, 69, 88, 0.2);
+>>>>>>> 891388c5b053d63627b06e042056795c83cbfc02
 }
+
 .Menu nav input[type=checkbox]:checked ~ ul{ /*case à cocher invisible*/
 	display: block;
 }

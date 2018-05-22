@@ -1,6 +1,22 @@
 body{
 	  background: url("../images/maison3.jpg");
 }
+
+/*
+body div ul li:hover{
+
+	background-color:rgba(240,240,240,0.9);
+	border: 2px solid rgb(100,100,100);
+
+}
+*/
+.salon nav li{
+	list-style: none;
+
+}
+.salonn nav ul li{
+	display: inline-block;
+}
 #conteneur {
 	display: flex;
 
@@ -9,9 +25,9 @@ body{
 .popup-position{
 	display: none;
 	position: fixed;
-top:0;
-left: 0;
-background-color: rgba(0,0,0,0.7);
+top:30%;
+left: 30%;
+background-color: rgba(0,0,0,0);
 width: 100%;
 height: 100%;}
 
@@ -21,19 +37,20 @@ height: 100%;}
 	text-align: left;
 }
 #popup-container{
-	background-color: blue;
-padding: 20px;
-border-radius: 4px;
+	background-color: grey;
+	padding: 20px;
+	border-radius: 4px;
 }
 
 
  .maison li{
 	   list-style-type: none;
 	   list-style-position: inside;
+
 	 }
 
 	  .maison a{
-	 	display: inline-block;
+	 	display: inline-bloc;
 	 	text-decoration: none;
 	 	color: rgb(0,128,192);
 	 }
@@ -47,7 +64,7 @@ border-radius: 4px;
 	 }
 
 		.salon{
-				background-image: url("../images/maison3.jpg");
+				background-image: url("../images/login_image.jpg");
 				border: 2px solid black;
 				display: block;
 				color: #FFF;
