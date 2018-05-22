@@ -3,24 +3,10 @@
     <head>
         <title>Condition d'utilisation</title>
         <meta charset= "utf-8">
-        <link rel='stylesheet' href="legal_and_privacy.css"=>
+        <link rel='stylesheet' href="vue/legal_and_privacy.css"=>
     </head>
     
     <body>
-        <header >
-            <!--Titre principal-->
-            <h1>Condition d'utilisation</h1>
-            <img class= 'logo' src="Logo.png" alt="logo">
-                           
-        </header>
-        
-
-        
-        <!--Menu-->
-        <nav >
-            <?php include("menu.php"); ?> 
-        </nav>
-
         <!--Condition d'utilisation-->
         <h2>Conditions générales d'utilisation du site www.loghome.fr</h2>
 
@@ -121,10 +107,5 @@
             La responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et insurmontable d'un tiers.</p>
         </div>
 
-
-        <!--Footer-->
-        <footer ">
-            <?php include("footer.php"); ?> 
-        </footer>
     </body>
 </html>

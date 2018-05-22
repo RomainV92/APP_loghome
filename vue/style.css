@@ -29,11 +29,7 @@ footer
 {
   grid-row: 4/5;
   grid-column: 1/6;
-
-  display : grid;
-  grid-template-columns: 3fr 3fr 3fr 2fr;
-
-  background-color : #f7f1e3;
+  
 }
 
 header
