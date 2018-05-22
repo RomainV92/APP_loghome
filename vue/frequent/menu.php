@@ -11,8 +11,13 @@
       <input type="checkbox" id="menu-mobile" role="button" />
       <ul>
         <div>
-          <li class="menu-main"><a href="../index.php?cible=accueil">ACCUEIL</a></li>
-          <?php  if (!empty($_SESSION['id_user']))
+          <?php
+          $path = $_SERVER['PHP_SELF'];
+          $file = basename ($path);
+          if ($file != "accueil.php")
+            echo "<li class=\"menu-main\"><a href=\"../index.php?cible=accueil\">ACCUEIL</a></li>";
+          
+          if (!empty($_SESSION['id_user']))
           {?>
             <li class="menu-main"><a href="../index.php?cible=Page_logement">LOGEMENTS</a>
               <ul class="submenu">
