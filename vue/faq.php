@@ -7,13 +7,6 @@
     </head>
 
     <body>
-
-
-
-
-        <!--Menu-->
-
-
         <!--Questions-->
         <div class='faq'>
 
@@ -57,7 +50,7 @@
 
                         <li class="question"><a href="#">L'installation de détecteurs de fumée est-elle obligatoire dans mon pays ?</a>
 
-                            <ul class="reponse"><li>L'installation d'un détecteur avertisseur de fumée est obligatoire dans tous les logements en France depuis mars 2015. Vous trouverez des informations détaillées concernant la réglementation en vigueur en France sous www.economie.gouf.fr/dgccrf/publications/vie-patrique/fiches-pratiques/detecteur-autonomes-avertisseurs-fumee-daaf.En Autriche, il existe dans presque tous les Land des réglementations concernant les nouvelles constructions / transformations et les constructions existantes. Ces réglementations s'appliquent même souvent pour tous les espaces de séjour de votre domicile.</li></ul>
+                            <ul class="reponse"><li>L'installation d'un détecteur avertisseur de fumée est obligatoire dans tous les logements en France depuis mars 2015.En Autriche, il existe dans presque tous les Land des réglementations concernant les nouvelles constructions / transformations et les constructions existantes. Ces réglementations s'appliquent même souvent pour tous les espaces de séjour de votre domicile.</li></ul>
                         </li>
 
                         <li class="question"><a href="#">Pourquoi devrais-je utiliser un détecteur de fumée ?</a>
@@ -114,8 +107,6 @@
             </div>
 
         </div>
-
-        <!--Footer-->
       
     </body>
 </html>

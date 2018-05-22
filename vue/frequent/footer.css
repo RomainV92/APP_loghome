@@ -1,26 +1,33 @@
 
 
+footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	}
 
 footer div{
-position: fixed;
-  width:100%;
+
   	text-align:center;
-  	display:table-row;
+  	display:flex;
+
   	justify-content: space-around;
  	font-family: Verdana, Calibri, sans-serif;
 	margin: 0px;
 	padding: 0px;
-  bottom: 0px;
-  height: 60px;
+
+}  
 
 
 
 
-
-}
-footer div nav{
+footer  nav{
 	width: 100%;
 	background-color: #424558;
+	padding-bottom: 10px;
+ 	padding-top: 10px;
+
 }
 
 footer nav li {
@@ -30,6 +37,8 @@ footer nav li {
 
  	padding-left: 30px;
  	padding-right: 30px;
+ 	padding-bottom: 10px;
+ 	padding-top: 10px;
 
 
 }
@@ -39,11 +48,17 @@ footer nav a{
 	text-decoration: none;
 }
 
-footer nav  ul li a{
-
-	color: #FFF;
-
+footer nav ul {
+	margin: 0px;
+	padding: 0px;
 }
+footer nav  ul li a{
+	
+	color: #FFF;
+}
+
+
+
 footer nav  ul li:hover{
 	border-top: 5px solid RGB(100,128,192);
 	background-color: rgba(100,128,192,0.2);
