@@ -52,7 +52,7 @@
                       <label for="adresse">Rue</label>
                   </div>
                   <div class="col-55">
-                      <input type="text" name="adresse" id="Street" /><br />
+                      <input type="text" name="Street" id="Street" /><br />
                   </div>
               </div>
 
@@ -61,7 +61,7 @@
                       <label for="adresse">Code Postal</label>
                   </div>
                   <div class="col-55">
-                      <input type="text" name="adresse" id="Postal" /><br />
+                      <input type="text" name="Postal" id="Postal" /><br />
                   </div>
               </div>
               <div class="row">
