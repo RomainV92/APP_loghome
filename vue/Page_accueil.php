@@ -8,8 +8,6 @@
   </head>
 
   <body>
-    <?php //include 'frequent/header.html'; ?>
-    <!--<img id="pic_accueil" src="../images/image_accueil.jpg" alt="image d'acceuil" />-->
     <div class="§principal">
       <div class="presentation">
         <img class="pic_pub1" src="../images/equipe.jpg" alt="L'équipe" />

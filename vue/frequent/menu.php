@@ -11,8 +11,13 @@
       <input type="checkbox" id="menu-mobile" role="button" />
       <ul>
         <div>
-          <li class="menu-main"><a href="../index.php?cible=accueil">ACCUEIL</a></li>
-          <?php  if (!empty($_SESSION['id_user']))
+          <?php
+          $path = $_SERVER['PHP_SELF'];
+          $file = basename ($path);
+          if ($file != "accueil.php")
+            echo "<li class=\"menu-main\"><a href=\"../index.php?cible=accueil\">ACCUEIL</a></li>";
+
+          if (!empty($_SESSION['id_user']))
           {?>
             <li class="menu-main"><a href="../index.php?cible=Page_logement">LOGEMENTS</a>
               <ul class="submenu">
@@ -20,9 +25,8 @@
 
                 <?php while ($donnees = $reponse->fetch())
                 {
-                  echo "<li><a href=\"" . $donnees['ID'] . ".php\">" . $donnees['nom'] . "</a></li>";
+                  echo "<li><a href=\"../controleur/Page_Pieces.php?cible=". $donnees['ID'] . "\">" . $donnees['nom'] . "</a></li>";
                 }
-
                 echo "</ul></li>";
                 $reponse->closeCursor(); // Termine le traitement de la requête
           }
