@@ -98,7 +98,7 @@ header
   flex-direction: column;
   justify-content: flex-start;
   width: 50%;
-  height: 50%;
+  height: 100%;
 
   border-radius: 20px;
   color: white;
