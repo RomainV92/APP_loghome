@@ -26,23 +26,28 @@
    ));
 
 
-    /*
     $subject=$_POST['problem_type'];
     $message=$_POST['message'];
     $headers = 'From:'. $_POST['email'] . "\r\n" .
      'Reply-To:'.$_POST['email'] . "\r\n" .
      'X-Mailer: PHP/' . phpversion();
-    $to = 'jonathan_truong@hotmail.fr';
+    $to = 'loghome.g11c@gmail.com';
 
     // Dans le cas où nos lignes comportent plus de 70 caractères, nous les coupons en utilisant wordwrap()
     $message = wordwrap($message, 70, "\r\n");
 
-    mail($to, $subject, $message, $headerw);
- 
+    
+    if (mail($to, $subject, $message, $headers)) // Envoi du message
+    {
+        echo 'Votre message a bien été envoyé ';
+    }
+    else // Non envoyé
+    {
+        echo "Votre message n'a pas pu être envoyé";
+    }
+    
 
-*/
 
 
 
-    header('Location: ../index.php?cible=Page_contact_us');
    ?>
