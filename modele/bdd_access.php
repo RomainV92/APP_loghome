@@ -12,3 +12,25 @@ function appel_bdd()
     die('Erreur : ' . $e->getMessage());
   }
 }
+
+function info_user($bdd, $id)
+{
+  $table = $bdd -> prepare('SELECT * FROM login WHERE ID=:id');
+  $table -> execute(array('id' => $id));
+  return ($table -> fetch());
+}
+
+function validation_identifiants($bdd, $login, $mdp)
+{
+  $table = $bdd -> prepare('SELECT ID,Password FROM login WHERE Pseudo=:nom');
+  $table -> execute(array('nom' => $login));
+  $data = $table -> fetch();
+  if($data['Password'] == $mdp)
+  {
+    $_SESSION['id_user']=$data['ID'];
+    $table->closeCursor();
+		return $data;
+  }
+  $table->closeCursor();
+  return '0';
+}

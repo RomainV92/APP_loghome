@@ -9,7 +9,7 @@
     <body>
     <div class="wrapper">
         <!--Questions-->
-        
+
 
             <div class= 'type'>
                 <h2>Compte utilisateur</h2>
@@ -108,6 +108,6 @@
             </div>
 
     </div>
-      
+
     </body>
 </html>
