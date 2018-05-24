@@ -1,8 +1,8 @@
-body{
+.wrapper{
 	display: flex;
 	flex-direction: column;	
 	font-family: sans-serif,'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
+	margin-top: 5%;
 
 }
 .logo{

@@ -8,7 +8,7 @@
     </head>
 
     <body>
-
+    <div class="wrapper">
          <!--Formulaire-->
 
         <form action="../modele/contact_us_post.php" method="post">
@@ -46,7 +46,7 @@
         </form>
 
      
-
+    </div>
     </body>
     
 </html>

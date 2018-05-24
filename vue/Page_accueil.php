@@ -8,7 +8,8 @@
   </head>
 
   <body>
-    <div class="§principal">
+  
+    <div class="wrapper">
       <div class="presentation">
         <img class="picture" src="../images/equipe.jpg" alt="L'équipe" />
         <div class="paragraphe">
@@ -54,6 +55,7 @@
             au moment où vous vous brossez les dents par exemple.</p>
           </div>
         </div>
-    </div>
+  </div>
+  
   </body>
 </html>

@@ -8,17 +8,7 @@
     </head>
 
     <body>
-  <!--       <header >
-
-            <h1>Ajouter une maison</h1>
-            <img class= 'logo' src="image/Logo.png" alt="logo">
-
-        </header>
--->
-
-
-
-         <!--Formulaire-->
+    <div class="wrapper">
 
         <form action="../modele/ajouter_maison_post.php" method="post">
 
@@ -55,7 +45,7 @@
 
         </form>
 
-         <!--Footer-->
+    </div>
 
     </body>
 
