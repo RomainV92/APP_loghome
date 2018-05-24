@@ -11,9 +11,9 @@
   
     <div class="wrapper">
       <div class="presentation">
-        <img class="pic_pub1" src="../images/equipe.jpg" alt="L'équipe" />
+        <img class="picture" src="../images/equipe.jpg" alt="L'équipe" />
         <div class="paragraphe">
-          <h2 style="width:200px;">Qui sommes nous?</h2>
+          <h2>Qui sommes nous?</h2>
           <p>
           DOMISEP vous apportera la solution à tous vos tracas du quotidien :
           plus besoin d'ouvrir vos volets, ni même d'allumer/éteindre la lumière,
@@ -25,8 +25,8 @@
       </div>
 
       <div class="presentation">
-        <div class="paragraphe">
-          <h2 style="width:150px;">Notre système</h2>
+        <div class="paragraphe1">
+          <h2>Notre système</h2>
           <p>Composé d'un microcontroleur à la pointe de
             la technologie, ainsi que de capteurs d'une qualité inégalée, notre système
             vous permettra d'automatiser certaines parties de votre maison
@@ -37,13 +37,13 @@
             des moteurs. Sa facilité d'installation vous libérera l'esprit,
             branchez le et il sera prêt à être utilisé.</p>
           </div>
-          <img class="pic_pub2" src="../images/architecture.jpg" alt="Notre système" />
+          <img class="picture1" src="../images/architecture.jpg" alt="Notre système" />
         </div>
 
       <div class="presentation">
-        <img class="pic_pub" src="../images/control.jpg" alt="Le panneau de contrôle" />
+        <img class="picture2" src="../images/control.jpg" alt="Le panneau de contrôle" />
         <div class="paragraphe">
-          <h2 style="width:250px;">Contrôler vos appareils</h2>
+          <h2>Contrôler vos appareils</h2>
           <p>Une configuration de base est installée sur notre système,
             mais si vous souhaitez personnaliser votre appareil,
             notre panneau de contrôle, aussi bien destiné aux personnes
