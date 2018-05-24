@@ -18,7 +18,6 @@ p
   font-family: monospace,"Trebuchet MS", Impact, Georgia, sans-serif;
   font-family: Tahoma,  sans-serif;
   text-align: justify;
-
 }
 
 h2
@@ -29,33 +28,6 @@ h2
   padding-left: 10px;
 }
 
-footer
-{
-  grid-row: 4/5;
-  grid-column: 1/6;
-
-}
-
-header
-{
-  grid-row: 1/2;
-  grid-column: 1/6;
-
-/*
-  display: grid;
-  grid-template-rows: repeat(3, auto);
-  grid-template-columns: 314px auto 314px;
-*/
-
-  display: flex;
-  flex-direction: inline;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-
-  background-color: #f7f1e3;
-
-}
 /*
 .logo_titre
 {
@@ -99,91 +71,67 @@ header
   justify-content: flex-start;
   width: 50%;
   height: 100%;
-
-  border-radius: 20px;
+  border-radius: 0px 20px 20px 0px;
   color: white;
-  background-color: rgba(0, 0, 0,0.8);
+  background-color: rgba(0, 0, 0,0.9);
   padding-left: 10px;
   padding-right: 10px;
   text-align: left;
+  box-shadow: 6px 6px 8px black;
+}
+.paragraphe1
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+
+  border-radius: 20px 0px 0px 20px;
+  color: white;
+  background-color: rgba(0, 0, 0,0.9);
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  box-shadow: 6px 6px 8px black;
+
 }
 
-.pic_pub1
+.picture
 {
   position: relative;
-  /*right: 30%;*/
-  height: 195px;
+  height: 193px;
+  max-height: 193px;
+  min-height: 193px;
   width: 250px;
-  border-radius: 20px;
+  max-width: 250px;
+  min-width: 250px;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 6px 6px 8px black;
+
 }
-.pic_pub2
+.picture1
 {
   position: relative;
-  /*right: 30%;*/
-  height: 235px;
+  height: 231px;
+  max-height: 231px;
+  min-height: 231px;
   width: 250px;
-  border-radius: 20px;
+  max-width: 250px;
+  min-width: 250px;
+  border-radius: 0px 20px 20px 0px;
+  box-shadow: 6px 6px 8px black;
 }
 
-.pic_pub
+.picture2
 {
   position: relative;
-  /*right: 30%;*/
   height: 250px;
+  max-height: 250px;
+  min-height: 250px;
   width: 250px;
-  border-radius: 20px;
-}
-
-.button
-{
-  font: bold 11px Arial;
-  text-decoration: none;
-  background-color: #EEEEEE;
-  color: #333333;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
-}
-
-#pic_accueil
-{
-  grid-row: 2/3;
-  grid-column: 3/4;
-  align-items: center;
-
-}
-
-#pic_accueil2
-{
-  align-items: center;
-  background-repeat: no-repeat;
-
-  height: auto;
-  width: 100%;
-}
-
-#logo
-{
-  grid-row: 1/4;
-  grid-column: 1/3;
-
-  height: 70%;
-  width: auto;
-  background-color: white;
-}
-
-#titre
-{
-  grid-row: 2/3;
-  grid-column: 2/3;
-  text-align: center;
-}
-
-#login_button
-{
-  text-align: center;
-  height: 15px;
-  width: 90px;
+  max-width: 250px;
+  min-width: 250px;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 6px 6px 8px black;
 }
