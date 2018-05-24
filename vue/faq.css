@@ -1,8 +1,9 @@
-body{
+.faq{
 	text-align: center;
 	display: flex;
 	flex-direction: column;	
 	font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin-top: 5%;
 }
 
 

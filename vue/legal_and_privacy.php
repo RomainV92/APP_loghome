@@ -7,6 +7,7 @@
     </head>
     
     <body>
+    <div class='condition_d_utilisation'>
         <!--Condition d'utilisation-->
         <h2>Conditions générales d'utilisation du site www.loghome.fr</h2>
 
@@ -106,6 +107,6 @@
 
             La responsabilité du site ne peut être engagée en cas de force majeure ou du fait imprévisible et insurmontable d'un tiers.</p>
         </div>
-
+    </div>
     </body>
 </html>
