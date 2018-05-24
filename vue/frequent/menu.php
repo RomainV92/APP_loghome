@@ -45,7 +45,7 @@
               if(isset($_SESSION['id_user'])){ ?>
                 <li><a href="../index.php?cible=deconnexion">Déconnexion</a></li>
                 <li><a href="#">Mes capteurs</a></li>
-                <li><a href="#">Mes informations</a></li>
+                <li><a href="../index.php?cible=InfoCompte">Mes informations</a></li>
                 <li><a href="#">Aide</a></li>
               <?php
               }
