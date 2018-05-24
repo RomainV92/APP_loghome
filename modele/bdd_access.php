@@ -28,7 +28,9 @@ function validation_identifiants($bdd, $login, $mdp)
   if($data['Password'] == $mdp)
   {
     $_SESSION['id_user']=$data['ID'];
+    $table->closeCursor();
 		return $data;
   }
+  $table->closeCursor();
   return '0';
 }
