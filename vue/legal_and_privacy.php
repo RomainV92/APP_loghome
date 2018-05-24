@@ -3,7 +3,7 @@
     <head>
         <title>Condition d'utilisation</title>
         <meta charset= "utf-8">
-        <link rel='stylesheet' href="vue/legal_and_privacy.css"=>
+        <link rel='stylesheet' href="../vue/legal_and_privacy.css"=>
     </head>
     
     <body>

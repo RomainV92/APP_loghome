@@ -3,7 +3,7 @@
     <head>
         <title>F.A.Q</title>
         <meta charset= "utf-8">
-        <link rel='stylesheet' href='vue/faq.css'>
+        <link rel='stylesheet' href='../vue/faq.css'>
     </head>
 
     <body>
