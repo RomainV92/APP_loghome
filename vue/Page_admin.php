@@ -8,6 +8,7 @@
   </head>
 
 <body>
-<?php utilisateurs($utilisateurs); ?>
-
+  <div class="wrapper">
+    <?php utilisateurs($utilisateurs); ?>
+  </div>
 </body>

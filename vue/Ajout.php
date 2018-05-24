@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="../vue/inscription.css"/>
 </head>
 <body>
+<div class="wrapper">
 <div class="InBox">
     <img src="../images/image_Log.png" class="avatar">
 <h1> Inscription </h1>
@@ -24,7 +25,7 @@
 <span class="Error"><?php echo $Error_message; ?></span>
 </fieldset>
 </div>
-
+</div>
 
 </body>
 </html>

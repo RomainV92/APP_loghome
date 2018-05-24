@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div>
+<div class="wrapper">
 <p> Vous etes maintenant inscrits sur le site de Log.Home</p>
 
 

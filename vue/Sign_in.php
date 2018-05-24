@@ -7,6 +7,7 @@
   </head>
 
   <body>
+  <div class="wrapper">
     <div class="loginbox">
       <img src="../images/image_Log.png" class="avatar">
       <h1> Connexion </h1>
@@ -20,5 +21,6 @@
       <a href="#"> Mot de passe oublié/perdu?</a><br>
       <a href="../index.php?cible=CreerCompte">Vous n'avez pas de compte?</a>
     </div>
+</div>
   </body>
 </html>

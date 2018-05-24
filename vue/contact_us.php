@@ -4,14 +4,14 @@
     <head>
         <meta charset="utf-8" />
         <title>Nous contacter</title>
-        <link rel='stylesheet' href='vue/contact_us.css'>
+        <link rel='stylesheet' href='../vue/contact_us.css'>
     </head>
 
     <body>
-
+    <div class="wrapper">
          <!--Formulaire-->
 
-        <form action="modele/contact_us_post.php" method="post">
+        <form action="../modele/contact_us_post.php" method="post">
         <div class="grid">
                     <label for="type">Type de problème :</label>
                 
@@ -46,7 +46,7 @@
         </form>
 
      
-
+    </div>
     </body>
     
 </html>

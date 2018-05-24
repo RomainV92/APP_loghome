@@ -17,7 +17,7 @@
     </head>
 
     <body>
-
+    <div class="wrapper">
         <div class="maison" id=conteneur>
 
         <?php bdd_maisons($pieces); ?>
@@ -38,5 +38,6 @@
         </div>
 
         </div>
+      </div>
       </body>
     </html>
