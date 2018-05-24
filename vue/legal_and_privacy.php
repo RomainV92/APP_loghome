@@ -7,7 +7,7 @@
     </head>
     
     <body>
-    <div class='condition_d_utilisation'>
+    <div class="wrapper">
         <!--Condition d'utilisation-->
         <h2>Conditions générales d'utilisation du site www.loghome.fr</h2>
 

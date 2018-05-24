@@ -8,8 +8,9 @@
   </head>
 
   <body>
-
+  <div class="wrapper">
     <p>Bienvenue chez vous, <?php echo $_SESSION['id_user']; ?></p>
     <a class="button" href="../index.php">Retour menu</a>
+  </div>
   </body>
 </html>

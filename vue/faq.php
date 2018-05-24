@@ -7,8 +7,9 @@
     </head>
 
     <body>
+    <div class="wrapper">
         <!--Questions-->
-        <div class='faq'>
+        
 
             <div class= 'type'>
                 <h2>Compte utilisateur</h2>
@@ -106,7 +107,7 @@
                     </ul>
             </div>
 
-        </div>
+    </div>
       
     </body>
 </html>

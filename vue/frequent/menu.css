@@ -107,16 +107,10 @@
 {
 	background-color:  RGB(100,128,192);
 }
-<<<<<<< HEAD
-.Menu .menu-about .submenu{
-	background-color:  RGB(100,128,192);
-
-=======
 
 .Menu .menu-main .submenu li:hover
 {
 	background-color:  rgba(66, 69, 88, 0.2);
->>>>>>> 891388c5b053d63627b06e042056795c83cbfc02
 }
 
 .Menu nav input[type=checkbox]:checked ~ ul{ /*case à cocher invisible*/
