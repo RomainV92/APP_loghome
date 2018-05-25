@@ -46,7 +46,7 @@
         echo "Votre message n'a pas pu être envoyé";
     }
     
-    
+    /*header('Location: ../index.php?cible=Page_contact_us');*/
 
 
 
