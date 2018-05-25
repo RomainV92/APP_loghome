@@ -8,9 +8,12 @@
   </head>
 
   <body>
+    <p>
     <?php
-      echo "Nom : ". $data['Nom'] . "<br />Prénom : " . $data['Prenom'];
+      echo "Prénom : ". $data['Prenom'] . "<br />Nom : " . $data['Nom']
+      . "<br />Adresse mail : " . $data['Mail'] . "<br />Téléphone : " . $data['Telephone'];
     ?>
+    </p>
   </body>
 
 </html>

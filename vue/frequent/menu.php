@@ -56,6 +56,7 @@
               </ul>
             </li>
         </div>
+
         <div>
           <li class="menu-main">
           <?php if($_SESSION == array())
@@ -67,6 +68,7 @@
             echo '<a href="../index.php?cible=deconnexion">DECONNEXION</a>';
           } ?>
           </li>
+          <img id="logo" src="../images/Logo.png" alt="Logo de Log.home" />
         </div>
       </ul>
     </nav>
