@@ -23,7 +23,7 @@ function bdd_maisons($Infos_maisons){
 
         <div id="popup_ajout<?php echo $Dif_maisons['ID']?>" class="popup-position">
           <div id="popup-wrapper">
-            <div id="popup-container">
+
               <form action="../modele/Ajout_utilisateur.php" method="post">
 
 
@@ -42,7 +42,7 @@ function bdd_maisons($Infos_maisons){
 
               </form>
               <p><button href="javascript:void(0)"onclick="toggle_visibility('popup_ajout<?php echo $Dif_maisons['ID']?>')">close popup</button></p>
-            </div>
+
           </div>
         </div>
 
