@@ -1,15 +1,10 @@
 
     <?php
     //session_start();
-        // Connexion à la base de données
-    try
-    {
-        $bdd = new PDO('mysql:host=localhost;dbname=users;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-    }
-    catch(Exception $e)
-    {
-        die('Erreur : '.$e->getMessage());
-    }
+    // Connexion à la base de données
+    /*
+    include('../modele/bdd_access.php');
+    $bdd=appel_bdd();
 
    $problem_type=$_POST['problem_type'];
    $email=$_POST['email'];
@@ -24,7 +19,7 @@
      'message' => $message,
 
    ));
-
+   */
 
     $subject=$_POST['problem_type'];
     $message=$_POST['message'];
@@ -36,7 +31,7 @@
     // Dans le cas où nos lignes comportent plus de 70 caractères, nous les coupons en utilisant wordwrap()
     $message = wordwrap($message, 70, "\r\n");
 
-    
+
     if (mail($to, $subject, $message, $headers)) // Envoi du message
     {
         echo 'Votre message a bien été envoyé ';
@@ -45,8 +40,8 @@
     {
         echo "Votre message n'a pas pu être envoyé";
     }
-    
-    /*header('Location: ../index.php?cible=Page_contact_us');*/
+
+
 
 
 
