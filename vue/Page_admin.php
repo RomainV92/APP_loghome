@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,7 +8,7 @@
   </head>
 
 <body>
-  <div class="wrapper">
-    <?php utilisateurs($utilisateurs); ?>
-  </div>
+<?php Trouver_users($utilisateurs); ?>
+
 </body>
+</html>

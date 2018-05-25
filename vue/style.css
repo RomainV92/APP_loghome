@@ -101,11 +101,7 @@ h2
 {
   position: relative;
   height: 193px;
-  max-height: 193px;
-  min-height: 193px;
   width: 250px;
-  max-width: 250px;
-  min-width: 250px;
   border-radius: 20px 0px 0px 20px;
   box-shadow: 6px 6px 8px black;
 
@@ -114,11 +110,7 @@ h2
 {
   position: relative;
   height: 231px;
-  max-height: 231px;
-  min-height: 231px;
   width: 250px;
-  max-width: 250px;
-  min-width: 250px;
   border-radius: 0px 20px 20px 0px;
   box-shadow: 6px 6px 8px black;
 }
@@ -127,11 +119,7 @@ h2
 {
   position: relative;
   height: 250px;
-  max-height: 250px;
-  min-height: 250px;
   width: 250px;
-  max-width: 250px;
-  min-width: 250px;
   border-radius: 20px 0px 0px 20px;
   box-shadow: 6px 6px 8px black;
 }
