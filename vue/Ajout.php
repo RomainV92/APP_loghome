@@ -6,10 +6,18 @@
     <link rel="stylesheet" href="../vue/inscription.css"/>
   </head>
   <body>
+<<<<<<< HEAD
     <div class="InBox">
       <img src="../images/image_Log.png" class="avatar">
       <h1> Inscription </h1>
       <form method="post" action=<?php echo $Direction; ?> />
+=======
+    <div class="wrapper">
+      <div class="InBox">
+        <img src="../images/image_Log.png" class="avatar">
+        <h1> Inscription </h1>
+        <form method="post" action=<?php echo $Direction; ?>>
+>>>>>>> 6e94a131e901d29d654480375b8893b4b917ab13
           <p>Votre Prenom </p>
           <input id="Prenom" type="text" name="Prenom" id="Prenom" required/>
           <p>Votre Nom </p>
@@ -20,8 +28,13 @@
           <p><label>Votre Mail </label><input type="text" name="Mail" id="Mail" placeholder="Ex: a@gmail.com" required></p>
 
           <input type="submit" value="Valider" class="Submit_button">
-      </form>
-      <span class="Error"><?php echo $Error_message; ?></span>
+        </form>
+        <span class="Error"><?php echo $Error_message; ?></span>
+      </div>
     </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e94a131e901d29d654480375b8893b4b917ab13
   </body>
 </html>
