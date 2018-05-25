@@ -8,7 +8,7 @@
   </head>
 
   <body>
-  
+
     <div class="wrapper">
       <div class="presentation">
         <img class="picture" src="../images/equipe.jpg" alt="L'équipe" />
@@ -56,6 +56,6 @@
           </div>
         </div>
   </div>
-  
+
   </body>
 </html>
