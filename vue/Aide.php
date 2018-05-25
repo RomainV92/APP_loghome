@@ -10,9 +10,9 @@
   <body>
   
     <div class="wrapper">
-    <a href="../index.php?cible=faq'">Accéder à la F.A.Q</a></li> 
-    <a href="../index.php?cible=Page_contact_us'">Envoyer une requête/a></li> 
-  </div>
+      <a href="../index.php?cible=faq'">Accéder à la F.A.Q</a></li> 
+      <a href="../index.php?cible=Page_contact_us'">Envoyer une requête/a></li> 
+    </div>
   
   </body>
 </html>
