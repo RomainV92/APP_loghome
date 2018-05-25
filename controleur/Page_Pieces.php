@@ -2,6 +2,9 @@
 session_start();
 include('../modele/Recherches_pieces.php');
 
+include('../modele/bdd_access.php');
+$bdd=appel_bdd();
+
 include('../modele/bdd_access_maison.php');
 include('../vue/frequent/menu.php');
 include('../vue/Pieces.php');

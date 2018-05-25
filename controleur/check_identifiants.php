@@ -1,7 +1,6 @@
 <?php
 session_start();
 include '../modele/bdd_access.php';
-include '../modele/identification.php';
 
 $bdd = appel_bdd();
 

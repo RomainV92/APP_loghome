@@ -17,7 +17,7 @@
     </head>
 
     <body>
-
+    <div class="wrapper">
         <div class="maison" id=conteneur>
 
         <?php bdd_maisons($capteurs); ?>
@@ -38,5 +38,6 @@
         </div>
 
         </div>
-      </body>
+    </div>
+    </body>
     </html>
