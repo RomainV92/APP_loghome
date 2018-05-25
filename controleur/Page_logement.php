@@ -18,7 +18,7 @@ function bdd_maisons($Infos_maisons){
       <ul>
         <?php echo $Dif_maisons['adresse'].', '.$Dif_maisons['Street'].$Dif_maisons['ID'];?>
         <p><?php echo $Dif_maisons['Postal']?></p>
-        <li ><a href="../controleur/Page_Pieces.php?cible=<?php echo $Dif_maisons['ID']?>">Pieces</a></li>
+        <li ><a href="../controleur/Page_Pieces.php?cible=<?php echo $Dif_maisons['ID']?>">Pièces</a></li>
 
 
         <div id="popup_ajout<?php echo $Dif_maisons['ID']?>" class="popup-position">
