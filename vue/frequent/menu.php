@@ -21,7 +21,7 @@
           {?>
             <li class="menu-main"><a href="../index.php?cible=Page_logement">LOGEMENTS</a>
               <ul class="submenu">
-                <li><a href="../index.php?cible=Ajout_maison">Ajouter une maison</a></li>
+                <!-- <li><a href="../index.php?cible=Ajout_maison">Ajouter une maison</a></li> -->
 
                 <?php while ($donnees = $reponse->fetch())
                 {
@@ -44,7 +44,7 @@
               <?php
               if(isset($_SESSION['id_user'])){ ?>
                 <li><a href="../index.php?cible=deconnexion">Déconnexion</a></li>
-                <li><a href="#">Mes capteurs</a></li>
+                <li><a href="../index.php?cible=Page_capteurs">Mes capteurs</a></li>
                 <li><a href="../index.php?cible=InfosCompte">Mes informations</a></li>
                 <li><a href="../index.php?cible=Page_aide">Aide</a></li>
               <?php

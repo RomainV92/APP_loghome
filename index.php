@@ -25,6 +25,11 @@ else
     $url = 'accueil';
 }
 
+if(isset($_GET['info']) && !empty($_GET['info']))
+{
+  
+}
+
 header("Refresh:0; url=/../APP_loghome/controleur/". $url . '.php');
 
 ?>

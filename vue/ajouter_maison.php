@@ -9,7 +9,7 @@
 
     <body>
     <div class="wrapper">
-
+         <div class="modal-content">
         <form action="../modele/ajouter_maison_post.php" method="post">
 
         <div class="row">
@@ -39,14 +39,14 @@
                 <input type="text" name="adresse" id="adresse" /><br />
             </div>
         </div>
-
-        <input type="submit" value="Ajouter une nouvelle maison" />
+        <span class="close">fermer</span>
+        <input type="submit"  class= "mylink" value="Ajouter une nouvelle maison" id="mylink" />
 
 
         </form>
 
     </div>
-
+</div>
     </body>
 
 </html>
