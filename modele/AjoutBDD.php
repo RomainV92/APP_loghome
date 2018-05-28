@@ -7,6 +7,8 @@ try {
 
 }
 function Ajout($bdd){
+$password = $_POST['Password'];
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 if(strpos($_POST['Mail'], '@')==true && strpos($_POST['Mail'], '.')==true && Ctype_alpha($_POST['Telephone'])==false)
 {
 $ajout = $bdd->prepare('INSERT INTO login(Nom,Prenom,Pseudo,Password,Telephone,Mail) VALUES(:Nom,:Prenom,:Pseudo,:Password,:Telephone,:Mail)');
@@ -14,7 +16,7 @@ $ajout->execute(array(
   'Nom' => $_POST['Nom'],
   'Prenom' => $_POST['Prenom'],
   'Pseudo' => $_POST['Pseudo'],
-  'Password' => $_POST['Password'],
+  'Password' => $hashed_password,
   'Telephone' => $_POST['Telephone'],
   'Mail' => $_POST['Mail'],
 ));
