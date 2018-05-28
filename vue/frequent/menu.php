@@ -46,7 +46,7 @@
                 <li><a href="../index.php?cible=deconnexion">Déconnexion</a></li>
                 <li><a href="#">Mes capteurs</a></li>
                 <li><a href="../index.php?cible=InfosCompte">Mes informations</a></li>
-                <li><a href="#">Aide</a></li>
+                <li><a href="../index.php?cible=Page_aide">Aide</a></li>
               <?php
               }
               else
