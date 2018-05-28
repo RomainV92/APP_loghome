@@ -21,7 +21,7 @@
           {?>
             <li class="menu-main"><a href="../index.php?cible=Page_logement">LOGEMENTS</a>
               <ul class="submenu">
-                <li><a href="../index.php?cible=Ajout_maison">Ajouter une maison</a></li>
+                <!-- <li><a href="../index.php?cible=Ajout_maison">Ajouter une maison</a></li> -->
 
                 <?php while ($donnees = $reponse->fetch())
                 {

@@ -13,6 +13,11 @@ body
   background-size: 100%;
 }
 
+a
+{
+  color: #fff;
+}
+
 table
 {
   width: 350px;
