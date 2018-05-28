@@ -27,9 +27,10 @@ else
 
 if(isset($_GET['info']) && !empty($_GET['info']))
 {
-  
+  $info=$_GET['info'];
+  header("Refresh:0; url=/../APP_loghome/controleur/". $url . '.php?modif='.$info);
 }
-
-header("Refresh:0; url=/../APP_loghome/controleur/". $url . '.php');
-
-?>
+else
+{
+  header("Refresh:0; url=/../APP_loghome/controleur/". $url . '.php');
+}

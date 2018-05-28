@@ -3,7 +3,7 @@
     <head>
         <title>Maison</title>
         <meta charset= "utf-8">
-        <link rel='stylesheet' href='../vue/style_house.css'>
+        <link rel='stylesheet' href='../vue/capteur.css'>
         <script type="text/javascript">
               function toggle_visibility(id){
                 var e = document.getElementById(id);
@@ -27,9 +27,6 @@
             <div id="popup-container">
               <h3>Ajouter un Capteur</h3>
               <ul>
-                <li><label for="room">Numéro pièce :</label>
-                    <input type="text" name="room" id="room" placeholder="ex: 13" size="30" maxlength="30"/>
-                </li>
                 <li><label for="reference">Référence :</label>
                     <input type="text" name="reference" id="reference" placeholder="ex: XX265 136 A" size="30" maxlength="30"/>
                   </li>
@@ -51,7 +48,7 @@
         </div>
 
 
-         <div class=ajouter_une_piece>
+         <div class=ajouter_un_capteur>
            <h2><a href="javascript:void(0)" onclick="toggle_visibility('popup-box')">Ajouter un capteur</a></h2>
         </div>
 

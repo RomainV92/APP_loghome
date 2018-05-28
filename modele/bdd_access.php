@@ -12,15 +12,35 @@ function appel_bdd()
     die('Erreur : ' . $e->getMessage());
   }
 }
-function All_login($bdd){
-$utilisateurs = $bdd->prepare('SELECT * FROM login');
-$utilisateurs -> execute(array());
-return $utilisateurs;}
+
+function All_login($bdd)
+{
+  $utilisateurs = $bdd->prepare('SELECT * FROM login');
+  $utilisateurs -> execute(array());
+  return $utilisateurs;
+}
+
 function info_user($bdd, $id)
 {
   $table = $bdd -> prepare('SELECT * FROM login WHERE ID=:id');
   $table -> execute(array('id' => $id));
   return ($table -> fetch());
+}
+
+function majInfosUser($bdd, $id, $champModif, $modif)
+{
+  if($champModif=="Mail")
+  {
+    $update = $bdd->prepare('UPDATE login SET Mail=:modif WHERE ID=:user');
+  }
+  else if($champModif=="Telephone")
+  {
+    $update = $bdd->prepare('UPDATE login SET Telephone=:modif WHERE ID=:user');
+  }
+  $update->execute(array(
+      'modif'=>$modif,
+      'user'=>$id,
+  ));
 }
 
 function validation_identifiants($bdd, $login, $mdp)
@@ -29,7 +49,6 @@ function validation_identifiants($bdd, $login, $mdp)
   $table -> execute(array('nom' => $login));
   $data = $table -> fetch();
   if(password_verify($mdp, $data['Password']))
-  //if($data['Password'] == $mdp)
   {
     $_SESSION['id_user']=$data['ID'];
     $table->closeCursor();
