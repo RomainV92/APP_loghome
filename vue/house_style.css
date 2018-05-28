@@ -1,3 +1,45 @@
+
+/*body {font-family: Arial, Helvetica, sans-serif;}*/
+
+/* The Modal (background) */
+.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 100px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%;
+}
+
+/* The Close Button */
+.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+}
+
 body{
 	  background: url("../images/maison3.jpg");
 }
@@ -25,8 +67,8 @@ body div ul li:hover{
 .popup-position{
 	display: none;
 	position: fixed;
-top:30%;
-left: 30%;
+top:50%;
+left: 340%;
 background-color: rgba(0,0,0,0);
 width: 100%;
 height: 100%;}
@@ -35,11 +77,9 @@ height: 100%;}
 	width:500px;
 	margin: 70px;
 	text-align: left;
-}
-#popup-container{
 	background-color: grey;
 	padding: 20px;
-	border-radius: 4px;
+	border-radius: 20px;
 }
 
 
@@ -52,7 +92,7 @@ height: 100%;}
 	  .maison a{
 	 	display: inline-bloc;
 	 	text-decoration: none;
-	 	color: rgb(0,128,192);
+	 	color: white;
 	 }
 
 	 .maison{
@@ -60,49 +100,63 @@ height: 100%;}
 	 	flex-direction: row;
 	 	justify-content: space-evenly;
 	 	flex-wrap : wrap
-
 	 }
 
 		.salon{
-				background-image: url("../images/login_image.jpg");
-				border: 2px solid black;
+				/*background-image: url("../images/login_image.jpg");*/
+				/*border: 2px solid black;*/
+				border-radius: 20px;
 				display: block;
-				color: #FFF;
-				background-color: rgb(143,221,250);
+				color: white;
+				font-family: sans-serif, monospace, serif;
+				text-align: center;
+				background-color: rgb(153,6,6);
 				text-align: center;
 				font-size: 23px;
-				margin-top: 30px;
-				padding-left: 20px;
-				padding-right: 20px;
-				width: 300px;
-				height: 300px;
+				margin-top: 7%;
+				padding-left: 1%;
+				padding-right: 1%;
+				width: 20%;
+				height: 35%;
 				min-width: 250px;
 				min-height: 250px;
 			}
 
-		 .ajouter_une_piece{
-							border: 2px solid black;
+		 .ajouter_une_piece
+		 {
 							display: block;
-							color: #FFF;
-							background-color: rgb(143,221,250);
+							border-radius: 10px;
+							font-family: sans-serif, monospace, serif;
+							background-color: rgba(0,0,0,0.9);
 							text-align: center;
-							width: 80%;
-							font-size: 23px;
-							margin:20px;
-							padding-left: 30px;
-							padding-right: 30px;
+							width: 50%;
+							font-size: 15px;
+							margin:10%;
+							margin-top: 13%;
+							padding-left: 2%;
+							padding-right: 2%;
+							padding-top: 1%;
+							padding-bottom: 1%;
+							color: white;
 						}
 
-						body .maison ul li{
-							margin-top: 8px;
-							margin-bottom: 8px;
-							margin-left: 30px;
-							margin-right: 40px;
-							background-color:rgb(240,240,240);
-							border: 2px solid rgb(160,160,160);
-							padding-top: 20px;
-							padding-bottom: 20px;
+
+body .maison ul li
+{
+							margin-top: 5%;
+							margin-bottom: 5%;
+							margin-left: 10%;
+							margin-right: 10%;
+							background-color:/*rgb(240,240,240)*/rgb(100,0,0);
+							border: 2px solid black;
+							border-radius: 10px;
+							padding-top: 5%;
+							padding-bottom: 5%;
+							padding-left: 2%;
+							padding-right: 2%;
+							color: white;
 						}
+
 /*
 body div ul li:hover{
 
