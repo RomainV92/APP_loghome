@@ -12,7 +12,10 @@ function appel_bdd()
     die('Erreur : ' . $e->getMessage());
   }
 }
-
+function All_login($bdd){
+$utilisateurs = $bdd->prepare('SELECT * FROM login');
+$utilisateurs -> execute(array());
+return $utilisateurs;}
 function info_user($bdd, $id)
 {
   $table = $bdd -> prepare('SELECT * FROM login WHERE ID=:id');
