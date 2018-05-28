@@ -3,7 +3,7 @@
   <head>
     <title>Bienvenue chez DOMISEP</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../vue/InfosCompte.css" />
+    <link rel="stylesheet" href="../vue/changementInfos.css" />
   </head>
 
   <body>
@@ -28,6 +28,10 @@
         ?>
         </p>
         <input id="chgmt" type="text" name="chgmt" required />
+        <?php
+          echo "<input id=\"secret\" type=\"text\" name=\"secret\" value=\"".$modif."\" readonly=\"readonly\" required />";
+          // Attention, possible de modifier la valeur depuis la console!
+        ?>
         <input type="submit" value="Enregistrer" />
       </form>
   <?php

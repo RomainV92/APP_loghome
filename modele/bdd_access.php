@@ -27,6 +27,11 @@ function info_user($bdd, $id)
   return ($table -> fetch());
 }
 
+function majInfosUser($data, $champModif, $modif)
+{
+
+}
+
 function validation_identifiants($bdd, $login, $mdp)
 {
   $table = $bdd -> prepare('SELECT ID,Password FROM login WHERE Pseudo=:nom');
