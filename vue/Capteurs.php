@@ -25,9 +25,27 @@
         <div id="popup-box" class="popup-position">
           <div id="popup-wrapper">
             <div id="popup-container">
-              <h3>popup box 1</h3>
-              <p>Bravo voila un popup</p>
-              <p><a href="javascript:void(0)"onclick="toggle_visibility('popup-box')">close popup</a></p>
+              <h3>Ajouter un Capteur</h3>
+              <ul>
+                <li><label for="room">Numéro pièce :</label>
+                    <input type="text" name="room" id="room" placeholder="ex: 13" size="30" maxlength="30"/>
+                </li>
+                <li><label for="reference">Référence :</label>
+                    <input type="text" name="reference" id="reference" placeholder="ex: XX265 136 A" size="30" maxlength="30"/>
+                  </li>
+                <li><label for="namesensor">Nom du capteur :</label>
+                    <input type="text" name="namesensor" id="namesensor" placeholder="ex: Luminos" size="30" maxlength="30"/>
+                </li>
+                <li><label for="sensortype">Type de capteur :</label>
+                    <select name="sensortype" id="sensortype">
+                      <option value="Luminosity">Luminosité</option>
+                      <option value="Temperature">Température</option>
+                      <option value="Motor">Moteur</option>
+                 </select>
+                </li>
+              </ul>
+              <input type="submit" id="confirm" value="Add sensor" />
+              <p><a href="javascript:void(0)"onclick="toggle_visibility('popup-box')">Fermer</a></p>
             </div>
           </div>
         </div>

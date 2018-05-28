@@ -21,9 +21,19 @@ height: 100%;}
 	text-align: left;
 }
 #popup-container{
-	background-color: blue;
-padding: 20px;
-border-radius: 4px;
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 10px;
+	padding: 20px;
+	position: absolute;
+	width: 50%;
+	margin-left: 20%;
+	/*margin-right: auto;*/
+	margin-top: 6%;
+}
+#popup-container h3
+{
+color: white;
+font-size: 23px;
 }
 
 

@@ -1,6 +1,6 @@
 body{
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
 	font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -8,15 +8,19 @@ body{
 	float: right;
 }
 
+.wrapper
+{
+	margin-top: 7%;
+}
  header >h1 {
  	float: left;
  	padding-left: 30px;
- 	
+
   }
 
  * {
     box-sizing: border-box;
-} 
+}
 
 
 label {
@@ -44,7 +48,7 @@ input[type="submit"]{
     border: 1px solid  rgb(0,128,192);
     border-radius: 4px;
     cursor: pointer;
-}   
+}
 .col-25 {
     float: left;
     width: 25%;
