@@ -11,13 +11,10 @@ if(isset($_POST['chgmt']) AND isset($_POST['secret']))
   if($_POST['secret']=="Mail" OR $_POST['secret']=="Telephone")
   {
     majInfosUser($bdd, $_SESSION['id_user'], $_POST['secret'], $_POST['chgmt']);
-    echo "Les modifications ont bien été faites (ou pas)";
+    header('Location:../index.php?cible=infosCompte'); //Ne fonctionne pas adans l'état actuel
   }
   else
   {
     echo "Une erreur est survenue, veuillez débugger tout ça";
   }
 }
-
-
-//header('../index.php?cible=infosCompte.php'); Ne fonctionne pas adans l'état actuel
