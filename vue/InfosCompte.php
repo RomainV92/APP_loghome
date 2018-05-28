@@ -8,12 +8,21 @@
   </head>
 
   <body>
-    <p>
-    <?php
-      echo "Prénom : ". $data['Prenom'] . "<br />Nom : " . $data['Nom']
-      . "<br />Adresse mail : " . $data['Mail'] . "<br />Téléphone : " . $data['Telephone'];
-    ?>
-    </p>
+    <div class="wrapper">
+      <img src="../images/image_Log.png" class="avatar">
+      <div class="infobox">
+        <table>
+      <?php
+        $infos = array('Prenom', 'Nom', 'Mail', 'Telephone');
+        foreach($infos as $element)
+        {
+          //Mise accent dans liste, mais ajout regex pour les enlever pour appel bdd
+          echo "<tr><td class=\"gauche\">".$element." :</td><td class=\"droite\">".$data[$element]."</td></tr>";
+        }
+      ?>
+        </table>
+      </div>
+    </div>
   </body>
 
 </html>
