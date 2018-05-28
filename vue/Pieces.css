@@ -65,11 +65,10 @@ height: 100%;}
 .salon .informations {
 	text-align: left;
 	color: #FFF;
-	vertical-align: baseline;
 }
 .salon .informations td {
-	vertical-align: baseline;
-	padding-bottom: 50px;
+
+	padding-bottom: 15px;
 }
 .salon .informations tr .label {
 	width : 100px;
@@ -151,3 +150,20 @@ body div ul li:hover{
 
 }
 */
+		 .ajouter_une_piece
+		 {
+							display: block;
+							border-radius: 10px;
+							font-family: sans-serif, monospace, serif;
+							background-color: rgba(0,0,0,0.9);
+							text-align: center;
+							width: 50%;
+							font-size: 15px;
+							margin:10%;
+							margin-top: 13%;
+							padding-left: 2%;
+							padding-right: 2%;
+							padding-top: 1%;
+							padding-bottom: 1%;
+							color: white;
+						}

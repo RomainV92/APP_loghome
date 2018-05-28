@@ -84,7 +84,7 @@
         </div>
 
 
-         <div class=ajouter_une_piece>
+         <div class=ajouter_une_maison>
            <h2><a href="javascript:void(0)" onclick="toggle_visibility('popup-box')">Ajouter une maison</a></h2>
         </div>
 
