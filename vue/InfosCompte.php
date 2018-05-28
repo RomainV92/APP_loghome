@@ -17,7 +17,11 @@
         foreach($infos as $element)
         {
           //Mise accent dans liste, mais ajout regex pour les enlever pour appel bdd
-          echo "<tr><td class=\"gauche\">".$element." :</td><td class=\"droite\">".$data[$element]."</td></tr>";
+          echo "<tr><td class=\"gauche\">".$element." :</td><td class=\"centre\">".$data[$element]."</td>";
+          if($element=="Mail" OR $element=="Telephone")
+            echo "<td class=\"droite\"><a >Modifier</a></td></tr>";
+          else
+            echo "<td class=\"droite\">        </td></tr>";
         }
       ?>
         </table>
