@@ -26,7 +26,7 @@
           <div id="popup-wrapper">
             <div id="popup-container">
               <h3>popup box 1</h3>
-              <p>Bravo voila un popup</p>
+              <p>Bravo voila un magnifique popup</p>
               <p><a href="javascript:void(0)"onclick="toggle_visibility('popup-box')">close popup</a></p>
             </div>
           </div>
@@ -34,7 +34,7 @@
 
 
          <div class=ajouter_une_piece>
-           <h2><a href="javascript:void(0)" onclick="toggle_visibility('popup-box')">Ajouter une pieces</a></h2>
+           <h2><a href="javascript:void(0)" onclick="toggle_visibility('popup-box')">Ajouter une pièce</a></h2>
         </div>
 
         </div>
