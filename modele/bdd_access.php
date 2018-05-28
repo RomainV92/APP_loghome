@@ -12,10 +12,14 @@ function appel_bdd()
     die('Erreur : ' . $e->getMessage());
   }
 }
-function All_login($bdd){
-$utilisateurs = $bdd->prepare('SELECT * FROM login');
-$utilisateurs -> execute(array());
-return $utilisateurs;}
+
+function All_login($bdd)
+{
+  $utilisateurs = $bdd->prepare('SELECT * FROM login');
+  $utilisateurs -> execute(array());
+  return $utilisateurs;
+}
+
 function info_user($bdd, $id)
 {
   $table = $bdd -> prepare('SELECT * FROM login WHERE ID=:id');
@@ -29,7 +33,6 @@ function validation_identifiants($bdd, $login, $mdp)
   $table -> execute(array('nom' => $login));
   $data = $table -> fetch();
   if(password_verify($mdp, $data['Password']))
-  //if($data['Password'] == $mdp)
   {
     $_SESSION['id_user']=$data['ID'];
     $table->closeCursor();
