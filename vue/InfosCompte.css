@@ -1,0 +1,21 @@
+body
+{
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
+  grid-template-columns: 2fr 5fr 10fr 5fr 2fr;
+  background-color: #d1ccc0;
+
+  background-image: url("../images/image_fond.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-position: top center;
+  background-size: 100%;
+}
+
+
+p
+{
+  grid-row: 2/4;
+  grid-column: 2/5;
+}

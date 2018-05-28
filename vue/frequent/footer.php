@@ -4,7 +4,7 @@
         <link rel='stylesheet' href='../vue/frequent/footer.css'/>
 
 
-    <div class="wrapper">
+    <div class="footer">
         <nav>
         <ul>
             <li><a href="about_us.php">A propos de Loghome</a></li>

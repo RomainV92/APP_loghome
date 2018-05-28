@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
   <head>
     <meta charset="utf-8" />
     <title> Page ajout </title>
@@ -10,7 +9,7 @@
     <div class="InBox">
       <img src="../images/image_Log.png" class="avatar">
       <h1> Inscription </h1>
-      <form method="post" action=<?php echo $Direction; ?>>
+      <form method="post" action=<?php echo $Direction; ?> />
           <p>Votre Prenom </p>
           <input id="Prenom" type="text" name="Prenom" id="Prenom" required/>
           <p>Votre Nom </p>
@@ -21,9 +20,10 @@
           <p><label>Votre Mail </label><input type="text" name="Mail" id="Mail" placeholder="Ex: a@gmail.com" required></p>
 
           <input type="submit" value="Valider" class="Submit_button">
-      </form>
-      <span class="Error"><?php echo $Error_message; ?></span>
+        </form>
+        <span class="Error"><?php echo $Error_message; ?></span>
+      </div>
     </div>
 </body>
->>>>>>> e70da3b10195691b0e442d276843903af81b487a
+
 </html>

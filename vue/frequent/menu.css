@@ -19,12 +19,21 @@
 	background-color: rgb(66, 69, 88);
 
 }
+
 .Menu nav  ul
 {   /* on utilise '>' pour ne cible que la liste ul qui est enfant direct de nav */
-	display : flex;
+	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	margin: 0px;
 	padding: 0px;
+}
+
+.Menu nav  ul div
+{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .Menu nav li{ /* enleve les puces devant tous les li appartenant a nav */
@@ -148,4 +157,11 @@
 		position: static;
 		width: 100%;
 	}
+}
+
+
+#logo
+{
+	height: auto;
+	width: 200px;
 }
