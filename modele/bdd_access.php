@@ -27,9 +27,20 @@ function info_user($bdd, $id)
   return ($table -> fetch());
 }
 
-function majInfosUser($data, $champModif, $modif)
+function majInfosUser($bdd, $id, $champModif, $modif)
 {
-
+  if($champModif=="Mail")
+  {
+    $update = $bdd->prepare('UPDATE login SET Mail=:modif WHERE ID=:user');
+  }
+  else if($champModif=="Telephone")
+  {
+    $update = $bdd->prepare('UPDATE login SET Telephone=:modif WHERE ID=:user');
+  }
+  $update->execute(array(
+      'modif'=>$modif,
+      'user'=>$id,
+  ));
 }
 
 function validation_identifiants($bdd, $login, $mdp)
