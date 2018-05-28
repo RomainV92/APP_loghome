@@ -49,6 +49,10 @@ body{
 	float: right;
 }
 
+.wrapper
+{
+	margin-top: 7%;
+}
  header >h1 {
  	float: left;
  	padding-left: 30px;
