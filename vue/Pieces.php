@@ -3,7 +3,7 @@
     <head>
         <title>Maison</title>
         <meta charset= "utf-8">
-        <link rel='stylesheet' href='../vue/house_style.css'>
+        <link rel='stylesheet' href='../vue/Pieces.css'>
         <script type="text/javascript">
               function toggle_visibility(id){
                 var e = document.getElementById(id);

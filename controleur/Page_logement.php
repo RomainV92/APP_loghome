@@ -14,11 +14,20 @@ include('../vue/frequent/footer.php');
 function bdd_maisons($Infos_maisons){
   while($Dif_maisons=$Infos_maisons->fetch()){?>
     <div class="salon">
-      <h2>Maison : <?php echo $Dif_maisons['nom'];?></h2>
+      
       <ul>
-        <?php echo $Dif_maisons['adresse'].', '.$Dif_maisons['Street'].$Dif_maisons['ID'];?>
-        <p><?php echo $Dif_maisons['Postal']?></p>
-        <li ><a href="../controleur/Page_Pieces.php?cible=<?php echo $Dif_maisons['ID']?>">Pièces</a></li>
+        <table class='informations'>
+          <tr>
+            <td class='label1'> Nom : </td>
+            <td class='content_nom'> <?php echo $Dif_maisons['nom'];?> </td>
+          </tr>
+          <tr>
+            <td class='label2'> Adresse :</td>
+            <td class='content_adresse'> <?php echo $Dif_maisons['adresse'].' '.$Dif_maisons['Street'].'</br></br>'.$Dif_maisons['Postal'].' '.$Dif_maisons['City'];?> </td>
+          <tr>
+       </table>
+
+         <a class="ajout_piece" href="../controleur/Page_Pieces.php?cible=<?php echo $Dif_maisons['ID']?>">Pièces</a></li>
 
 
         <div id="popup_ajout<?php echo $Dif_maisons['ID']?>" class="popup-position">
@@ -47,8 +56,8 @@ function bdd_maisons($Infos_maisons){
         </div>
 
 
-        <div class=ajouter_une_piece>
-          <h2><a href="javascript:void(0)" onclick="toggle_visibility('popup_ajout<?php echo $Dif_maisons['ID']?>')">Ajouter un utilisateur</a></h2>
+        <div> 
+          <a class=ajouter_un_utilisateur href="javascript:void(0)" onclick="toggle_visibility('popup_ajout<?php echo $Dif_maisons['ID']?>')">Ajouter un utilisateur</a>
         </div>
       </ul>
     </div><?php
