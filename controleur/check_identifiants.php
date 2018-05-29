@@ -13,9 +13,12 @@ if(isset($_POST['Pseudo']) AND isset($_POST['Password']))
       header('location:../controleur/Page_administrateur.php');
       exit();
     }
+    else {
 
+    
     header('Location:../controleur/Page_logement.php');
     exit();
+    }
   }
   else
   {

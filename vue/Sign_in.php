@@ -8,8 +8,8 @@
 
   <body>
   <div class="wrapper">
+    <img src="../images/image_Log.png" class="avatar">
     <div class="loginbox">
-      <img src="../images/image_Log.png" class="avatar">
       <h1> Connexion </h1>
       <form method="post" action="../controleur/check_identifiants.php">
         <p> Pseudo </p>

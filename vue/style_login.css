@@ -1,5 +1,10 @@
 body
 {
+  display: grid;
+  grid-template-rows: 0.8fr 0.3fr 2fr 0.5fr;
+  grid-template-columns: 2fr 5fr 10fr 5fr 2fr;
+  background-color: #d1ccc0;
+
   margin: 0;
   padding: 0;
   background: url("../images/maison1.jpg");
@@ -10,25 +15,45 @@ body
   font-family: sans-serif;
 
 }
-.loginbox{
-  width: 320px;
-  background: #000;
-  color: #fff;
-  box-sizing: border-box;
-  padding: 30px 20px 30px 20px;
-  border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 8%;
-  margin-bottom: 5%;
 
+
+.wrapper
+{
+  grid-row: 2/5;
+  grid-column: 3/4;
+
+  display : flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.avatar{
+
+.avatar
+{
   width: 100px;
   height: 100px;
-  margin-left: 90px;
   border-radius: 50%;
+  margin-bottom: -5%;
+  z-index: 1;
 }
+
+.loginbox
+{
+  width: 320px;
+  height: 100%;
+
+  box-sizing: border-box;
+  background: #000;
+  color: #fff;
+
+  padding: 30px 20px 30px 20px;
+  border-radius: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
 
 h1
 {
@@ -38,13 +63,15 @@ h1
   font-size: 22px;
 }
 
-.loginbox p{
+.loginbox p
+{
   margin: 0;
   padding: 0;
   font-weight: bold;
 }
 
-.loginbox input{
+.loginbox input
+{
   width: 100%;
   margin-bottom: 20px;
 }
@@ -69,23 +96,25 @@ h1
   color: #fff;
   font-size: 18px;
   border-radius: 20px;
-
 }
 
-.loginbox input[type="submit"]:hover{
+.loginbox input[type="submit"]:hover
+{
   cursor:pointer;
   background: #ffc107;
   color: #000;
 
 }
 
-.loginbox a{
+.loginbox a
+{
   text-decoration: none;
   font-size: 12px;
   line-height: 20px;
   color: darkgrey;
 }
 
-.loginbox a:hover{
+.loginbox a:hover
+{
   color: #ffc107;
 }
