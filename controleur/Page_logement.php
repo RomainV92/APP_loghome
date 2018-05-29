@@ -18,12 +18,12 @@ function bdd_maisons($Infos_maisons){
       <ul>
         <table class='informations'>
           <tr>
-            <td class='label'> Nom : </td>
-            <td> <?php echo $Dif_maisons['nom'];?> </td>
+            <td class='label1'> Nom : </td>
+            <td class='content_nom'> <?php echo $Dif_maisons['nom'];?> </td>
           </tr>
           <tr>
-            <td class='label'> Adresse :</td>
-            <td> <?php echo $Dif_maisons['adresse'].' '.$Dif_maisons['Street'].' '.$Dif_maisons['Postal'];?> </td>
+            <td class='label2'> Adresse :</td>
+            <td class='content_adresse'> <?php echo $Dif_maisons['adresse'].' '.$Dif_maisons['Street'].'</br></br>'.$Dif_maisons['Postal'].' '.$Dif_maisons['City'];?> </td>
           <tr>
        </table>
 

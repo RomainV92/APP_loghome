@@ -4,10 +4,6 @@ include '../modele/bdd_access.php';
 
 $bdd = appel_bdd();
 
-<<<<<<< HEAD
-
-=======
->>>>>>> ace925e5604b2d26efd4fa1b6945e90173267328
 if(isset($_POST['Pseudo']) AND isset($_POST['Password']))
 {
   $data = validation_identifiants($bdd, $_POST['Pseudo'], $_POST['Password']);

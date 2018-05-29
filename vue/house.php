@@ -16,14 +16,14 @@
           <body>
 
           <!-- Trigger/Open The Modal -->
-          <button id="myBtn" class="ajouter_une_piece">ajouter une piece</button>
+          <button id="myBtn" class="ajouter_une_maison"><p>Ajouter une maison</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
 
           <!-- The Modal -->
           <div id="myModal" class="modal">
 
             <!-- Modal content -->
             <div class="modal-content">
-              <span class="close">&times;</span>
+             
               <form action="../modele/ajouter_maison_post.php" method="post">
 
                 <div class="row">
@@ -77,6 +77,7 @@
 
 
               </form>
+              <span class="close">&times;</span>
             </div>
 
           </div>
@@ -109,9 +110,6 @@
 
 
 
-         <div class=ajouter_une_maison>
-           <h2><a href="javascript:void(0)" onclick="toggle_visibility('popup-box')">Ajouter une maison</a></h2>
-        </div>
 
         </div>
     </div>
