@@ -7,6 +7,7 @@
   </head>
 
   <body>
+    <div class="cadre">
   <?php
     if(isset($_GET['modif']) && !empty($_GET['modif']))
       $modif = $_GET['modif'];
@@ -14,6 +15,7 @@
     {
       echo "<p>".$modif." actuel : ".$data[$modif]."</p>";
   ?>
+
       <form method="post" action="../controleur/appliquerModifsInfos.php">
         <p>
         <?php
@@ -34,6 +36,7 @@
         ?>
         <input type="submit" value="Enregistrer" />
       </form>
+
   <?php
     }
     else
@@ -42,5 +45,6 @@
       // Ajouter lien retour page InfosCompte
     }
   ?>
+</div>
   </body>
 </html>
