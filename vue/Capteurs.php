@@ -35,10 +35,10 @@
                 </li>
                 <li><label for="sensortype">Type de capteur :</label>
                     <select name="sensortype" id="sensortype">
-                      <option value="Luminosity">Luminosité</option>
-                      <option value="Temperature">Température</option>
-                      <option value="Motor">Moteur</option>
-                 </select>
+                        <option value="Luminosity">Luminosité</option>
+                        <option value="Temperature">Température</option>
+                        <option value="Motor">Moteur</option>
+                    </select>
                 </li>
               </ul>
               <input type="submit" id="confirm" value="Add sensor" />

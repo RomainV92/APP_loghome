@@ -25,7 +25,8 @@
         }
       ?>
         </table>
-        <a >Modifier le mot de passe</a>
+        <a>Modifier le mot de passe</a>
+
       </div>
     </div>
   </body>
