@@ -1,7 +1,7 @@
 <?php
 //include('vue/frequent/header.php');
 session_start();
-$Error_message= "Champs incorrectes";
+$Error_message= "Champs incorrects";
 $Direction='../controleur/Redirection_creation.php';
 
 include('../modele/bdd_access.php');
