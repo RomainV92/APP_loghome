@@ -20,16 +20,18 @@ body
 
 .cadre
 {
+  position: absolute;
   background-color: rgba(0,0,0,0.9);
   border-radius: 10px;
   color: white;
   font-size: 23px;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  padding-top: 4%;
+  padding-bottom: 3%;
   margin-bottom: -30%;
   margin-top: 10%;
-  margin-left: 48%;
-  width: 70%;
+  margin-left: 30%;
+  margin-right: auto;
+  width: 40%;
   text-align: center;
 
 }
