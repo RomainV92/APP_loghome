@@ -34,6 +34,32 @@ td
   border-bottom: 1px solid #fff;
 }
 
+.bouton:link
+{
+text-decoration:none;
+}
+
+.bouton
+{
+  border:none;
+  outline:none;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 2px;
+  height:40px;
+  background: #AD1925;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.bouton:hover
+{
+  cursor: pointer;
+  background: #d8bd0f;
+  color: #000;
+}
+
 .gauche
 {
   padding-left: 5px;

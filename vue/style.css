@@ -25,26 +25,9 @@ p
 h2
 {
   display: inline;
-  /*background-color: rgba(210,210,210,0.3);
-*/
   padding-left: 10px;
 }
 
-/*
-.logo_titre
-{
-  grid-column: 1/5;
-
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: 1fr 2fr;
-/*
-  display: flex;
-  flex-direction: inline;
-  flex-wrap: wrap;
-  *
-}
-*/
 
 .wrapper
 {
@@ -83,6 +66,7 @@ h2
   text-align: left;
   box-shadow: 6px 6px 8px black;
 }
+
 .paragraphe1
 {
   display: flex;

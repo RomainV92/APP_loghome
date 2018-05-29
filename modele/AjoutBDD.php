@@ -9,7 +9,7 @@ try {
 function Ajout($bdd){
 $password = $_POST['Password'];
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-if(strpos($_POST['Mail'], '@')==true && strpos($_POST['Mail'], '.')==true && Ctype_alpha($_POST['Telephone'])==false)
+if(strpos($_POST['Mail'], '@')==true && strpos($_POST['Mail'], '.')==true && Ctype_alpha($_POST['Telephone'])==false && strlen($_POST['Telephone'])==10)
 {
 $ajout = $bdd->prepare('INSERT INTO login(Nom,Prenom,Pseudo,Password,Telephone,Mail) VALUES(:Nom,:Prenom,:Pseudo,:Password,:Telephone,:Mail)');
 $ajout->execute(array(
