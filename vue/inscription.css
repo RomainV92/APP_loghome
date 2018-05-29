@@ -13,34 +13,6 @@ body
   font-family: sans-serif;
 }
 
-.InBox
-{
-  width: 340px;
-  height: 100%;
-
-  background: #000;
-  color: #fff;
-  box-sizing: border-box;
-
-  border-radius: 20px;
-
-  padding: 20px;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5%;
-}
-
-/*
-.avatar{
-  width: 100px;
-  height: 100px;
-  margin-left: 100px;
-  border-radius: 50%;
-
-}
-*/
-
 .wrapper
 {
   grid-row: 2/5;
@@ -61,7 +33,7 @@ body
   z-index: 1;
 }
 
-.Inbox
+.inbox
 {
   width: 320px;
   height: 100%;
@@ -70,12 +42,12 @@ body
   background: #000;
   color: #fff;
 
-  padding: 30px 20px 30px 20px;
+  padding: 50px 20px 0px 20px;
   border-radius: 20px;
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 
 h1

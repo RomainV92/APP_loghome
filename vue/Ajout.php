@@ -8,7 +8,7 @@
 <body>
   <div class="wrapper">
     <img src="../images/image_Log.png" class="avatar">
-    <div class="InBox">
+    <div class="inbox">
       <h1> Inscription </h1>
       <form method="post" action=<?php echo $Direction; ?> />
         <p>Votre Prenom </p>
@@ -19,7 +19,7 @@
         <p><label>Votre Mot de passe </label><input type="password" name="Password" id="Password" required></p>
         <p><label>Votre Telephone </label><input type="text" name="Telephone" id="Telephone" placeholder="Ex: 06 95 82 71 60" required></p>
         <p><label>Votre Mail </label><input type="text" name="Mail" id="Mail" placeholder="Ex: a@gmail.com" required></p>
-        
+
         <input type="submit" value="Valider" class="Submit_button">
       </form>
       <span class="Error"><?php echo $Error_message; ?></span>
