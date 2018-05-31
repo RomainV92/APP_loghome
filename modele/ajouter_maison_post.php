@@ -17,8 +17,9 @@
    $adresse=$_POST['adresse'];
    $rue=$_POST['Street'];
    $Postal=$_POST['Postal'];
+   $City=$_POST['City'];
    //$id_user=$_SESSION['id_user'];
-   $ajout = $bdd->prepare('INSERT INTO maison(ID_user,nom,superficie,adresse,Street,Postal) VALUES(:ID_user,:nom,:superficie,:adresse,:Street,:Postal)');
+   $ajout = $bdd->prepare('INSERT INTO maison(ID_user,nom,superficie,adresse,Street,Postal,City) VALUES(:ID_user,:nom,:superficie,:adresse,:Street,:Postal,:City)');
    // Requête d'insertion,
    $ajout->execute(array(
      'ID_user' => $_SESSION['id_user'],
@@ -27,8 +28,8 @@
      'adresse' => $adresse,
      'Street' => $rue,
      'Postal' => $Postal,
+     'City'   => $City,
    ));
 
 
    header('Location: ../index.php?cible=Page_logement');
-   ?>

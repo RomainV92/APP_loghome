@@ -23,7 +23,7 @@
 
             <!-- Modal content -->
             <div class="modal-content">
-             
+
               <form action="../modele/ajouter_maison_post.php" method="post">
 
                 <div class="row">
@@ -38,19 +38,28 @@
 
                 <div class="row">
                   <div class="col-25">
-                    <label for="adresse">Adresse</label>
+                    <label for="adresse">Numéro de rue</label>
                   </div>
                   <div class="col-55">
                     <input type="text" name="adresse" id="adresse" /><br />
                   </div>
                 </div>
-
+                
                 <div class="row">
                   <div class="col-25">
                     <label for="adresse">Rue</label>
                   </div>
                   <div class="col-55">
                     <input type="text" name="Street" id="Street" /><br />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-25">
+                    <label for="adresse">Ville</label>
+                  </div>
+                  <div class="col-55">
+                    <input type="text" name="City" id="City" /><br />
                   </div>
                 </div>
 

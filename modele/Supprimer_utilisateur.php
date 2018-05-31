@@ -14,5 +14,3 @@ $compte=$_GET['cible'];
 $Suppression= $bdd ->prepare('DELETE from Login WHERE ID=:id');
 $Suppression -> execute(array('id'=> $compte));
 header('Location:../controleur/Page_administrateur.php');
-
-?>

@@ -9,6 +9,3 @@
   }
 $utilisateurs = $bdd->prepare('SELECT * FROM login');
 $utilisateurs -> execute(array());
-
-
-?>
