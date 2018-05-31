@@ -26,7 +26,7 @@
         <div class="modal-content">
 
           <form action="../modele/recup_mail.php" method="post">
-                <label for="nom">Nom</label>
+                <label for="nom">Address mail</label>
                 <input type="mail" name="mail_Ver" id="mail_Ver" required /><br />
 
                 <label for="superficie">Entrez votre question secréte</label>
