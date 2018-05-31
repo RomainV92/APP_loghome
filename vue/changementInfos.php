@@ -32,7 +32,6 @@
         <input id="chgmt" type="text" name="chgmt" required />
         <?php
           echo "<input id=\"secret\" type=\"text\" name=\"secret\" value=\"".$modif."\" readonly=\"readonly\" required />";
-          // Attention, possible de modifier la valeur depuis la console!
         ?>
         <input type="submit" value="Enregistrer" />
       </form>
@@ -41,8 +40,7 @@
     }
     else
     {
-      echo "<p>Un problème est survenu, veuillez réessayer</p>";
-      // Ajouter lien retour page InfosCompte
+      header('Location:../index.php?cible=erreur');
     }
   ?>
 </div>
