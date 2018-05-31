@@ -87,7 +87,8 @@ h1
 
 .Inbox select
 {
-  border: none;
+  
+  border-color: white;
   background: transparent;
   height: 40px;
   color: #fff;
