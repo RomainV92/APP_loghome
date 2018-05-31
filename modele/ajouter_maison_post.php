@@ -33,4 +33,3 @@
 
 
    header('Location: ../index.php?cible=Page_logement');
-   ?>

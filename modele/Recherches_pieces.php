@@ -10,7 +10,3 @@ try
     }
  $pieces = $bdd->prepare('SELECT * FROM pieces WHERE ID_maison=?');
  $pieces-> execute(array($_GET['cible']));
-
-
-
- ?>
