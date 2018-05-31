@@ -15,17 +15,18 @@
    $nom=$_POST['nom'];
    $superficie=$_POST['superficie'];
    $id_maison=$_GET['cible'];
-   //$id_user=$_SESSION['id_user'];
-   $ajout = $bdd->prepare('INSERT INTO pieces(ID_user,ID_maison,Nom,Superficie) VALUES(:ID_user,:ID_maison,:nom,:superficie)');
+   
+
+   $ajout = $bdd->prepare('INSERT INTO pieces(ID_maison,Nom,Superficie) VALUES(:ID_maison,:Nom,:Superficie)');
    // Requête d'insertion,
    $ajout->execute(array(
-    'ID_user' => $_SESSION['id_user'],
-    'ID_maison' => $id_maison,
-    'Nom' => $nom,
-    'Superficie' => $superficie,
+     'ID_maison' => $id_maison,
+     'Nom' => $nom,
+     'Superficie' => $superficie,
      
    ));
 
 
-   header('Location: ../index.php?cible=Page_pieces');
+
+   header("Location: ../controleur/Page_pieces.php?cible=$id_maison");
    ?>

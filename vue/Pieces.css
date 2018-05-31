@@ -65,10 +65,9 @@ border: 2px solid rgb(100,100,100);
 
 #conteneur {
 display: flex;
-
-
-
 }
+
+/*
 .popup-position{
 display: none;
 position: fixed;
@@ -87,7 +86,7 @@ padding: 20px;
 border-radius: 20px;
 }
 
-
+*/
 .maison li{
    list-style-type: none;
    list-style-position: inside;
@@ -103,7 +102,7 @@ color: rgb(0, 0, 0);
 .maison{
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content: space-evenly;
 flex-wrap : wrap
 }
 .salon li{
@@ -124,7 +123,7 @@ vertical-align: baseline;
 
 }
 .salon .informations tr .label1 {
-width : 80px;
+width : 80px;  
 height: 50px;
 }
 .salon .informations tr .label2 {
