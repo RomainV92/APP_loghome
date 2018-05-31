@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-<body>
-<div class="wrapper">
-<p> Vous etes maintenant inscrits sur le site de Log.Home</p>
+  <head>
+    <title>Bienvenue chez DOMISEP</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../vue/changementInfos.css" />
+  </head>
 
-
-<a class="button" href="../index.php?cible=accueil">Retour Inscription </a>
-</div>
-</body>
+  <body>
+    <div class="cadre">
+      <p> Vous etes maintenant inscrits sur le site de Log.Home</p>
+      <a class="button" href="../index.php?cible=accueil">Retour à l'accueil </a>
+    </div>
+  </body>
 </html>
