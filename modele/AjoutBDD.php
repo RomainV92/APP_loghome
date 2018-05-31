@@ -11,7 +11,7 @@ $password = $_POST['Password'];
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 if(strpos($_POST['Mail'], '@')==true && strpos($_POST['Mail'], '.')==true && Ctype_alpha($_POST['Telephone'])==false && strlen($_POST['Telephone'])==10)
 {
-$ajout = $bdd->prepare('INSERT INTO login(Nom,Prenom,Pseudo,Password,Telephone,Mail) VALUES(:Nom,:Prenom,:Pseudo,:Password,:Telephone,:Mail)');
+$ajout = $bdd->prepare('INSERT INTO login(Nom,Prenom,Pseudo,Password,Telephone,Mail,Question,Answer) VALUES(:Nom,:Prenom,:Pseudo,:Password,:Telephone,:Mail,:Question,:Answer)');
 $ajout->execute(array(
   'Nom' => $_POST['Nom'],
   'Prenom' => $_POST['Prenom'],
@@ -19,9 +19,10 @@ $ajout->execute(array(
   'Password' => $hashed_password,
   'Telephone' => $_POST['Telephone'],
   'Mail' => $_POST['Mail'],
+  'Question' => $_POST['Question'],
+  'Answer' => $_POST['Answer'],
 ));
 return 1;
 }
 return 0;
 }
-?>

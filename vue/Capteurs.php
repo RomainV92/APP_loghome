@@ -25,7 +25,8 @@
         <div id="popup-box" class="popup-position">
           <div id="popup-wrapper">
             <div id="popup-container">
-              <h3>Ajouter un Capteur</h3>
+              <h3>Veuillez rentrer les informations liées au capteur</h3>
+              <form action="../modele/bdd_access_capteur.php" method="post">
               <ul>
                 <li><label for="reference">Référence :</label>
                     <input type="text" name="reference" id="reference" placeholder="ex: XX265 136 A" size="30" maxlength="30"/>
@@ -41,7 +42,7 @@
                     </select>
                 </li>
               </ul>
-              <input type="submit" id="confirm" value="Add sensor" />
+              <input type="submit" id="confirm" value="Ajouter capteur" />
               <p><a href="javascript:void(0)"onclick="toggle_visibility('popup-box')">Fermer</a></p>
             </div>
           </div>

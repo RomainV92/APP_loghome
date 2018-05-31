@@ -14,16 +14,16 @@ include('../vue/frequent/footer.php');
 function bdd_maisons($Infos_maisons){
   while($Dif_maisons=$Infos_maisons->fetch()){?>
     <div class="salon">
-      
+
       <ul>
         <table class='informations'>
           <tr>
             <td class='label1'> Nom : </td>
-            <td> <?php echo $Dif_maisons['nom'];?> </td>
+            <td> <?php echo htmlspecialchars($Dif_maisons['nom']);?> </td>
           </tr>
           <tr>
             <td class='label2'> Adresse :</td>
-            <td> <?php echo $Dif_maisons['adresse'].' '.$Dif_maisons['Street'].'</br></br>'.$Dif_maisons['Postal'].' '.$Dif_maisons['City'];?> </td>
+            <td> <?php echo htmlspecialchars($Dif_maisons['adresse']).' '.htmlspecialchars($Dif_maisons['Street']).'</br></br>'.htmlspecialchars($Dif_maisons['Postal']).' '.htmlspecialchars($Dif_maisons['City']);?> </td>
           <tr>
        </table>
 
@@ -57,7 +57,7 @@ function bdd_maisons($Infos_maisons){
   -->
 
 
-        <div> 
+        <div>
           <a class=ajouter_un_utilisateur href="javascript:void(0)" onclick="toggle_visibility('popup_ajout<?php echo $Dif_maisons['ID']?>')">Ajouter un utilisateur</a>
         </div>
       </ul>

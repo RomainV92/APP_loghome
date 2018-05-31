@@ -10,7 +10,3 @@ catch(Exception $e)
 }
 
 $Infos_maisons = $bdd->query('SELECT * FROM maison WHERE ID_user=\''.$_SESSION['id_user'].'\'');
-
-
-
- ?>
