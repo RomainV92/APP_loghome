@@ -27,4 +27,3 @@ $ajout_util->execute(array(
 
 
 header('Location: ../index.php?cible=Page_logement');
-?>

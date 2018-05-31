@@ -40,9 +40,3 @@
     {
         echo "Votre message n'a pas pu être envoyé";
     }
-
-
-
-
-
-   ?>
