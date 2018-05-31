@@ -10,3 +10,5 @@ try
     }
  $capteurs = $bdd->prepare('SELECT * FROM capteurs WHERE ID_piece=?');
  $capteurs-> execute(array($_GET['cible']));
+
+ ?>

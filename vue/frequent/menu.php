@@ -32,7 +32,7 @@
           }
           else
           { ?>
-            <li class="menu-main"><a href="../index.php?indice=Page_logement">LOGEMENTS</a>
+            <li class="menu-main"><a href="../index.php?cible=Page_logement">LOGEMENTS</a>
               <ul class="submenu"x>
                 <li><a href="../index.php?cible=Page_connexion">Connexion</a></li>
               </ul>

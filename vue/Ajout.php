@@ -34,6 +34,7 @@
       <span class="Error"><?php echo $Error_message; ?></span>
     </div>
   </div>
+  
 </body>
 
 </html>
