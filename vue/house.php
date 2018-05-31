@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Maison</title>
+        <title>Logements</title>
         <meta charset= "utf-8">
         <link rel='stylesheet' href='../vue/house_style.css'>
-
+    </head>
+    
     <body>
     <div class="wrapper">
         <div class="maison" id=conteneur>
@@ -12,8 +13,7 @@
           <?php bdd_maisons($Infos_maisons); ?>
           <!-- Script pour popup ajout maison -->
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          </head>
-          <body>
+      
 
           <!-- Trigger/Open The Modal -->
           <button id="myBtn" class="ajouter_une_maison"><p>Ajouter une maison</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
@@ -38,7 +38,7 @@
 
                 <div class="row">
                   <div class="col-25">
-                    <label for="adresse">Adresse</label>
+                    <label for="adresse">Numéro de rue</label>
                   </div>
                   <div class="col-55">
                     <input type="text" name="adresse" id="adresse" /><br />
@@ -47,20 +47,19 @@
                 
                 <div class="row">
                   <div class="col-25">
-                    <label for="adresse">ville</label>
-                  </div>
-                  <div class="col-55">
-                    <input type="text" name="City" id="City" /><br />
-                  </div>
-                </div>
-
-
-                <div class="row">
-                  <div class="col-25">
                     <label for="adresse">Rue</label>
                   </div>
                   <div class="col-55">
                     <input type="text" name="Street" id="Street" /><br />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-25">
+                    <label for="adresse">Ville</label>
+                  </div>
+                  <div class="col-55">
+                    <input type="text" name="City" id="City" /><br />
                   </div>
                 </div>
 

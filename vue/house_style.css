@@ -65,10 +65,9 @@ body div ul li:hover{
 
 #conteneur {
 	display: flex;
-	
-
-
 }
+
+/*
 .popup-position{
 	display: none;
 	position: fixed;
@@ -86,7 +85,7 @@ height: 100%;}
 	padding: 20px;
 	border-radius: 20px;
 }
-
+*/
 
 .maison li{
 	   list-style-type: none;
@@ -103,7 +102,7 @@ height: 100%;}
 .maison{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	flex-wrap : wrap
 }
 .salon li{
@@ -147,7 +146,7 @@ height: 100%;}
 	
 }
 
-.salon .ajout_piece{
+.salon .piece{
 	text-align: center;
 	width: 100%;
 	background-color:rgb(230,230,230);
