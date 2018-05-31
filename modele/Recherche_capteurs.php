@@ -1,5 +1,5 @@
 <?php
-echo $_GET['cible'];
+//echo $_GET['cible'];
 try
     {
     $bdd = new PDO('mysql:host=localhost;dbname=users;charset=utf8', 'root', '');
