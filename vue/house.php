@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Maison</title>
+        <title>Logements</title>
         <meta charset= "utf-8">
         <link rel='stylesheet' href='../vue/house_style.css'>
-
+    </head>
+    
     <body>
     <div class="wrapper">
         <div class="maison" id=conteneur>
@@ -12,8 +13,7 @@
           <?php bdd_maisons($Infos_maisons); ?>
           <!-- Script pour popup ajout maison -->
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          </head>
-          <body>
+      
 
           <!-- Trigger/Open The Modal -->
           <button id="myBtn" class="ajouter_une_maison"><p>Ajouter une maison</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
