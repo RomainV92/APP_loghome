@@ -13,14 +13,13 @@ catch(Exception $e)
 $nom=$_POST['namesensor'];
 $type=$_POST['sensortype'];
 $reference=$_POST['reference'];
-$id_maison=$_GET['cible'];
+$id_piece=$_GET['cible'];
 
 //$id_user=$_SESSION['id_user'];
-$ajout = $bdd->prepare('INSERT INTO capteur(ID,ID_maison,Num_Serie,Valeur,Nom,Type) VALUES(:ID,:ID_maison,:Num_Serie,:Valeur,:Nom,:Type)');
+$ajout = $bdd->prepare('INSERT INTO capteur(ID_piece,Num_Serie,Valeur,Nom,Type) VALUES(:ID_piece,:Num_Serie,:Valeur,:Nom,:Type)');
 // Requête d'insertion,
 $ajout->execute(array(
-  'ID' => $_SESSION['id_user'],
-  'ID_maison' => $id_maison,
+  'ID_piece' => $id_piece,
   'Num_Serie' => $reference,
   'Valeur' => ' ',
   'Nom' => $nom,
@@ -28,5 +27,5 @@ $ajout->execute(array(
 ));
 
 
-header("Location: ../controleur/Page_capteurs.php?cible=$id_maison");
+header("Location: ../controleur/Page_capteurs.php?cible=$id_piece");
 ?>

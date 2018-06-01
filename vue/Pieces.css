@@ -1,6 +1,3 @@
-
-/*body {font-family: Arial, Helvetica, sans-serif;}*/
-
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -16,7 +13,6 @@
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
 .modal-content {
 	margin: auto;
 	padding: 20px;
@@ -26,13 +22,11 @@
 	margin-top: 7%;
 	display: flex;
 	justify-content: center;
-	} 
-	
+	}
+
 .row{
 margin-bottom: 10px;
 }
-	
-
 
 /* The Close Button */
 .close {
@@ -42,7 +36,8 @@ margin-bottom: 10px;
 	font-weight: bold;
 }
 .close:hover,
-.close:focus {
+.close:focus
+{
 	color: #000;
 	text-decoration: none;
 	cursor: pointer;
@@ -54,39 +49,11 @@ background-size: cover;
 background-repeat: no-repeat;
 }
 
-/*
-body div ul li:hover{
-
-background-color:rgba(240,240,240,0.9);
-border: 2px solid rgb(100,100,100);
-
-}
-*/
 
 #conteneur {
 display: flex;
 }
 
-/*
-.popup-position{
-display: none;
-position: fixed;
-top:50%;
-left: 340%;
-background-color: rgba(0,0,0,0);
-width: 100%;
-height: 100%;}
-
-#popup-wrapper{
-width:500px;
-margin: 70px;
-text-align: left;
-background-color: grey;
-padding: 20px;
-border-radius: 20px;
-}
-
-*/
 .maison li{
    list-style-type: none;
    list-style-position: inside;
@@ -123,7 +90,7 @@ vertical-align: baseline;
 
 }
 .salon .informations tr .label1 {
-width : 80px;  
+width : 80px;
 height: 50px;
 }
 .salon .informations tr .label2 {
@@ -154,7 +121,7 @@ background-color:rgb(230,230,230);
 margin-top: 15px;
 padding: 15px 0px 15px;
 
-}			
+}
 .ajouter_une_piece{
 border-radius: 20px;
 color: #FFF;
@@ -180,13 +147,10 @@ margin-right: auto;
 text-align: center;
 width: 100%;
 margin-top: 15px;
-background-color:rgb(230,230,230);	
+background-color:rgb(230,230,230);
 padding: 15px 0px 15px;
 
 }
-
-
-
 
 body .maison ul li
 {
@@ -202,16 +166,3 @@ body .maison ul li
 						padding-right: 2%;
 						color: white;
 					}
-
-
-
-
-
-					/*
-body div ul li:hover{
-
-background-color:rgba(240,240,240,0.9);
-border: 2px solid rgb(100,100,100);
-
-}
-*/
