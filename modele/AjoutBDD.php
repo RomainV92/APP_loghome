@@ -6,6 +6,7 @@ try {
   die('Erreur : ' . $e->getmessage() );
 
 }
+
 function Ajout($bdd){
 $password = $_POST['Password'];
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);

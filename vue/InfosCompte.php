@@ -25,7 +25,7 @@
         }
       ?>
         </table>
-        <a>Modifier le mot de passe</a>
+        <a href="../index.php?cible=changementMDP">Modifier le mot de passe</a>
 
       </div>
     </div>
