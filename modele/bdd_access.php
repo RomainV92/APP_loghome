@@ -12,6 +12,12 @@ function appel_bdd()
     die('Erreur : ' . $e->getMessage());
   }
 }
+function Recup_user($bdd,$pseudo)
+{
+  $utilisateurs = $bdd->prepare('SELECT * FROM login WHERE Pseudo=:pseudo');
+  $utilisateurs -> execute(array('pseudo'=>$pseudo));
+  return $utilisateurs;
+}
 
 function All_login($bdd)
 {

@@ -1,5 +1,5 @@
 <?php
 session_start();
 
-include('../vue/Confirmation.php');
+include('../vue/infosChanged.php');
 include('../vue/frequent/footer.php');

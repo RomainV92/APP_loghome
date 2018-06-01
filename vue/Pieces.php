@@ -4,7 +4,7 @@
         <title>Pièces</title>
         <meta charset= "utf-8">
         <link rel='stylesheet' href='../vue/Pieces.css'>
-        
+
     </head>
 
     <body>
@@ -25,7 +25,7 @@
 
             <!-- Modal content -->
             <div class="modal-content">
-             
+
               <form action="../modele/ajouter_piece_post.php?cible=<?php echo $_GET['cible']?>" method="post">
 
                 <div class="row">
@@ -36,9 +36,6 @@
                     <input type="text" name="nom" id="nom" /><br />
                   </div>
                 </div>
-
-
-                
 
                 <div class="row">
                   <div class="col-25">

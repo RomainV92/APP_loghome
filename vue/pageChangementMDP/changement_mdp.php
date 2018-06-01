@@ -3,10 +3,9 @@
 <head>
     <meta charset="utf-8">
     <title>Change password</title>
-    <link rel="stylesheet" type="text/css" href="../vue/pageChangementMDP/changement_mdp.css">
 </head>
 <body>
-<?php require('../vue/frequent/menu.php'); ?>
+
 <h1>CHANGE PASSWORD</h1>
 
 <div id="edit">
@@ -21,6 +20,6 @@
         <?php if(isset($message)){echo $message;} ?>
     </form>
 </div>
-<?php require('../vue/frequent/footer.php'); ?>
+
 </body>
 </html>

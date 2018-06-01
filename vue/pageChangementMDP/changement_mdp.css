@@ -8,20 +8,6 @@ body {
     height: 100vh;
 }
 
-header {
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
-}
-
-header h1 {
-    position: relative;
-    font-size: 40px;
-    top: 10px;
-}
-
 #nav {
     position: relative;
     margin-top: 100px;
@@ -88,20 +74,4 @@ input {
     top: -90px;
     right: -35px;
     float: right;
-}
-
-footer {
-    margin-top: 150px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    border-top: 2px solid rgb(7, 31, 71);
-}
-
-footer ul li {
-    display: inline;
-    margin-right: 100px;
-    color: rgb(7, 31, 71);
-    font-weight: bold;
 }

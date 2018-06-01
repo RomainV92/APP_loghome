@@ -13,7 +13,7 @@ if(isset($_POST['chgmt']) AND isset($_POST['secret']))
     if(checkRegex($_POST['secret'], $_POST['chgmt']))
     {
       majInfosUser($bdd, $_SESSION['id_user'], $_POST['secret'], $_POST['chgmt']);
-      header('Location:../index.php?cible=infosCompte');
+      header('Location:../index.php?cible=infosChanged');
     }
     else
       header('Location:../index.php?cible=erreur');
