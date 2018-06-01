@@ -35,7 +35,7 @@ body
 
 .inbox
 {
-  width: 320px;
+  width: 340px;
   height: 100%;
 
   box-sizing: border-box;
@@ -124,4 +124,13 @@ h1
 
 .InBox a:hover{
   color: #ffc107;
+}
+
+#Question{
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    color:black;
 }

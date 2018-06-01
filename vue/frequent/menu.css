@@ -129,7 +129,7 @@
 	display: block;
 }
 
-
+/*
 .Menu @media screen and (max-width: 780px){
 	.menu-mobile{
 		display: block;
@@ -158,8 +158,7 @@
 		width: 100%;
 	}
 }
-
-
+*/
 #logo
 {
 	height: auto;

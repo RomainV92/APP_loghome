@@ -82,7 +82,7 @@
                 </div>
 
 
-              <input type="submit" value="Ajouter une nouvelle maison" />
+              <input type="submit" value="Ajouter une nouvelle maison" id="button_submit"/>
 
 
               </form>
