@@ -9,42 +9,59 @@ body{
 .popup-position{
 	display: none;
 	position: fixed;
-top:0;
-left: 0;
-background-color: rgba(0,0,0,0.7);
-width: 100%;
-height: 100%;}
+	top:0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;}
 
 
 #popup-container{
-	background-color: rgba(0,0,0,0.9);
+/*	background-color: rgba(0,0,0,0.9);
 	border-radius: 10px;
 	padding: 20px;
 	position: absolute;
 	width: 50%;
 	margin-left: 20%;
-	/*margin-right: auto;*/
-	margin-top: 6%;
+	/*margin-right: auto;
+	margin-top: 6%;*/
+	/*text-align: center;*/
+	margin: auto;
+	padding: 20px;
+	border-radius: 20px;
+	width: 20%;
+	height: 25%;
+	background-color: rgba(238, 238, 238, 0.9);
+	margin-top: 7%;
+	display: flex;
+	justify-content: center;
 }
-#popup-container h3
-{
-color: white;
-font-size: 23px;
-}
-
-
+/*
+.modal-content {
+	margin: auto;
+	padding: 20px;
+	border-radius: 20px;
+	width: 30%;
+	background-color: rgba(238, 238, 238, 0.9);
+	margin-top: 7%;
+	display: flex;
+	justify-content: center;
+	}
+	*/
  .maison li{
 	   list-style-type: none;
 	   list-style-position: inside;
 	 }
 
-	  .maison a{
+.maison a
+{
 	 	display: inline-block;
 	 	text-decoration: none;
 	 	color: white;
 	 }
 
-	 .maison{
+.maison
+{
 	 	display: flex;
 	 	flex-direction: row;
 	 	justify-content: space-evenly;
@@ -52,7 +69,8 @@ font-size: 23px;
 
 	 }
 
-		.salon{
+.salon
+{
 				background-image: url("../images/maison3.jpg");
 				border: 2px solid black;
 				display: block;
@@ -69,34 +87,53 @@ font-size: 23px;
 				min-height: 250px;
 			}
 
-		 .ajouter_un_capteur{
+.ajouter_un_capteur
+{
 							display: block;
 							color: white;
 							background-color: rgba(0,0,0,0.9);
 							border-radius: 10px;
 							text-align: center;
-							width: 80%;
+							width: 17%;
+							height: 30%;
 							font-size: 23px;
-							margin:20px;
+							margin-top: 15%;
+							padding-top: 3%;
 							padding-left: 30px;
 							padding-right: 30px;
 						}
+#plus_rouge
+{
+	width: 50px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-						body .maison ul li{
-							margin-top: 8px;
-							margin-bottom: 8px;
-							margin-left: 30px;
-							margin-right: 40px;
-							background-color:rgb(240,240,240);
-							border: 2px solid rgb(160,160,160);
-							padding-top: 20px;
-							padding-bottom: 20px;
-						}
-/*
-body div ul li:hover{
-
-	background-color:rgba(240,240,240,0.9);
-	border: 2px solid rgb(100,100,100);
+#popup-container p a
+{
+	color: black;
+	font-size:20px;
 
 }
-*/
+
+.row{
+margin-bottom: 10px;
+}
+
+
+
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus
+	{
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
