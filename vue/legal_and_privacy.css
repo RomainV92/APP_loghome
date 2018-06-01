@@ -3,8 +3,14 @@
 	flex-direction: column;	
 	font-family: sans-serif,'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin-top: 5%;
-
+	margin-bottom: 90px;
+	
 }
+
+body{
+	background-color: rgba(218, 218, 218, 0.705)
+}
+
 .logo{
 	float: right;
 }

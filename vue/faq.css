@@ -4,20 +4,24 @@
 	flex-direction: column;	
 	font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin-top: 5%;
+	margin-bottom: 90px;
+	
 }
 
-
-
+body{
+	background-color: rgba(218, 218, 218, 0.705)
+}
 ul,li{
    list-style-type: none;
 }
 
 .question{
-	margin-top: 8px;
-	margin-bottom: 8px;
-	margin-left: 100px;
-	margin-right: 130px;
-	background-color:rgb(230,230,230);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	background-color:rgb(253, 253, 253);
 	border: 2px solid rgb(160,160,160);
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -31,7 +35,7 @@ ul,li{
 
 
 div a{
-	display: inline-block;
+	
 	text-decoration: none;
 	color: rgb(0,128,192);
 
@@ -40,7 +44,7 @@ div a{
 
 .question:hover .reponse{
 	margin-top: 8px;
-	z-index: 1000;
+	z-index: 2;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background-color:  rgb(255,255,255);

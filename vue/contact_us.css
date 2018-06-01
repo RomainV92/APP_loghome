@@ -1,6 +1,6 @@
 body{
 	font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: url("../images/maison3.jpg");
+    background: url("../images/maison7.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -19,7 +19,7 @@ form {
 
     justify-content: space-evenly;
   
-	background: rgba(0, 0, 0, 0.884);
+	background: rgba(0, 0, 0, 0.95);
     color: #fff;
     box-sizing: border-box;
     border-radius: 20px;
