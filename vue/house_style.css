@@ -26,12 +26,12 @@
 		margin-top: 7%;
 		display: flex;
 		justify-content: center;
-		} 
-		
+		}
+
 .row{
 	margin-bottom: 10px;
 	}
-		
+
 
 
 /* The Close Button */
@@ -107,20 +107,20 @@ height: 100%;}
 }
 .salon li{
 	list-style: none;
-	
+
 
 }
 
 .salon .informations {
 	text-align: left;
 	color: #FFF;
-	
+
 }
 .salon .informations td {
 	vertical-align: baseline;
-	
-	
-	
+
+
+
 }
 .salon .informations tr .label1 {
 	width : 80px;
@@ -129,7 +129,7 @@ height: 100%;}
 .salon .informations tr .label2 {
 	width: 80px;
 	height: 85px;
-	
+
 }
 
 .salon{
@@ -143,18 +143,18 @@ height: 100%;}
 	width: 20%;
 	min-width: 250px;
 	min-height: 250px;
-	
+
 }
 
 .salon .piece{
 	text-align: center;
 	width: 100%;
 	background-color:rgb(230,230,230);
-	
+
 	margin-top: 15px;
 	padding: 15px 0px 15px;
-	
-}			
+
+}
 .ajouter_une_maison{
 	border-radius: 20px;
 	color: #FFF;
@@ -180,9 +180,9 @@ height: 100%;}
 	text-align: center;
 	width: 100%;
 	margin-top: 15px;
-	background-color:rgb(230,230,230);	
+	background-color:rgb(230,230,230);
 	padding: 15px 0px 15px;
-	
+
 }
 
 

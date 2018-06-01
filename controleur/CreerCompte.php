@@ -27,6 +27,3 @@ while ($variable = $reponse->fetch())
 echo '</ul>';
 $reponse ->closeCursor();
 */
-
-
-?>

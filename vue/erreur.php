@@ -7,9 +7,6 @@
   </head>
 
   <body>
-    <div class="cadre">
-      <p> Vous etes maintenant inscrits sur le site de Log.Home</p>
-      <a class="button" href="../index.php?cible=accueil">Retour à l'accueil </a>
-    </div>
+    <p class="cadre">Une erreur est survenue, veuillez réessayer</p>
   </body>
 </html>

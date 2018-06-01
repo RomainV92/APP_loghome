@@ -15,7 +15,7 @@
    $nom=$_POST['nom'];
    $superficie=$_POST['superficie'];
    $id_maison=$_GET['cible'];
-   
+
 
    $ajout = $bdd->prepare('INSERT INTO pieces(ID_maison,Nom,Superficie) VALUES(:ID_maison,:Nom,:Superficie)');
    // Requête d'insertion,
@@ -23,7 +23,7 @@
      'ID_maison' => $id_maison,
      'Nom' => $nom,
      'Superficie' => $superficie,
-     
+
    ));
 
 

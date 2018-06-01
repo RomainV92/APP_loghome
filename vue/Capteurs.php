@@ -26,7 +26,7 @@
           <div id="popup-wrapper">
             <div id="popup-container">
               <h3>Veuillez rentrer les informations liées au capteur</h3>
-              <form action="../modele/bdd_access_capteur.php" method="post">
+              <form action="../modele/ajout_capteur_post.php" method="post">
               <ul>
                 <li><label for="reference">Référence :</label>
                     <input type="text" name="reference" id="reference" placeholder="ex: XX265 136 A" size="30" maxlength="30"/>
