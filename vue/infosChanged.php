@@ -8,8 +8,8 @@
 
   <body>
     <div class="cadre">
-      <p> Vous êtes maintenant inscrits sur le site de Log.Home</p>
-      <a class="button" href="../index.php?cible=accueil">Retour à l'accueil </a>
+      <p> Vos informations ont été mises à jour.</p>
+      <a class="button" href="../index.php?cible=InfosCompte">Retour à votre profil</a>
     </div>
   </body>
 </html>
