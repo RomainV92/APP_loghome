@@ -9,6 +9,7 @@ body
   background-image: url("../images/image_fond.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   background-position: top center;
   background-size: 100%;
@@ -18,8 +19,7 @@ body
 
 p
 {
-  font-family: monospace,"Trebuchet MS", Impact, Georgia, sans-serif;
-  font-family: Tahoma,  sans-serif;
+
   text-align: justify;
 }
 

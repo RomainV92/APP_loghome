@@ -16,7 +16,7 @@
 }
 .Menu nav{
 	width: 100%;
-	background-color: #424558; 
+	background-color: #6464686e; 
 
 }
 
@@ -76,6 +76,7 @@
 .Menu nav ul li a{
 	padding: 20px 30px;
 	color: #FFF;
+	
 }
 
 .Menu nav ul li:hover a{
@@ -96,10 +97,10 @@
 }
 
 .Menu .submenu li a{
-	padding: 15px 30px;
+	padding: 15px 0px 15px 0px;
 	font-size:  15px;
 	color: white;
-	width: 270px;
+	width:100px;
 }
 .Menu .submenu li{
 	border-bottom: 1px solid #CCC;
@@ -111,18 +112,18 @@
 }
 
 .Menu .menu-main:hover{
-	border-top: 5px solid RGB(100,128,192);
-	background-color: rgba(100,128,192,0.2);
+	border-top: 5px solid rgb(57, 176, 223);
+	background-color: rgba(57, 176, 223, 0.2);
 }
 
 .Menu .menu-main .submenu
 {
-	background-color:  RGB(100,128,192);
+	background-color: rgb(92, 186, 223);
 }
 
 .Menu .menu-main .submenu li:hover
 {
-	background-color:  rgba(66, 69, 88, 0.2);
+	background-color: rgb(57, 176, 223);
 }
 
 .Menu nav input[type=checkbox]:checked ~ ul{ /*case à cocher invisible*/
