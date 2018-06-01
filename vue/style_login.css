@@ -29,6 +29,7 @@
 		position: fixed; /* Stay in place */
 		z-index: 1; /* Sit on top */
 		padding-top: 100px; /* Location of the box */
+    padding-left: 35%;
 		left: 0;
 		top: 0;
 		width: 100%; /* Full width */
@@ -41,15 +42,59 @@
 
 /* Modal Content */
 .modal-content {
-		margin: auto;
+		margin: 10px;
 		padding: 20px;
 		border-radius: 20px;
-		width: 30%;
-		background-color: rgba(238, 238, 238, 0.9);
+		width: 20%;
+		background-color: black;
 		margin-top: 7%;
 		display: flex;
 		justify-content: center;
 		}
+#Mailpost
+{
+   padding-top: 30px;
+   color: white;
+   font-weight: bold;
+}
+#Question_Ver
+{
+    border: none;
+    background-color: darkgrey;
+    border-radius: 2%;
+
+}
+
+#textmail
+{
+  margin-bottom: 20px;
+}
+#mail_Ver
+{
+  border:none;
+  background-color: black;
+  color: white;
+  border-bottom: 1px solid #fff;
+  margin-top: 10px;
+
+}
+#buttonoublie
+{
+  border:none;
+  outline:none;
+  height:30px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+#buttonoublie:hover
+{
+  cursor:pointer;
+  background: #ffc107;
+  color: #000;
+}
+
 
     .close {
         color: #aaaaaa;
