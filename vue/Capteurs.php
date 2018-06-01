@@ -5,14 +5,14 @@
         <meta charset= "utf-8">
         <link rel='stylesheet' href='../vue/capteur.css'>
         <script type="text/javascript">
-              function toggle_visibility(id){
-                var e = document.getElementById(id);
-                if(e.style.display=='block'){
-                  e.style.display='none';}
-                  else {
-                    e.style.display ='block';
-                  }
-              }
+        function toggle_visibility(id){
+          var e = document.getElementById(id);
+          if(e.style.display=='block'){
+            e.style.display='none';}
+            else {
+              e.style.display ='block';
+            }
+        }
         </script>
     </head>
 
@@ -24,33 +24,54 @@
         <!-- Script pour popup ajout maison -->
         <div id="popup-box" class="popup-position">
           <div id="popup-wrapper">
-            <div id="popup-container">
-              <h3>Veuillez rentrer les informations liées au capteur</h3>
-              <form action="../modele/ajout_capteur_post.php" method="post">
-              <ul>
-                <li><label for="reference">Référence :</label>
+            <div  id="popup-container" class="modal-content">
+
+              <form action="../modele/ajout_capteur_post.php?cible=<?php echo $_GET['cible']?>" method="post">
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="reference">Référence :</label>
+                </div>
+                <div class="col-25">
                     <input type="text" name="reference" id="reference" placeholder="ex: XX265 136 A" size="30" maxlength="30"/>
-                  </li>
-                <li><label for="namesensor">Nom du capteur :</label>
+                </div>
+              </div>
+
+                <div class="row">
+                  <div class="col-25">
+                    <label for="namesensor">Nom du capteur :</label>
+                  </div>
+                  <div class="col-25">
                     <input type="text" name="namesensor" id="namesensor" placeholder="ex: Luminos" size="30" maxlength="30"/>
-                </li>
-                <li><label for="sensortype">Type de capteur :</label>
-                    <select name="sensortype" id="sensortype">
+                  </div>
+                </div>
+
+                  <div class="row">
+                    <div class="col-25">
+                      <label for="sensortype">Type de capteur :</label>
+                    </div>
+                    <div class="col-25">
+                      <select name="sensortype" id="sensortype">
                         <option value="Luminosity">Luminosité</option>
                         <option value="Temperature">Température</option>
                         <option value="Motor">Moteur</option>
-                    </select>
-                </li>
-              </ul>
+                      </select>
+                    </div>
+                  </div>
+
               <input type="submit" id="confirm" value="Ajouter capteur" />
               <p><a href="javascript:void(0)"onclick="toggle_visibility('popup-box')">Fermer</a></p>
+            </form>
+              <span class="close">&times;</span>
             </div>
           </div>
         </div>
 
 
          <div class=ajouter_un_capteur>
-           <h2><a href="javascript:void(0)" onclick="toggle_visibility('popup-box')">Ajouter un capteur</a></h2>
+           <h2><a href="javascript:void(0)" onclick="toggle_visibility('popup-box')">Ajouter un capteur</br></br><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></a></h2>
+
         </div>
 
         </div>
