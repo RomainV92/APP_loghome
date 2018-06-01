@@ -21,7 +21,7 @@
         <p><label>Votre Mail </label><input type="mail" name="Mail" id="Mail" placeholder="Ex: exemple@exemple.com" required></p>
         <p><label>Entrez votre question secréte </label><select name="Question" id="Question">
           <option value="type1">Le nom de votre premier animal de compagnie</option>
-          <option value="type2">Le nom de jeune fille de votre mére</option>
+          <option value="type2">Le nom de jeune fille de votre mère</option>
           <option value="type3">Votre ville de naissance</option>
           <option value="type4">Votre boisson préférée</option>
           <option value="type5">Votre nourriture préférée</option>

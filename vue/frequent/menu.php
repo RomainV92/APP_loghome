@@ -8,7 +8,7 @@
   <body>
     <nav>
       <label for="menu-mobile" class="menu-mobile">Menu</label>
-      <input type="checkbox" id="menu-mobile" role="button" />
+      <input type= "checkbox" id="menu-mobile" role="button" />
       <ul>
         <div>
           <?php
@@ -32,42 +32,56 @@
           }
           else
           { ?>
-            <li class="menu-main"><a href="../index.php?cible=Page_logement">LOGEMENTS</a>
-              <ul class="submenu"x>
-                <li><a href="../index.php?cible=Page_connexion">Connexion</a></li>
-              </ul>
+            <li class="menu-main"><a href="../index.php?cible=Page_connexion">LOGEMENTS</a>
             </li>
           <?php
           } ?>
+          <?php
+              if(isset($_SESSION['id_user'])){ ?>
             <li class="menu-main"><a href="#">MON COMPTE</a>
               <ul class="submenu">
-              <?php
-              if(isset($_SESSION['id_user'])){ ?>
                 <li><a href="../index.php?cible=deconnexion">Déconnexion</a></li>
                 <li><a href="../index.php?cible=Page_capteurs">Mes capteurs</a></li>
                 <li><a href="../index.php?cible=InfosCompte">Mes informations</a></li>
                 <li><a href="../index.php?cible=Page_aide">Aide</a></li>
+              </ul>
+            </li>
               <?php
               }
               else
-              {
-                echo "<li><a href=\"../index.php?cible=Page_connexion\">Connexion</a></li>";
+              { ?>
+                <li class="menu-main"><a href="../index.php?cible=Page_connexion">MON COMPTE</a>
+                  
+                </li>
+                <?php
               } ?>
-              </ul>
-            </li>
+              
+           
         </div>
 
         <div>
           <li class="menu-main">
           <?php if($_SESSION == array())
           {
+              
+            echo '<a href="../index.php?cible=CreerCompte">INSCRIPTION</a>';
+            
+          }
+          ?>
+          </li>
+          <li class="menu-main">
+          <?php if($_SESSION == array())
+          {
+              
             echo '<a href="../index.php?cible=Page_connexion">CONNEXION</a>';
+            
           }
           else
           {
             echo '<a href="../index.php?cible=deconnexion">DECONNEXION</a>';
           } ?>
           </li>
+         
           <img id="logo" src="../images/Logo.png" alt="Logo de Log.home" />
         </div>
       </ul>
