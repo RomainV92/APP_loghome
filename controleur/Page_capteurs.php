@@ -13,9 +13,9 @@ include('../vue/frequent/footer.php');
 function bdd_maisons($capteurs){
   while($Dif_capteurs=$capteurs->fetch()){?>
     <div class="salon">
-      <h2>Maison : <?php echo $Dif_capteurs['Nom'];?></h2>
+      <h2>Maison : <?php echo htmlspecialchars($Dif_capteurs['Nom']);?></h2>
        <ul>
-           <?php echo $Dif_capteurs['Type'].': '.$Dif_capteurs['Valeur']?>
+           <?php echo htmlspecialchars($Dif_capteurs['Type'].': '.$Dif_capteurs['Valeur'])?>
        </ul>
    </div><?php
   }
