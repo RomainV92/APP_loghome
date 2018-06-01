@@ -13,7 +13,7 @@
 
         <form action="../modele/contact_us_post.php" method="post">
         <div class="grid">
-                    <label for="type">Type de problème :</label>
+                    <label for="problem_type">Type de problème :</label>
 
                     <select name="problem_type">
                         <option value="type1">Capteur défaillant</option>
