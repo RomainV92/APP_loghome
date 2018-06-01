@@ -10,13 +10,8 @@ if ($direction==1){
   Merci d'avoir créé un compte chez Loghome! \n
   Vous trouverez ci-dessous votre identifiant et un lien pour vous connecter :\n
   Votre identifiant :".$_POST['Pseudo']."\n Accéder à votre compte maintenant :https://www.loghome.fr/";
-<<<<<<< HEAD
   
   
-=======
-
-
->>>>>>> 5cd6d1dc4ca848f56e8f6e0a573d0433d6891ffa
   if (mail($to,$subject,$txt)){
     header('Location:../index.php?cible=Page_Confirmed');
   }

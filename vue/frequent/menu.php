@@ -8,7 +8,7 @@
   <body>
     <nav>
       <label for="menu-mobile" class="menu-mobile">Menu</label>
-      <input type="checkbox" id="menu-mobile" role="button" />
+      <input type= "checkbox" id="menu-mobile" role="button" />
       <ul>
         <div>
           <?php
@@ -52,6 +52,7 @@
               else
               {
                 echo "<li><a href=\"../index.php?cible=Page_connexion\">Connexion</a></li>";
+                echo "<li><a href=\"../index.php?cible=CreerCompte\">Inscription</a></li>";
               } ?>
               </ul>
             </li>
@@ -61,13 +62,25 @@
           <li class="menu-main">
           <?php if($_SESSION == array())
           {
+              
+            echo '<a href="../index.php?cible=CreerCompte">INSCRIPTION</a>';
+            
+          }
+          ?>
+          </li>
+          <li class="menu-main">
+          <?php if($_SESSION == array())
+          {
+              
             echo '<a href="../index.php?cible=Page_connexion">CONNEXION</a>';
+            
           }
           else
           {
             echo '<a href="../index.php?cible=deconnexion">DECONNEXION</a>';
           } ?>
           </li>
+         
           <img id="logo" src="../images/Logo.png" alt="Logo de Log.home" />
         </div>
       </ul>
