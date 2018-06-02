@@ -38,8 +38,8 @@ footer nav li {
  	padding-left: 30px;
  	padding-right: 30px;
  	padding-bottom: 10px;
- 	padding-top: 10px;
-
+ 	padding-top: 5px;
+	
 
 }
 
@@ -51,6 +51,7 @@ footer nav a{
 footer nav ul {
 	margin: 0px;
 	padding: 0px;
+	
 }
 footer nav  ul li a{
 	
