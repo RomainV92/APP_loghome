@@ -19,7 +19,7 @@ body
 
 p
 {
-  font-size: 14px;
+  font-size: 13px;
   text-align: justify;
 }
 
@@ -45,7 +45,7 @@ h2
 .presentation1, .presentation2, .presentation3
 {
   border-top:none;
-  padding: 120px 20px 0px 20px ;
+  padding: 90px 20px 0px 20px ;
 }
 
 .presentation1{
@@ -65,16 +65,16 @@ h2
   padding: 15px 15px 2px 15px;
 }
 .paragraphe2{
-  margin-top: 200px;
+  margin-top: 140px;
 }
 
 .paragraphe3{
-  margin-top: 200px;
+  margin-top: 140px;
 }
 .paragraphe1 img{
   border: 1px solid #ddd;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 90%;
   margin-left: 5%; 
   opacity: 0.932; 
