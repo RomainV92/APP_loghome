@@ -130,23 +130,31 @@
 	display: block;
 }
 
-/*
-.Menu @media screen and (max-width: 780px){
-	.menu-mobile{
+
+@media screen and (max-width: 780px){
+	.Menu .menu-mobile{
 		display: block;
 		color: #FFF;
-		background-color: rgba(29,197,151,0.97);
+	background-color: #6464686e; 
 		text-align: center;
 		padding: 12px 0px;
+	}
+	.Menu nav  ul div
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
 	}
 
 	.Menu nav ul{
 		display: none;
 	}
 
+
 	 .Menu nav ul li, nav ul li a{
 		width: 100%;
-		text-align: center;
+		text-align: left;
 		padding: 10px 0px 10px 0px;
 	}
 	.Menu nav ul li, nav ul li:hover a{
@@ -159,7 +167,7 @@
 		width: 100%;
 	}
 }
-*/
+
 #logo
 {
 	height: auto;

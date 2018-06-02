@@ -7,17 +7,7 @@
 	
 }
 
-body{
-	background-color: rgba(218, 218, 218, 0.705)
-}
 
-.logo{
-	float: right;
-}
- header >h1 {
- 	float: left;
- 	padding-left: 30px;
-  }
  p{
  	text-align: justify;
  	padding-left: 30px;
@@ -30,17 +20,25 @@ body{
  	list-style-position: inside;
  	padding-left: 23px;
  }
+ 
+ h2{
+	 text-align: center;
+ }
 
  h3,h4 {
  	text-align: left;
  	padding-left: 25px;
 
  }
-
+ h4{
+	 margin-top:45px;
+ }
 .article{
-	background-color:rgb(240,240,240);
+	width: 70%;
+	margin-right:auto;
+	margin-left:auto;
+	background-color:#6464681a;
 	border: 2px solid rgb(160,160,160);
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-top: 5px;
+	padding: 20px;
+	margin-top: 25px;
 }
