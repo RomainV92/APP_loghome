@@ -1,164 +1,119 @@
 
 body
 {
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   
   background-color: #d1ccc0;
-
-  background-image: url("../images/image_fond.jpg");
+  background-image: url("../images/maison19.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
   background-position: top center;
-  background-size: 100%;
+  background-size: cover;
 
   
 }
 
-
-
 p
 {
-  font-size: 13px;
+  text-indent: 15px;
+  font-size: 18px;
   text-align: justify;
 }
 
 h2
 {
   display: inline;
-  padding-left: 10px;
-}
-
-
-.wrapper
-{
-  display: grid;
-
-  grid-template-rows: repeat(3, 30%);
-
-  margin: 0px;
-  height: 100%;
-  
-  
-
-}
-
-.presentation1, .presentation2, .presentation3
-{
-  border-top:none;
-  padding: 0px 0px 0px 0px ;
-  margin: 0px;
-}
-/*
-.presentation1{
-  border-right: 5px solid white;
-}
-.presentation2{
-  border-left: 5px solid white;
-  border-right: 5px solid white;
-}
-.presentation3{
-  border-left: 5px solid white;
   
 }
-*/
-.paragraphe1,.paragraphe2,.paragraphe3{
-  border: 2px solid black;
-  background-color: rgba(255, 255, 255, 0.932);
-  padding: 15px 15px 2px 15px;
-  width: 55%;
+
+.mySlides {
+   
+  padding: 25px;
+  background-color: #fffffff6;
   
-}
-.paragraphe2{
-
-}
-
-.paragraphe3{
- 
-}
-.paragraphe1 img{
-  border: 1px solid #ddd;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 90%;
-  margin-left: 5%; 
-  opacity: 0.932; 
-    
-}
-.paragraphe3 img{
-  border: 1px solid #ddd;
-  margin-bottom: 20px;
-  opacity: 0.932; 
-    width: 100%;
-}
-.text {
-  background-color: rgba(255, 255, 255, 0.932);
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-/*
-.paragraphe
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   width: 50%;
-  height: 100%;
-  border-radius: 0px 20px 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 1000px;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
   color: white;
-  background-color: rgba(0, 0, 0,0.9);
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: left;
-  box-shadow: 6px 6px 8px black;
-}
-*/
-/*
-.paragraphe1
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 50%;
-  height: 100%;
-
-  border-radius: 20px 0px 0px 20px;
-  color: white;
-  background-color: rgba(0, 0, 0,0.9);
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: left;
-  box-shadow: 6px 6px 8px black;
-
-}
-*/
-/*
-.picture
-{
-  position: relative;
-  height: 179px;
-  width: 250px;
-  border-radius: 20px 0px 0px 20px;
-  box-shadow: 6px 6px 8px black;
-
-}
-.picture1
-{
-  position: relative;
-  height: 220px;
-  width: 250px;
-  border-radius: 0px 20px 20px 0px;
-  box-shadow: 6px 6px 8px black;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
 }
 
-.picture2
-{
-  position: relative;
-  height: 240px;
-  width: 250px;
-  border-radius: 20px 0px 0px 20px;
-  box-shadow: 6px 6px 8px black;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  
 }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(211, 211, 211);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
