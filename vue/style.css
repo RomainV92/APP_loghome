@@ -13,14 +13,14 @@ body
   
 }
 
-p
+.mySlides p
 {
   text-indent: 15px;
   font-size: 18px;
   text-align: justify;
 }
 
-h2
+.mySlides h2
 {
   display: inline;
   
@@ -37,7 +37,7 @@ h2
   
 }
 
-* {box-sizing:border-box}
+
 
 /* Slideshow container */
 .slideshow-container {
