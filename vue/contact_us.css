@@ -1,6 +1,7 @@
 body{
 	font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: url("../images/maison7.jpg");
+    background: url("../images/maison2.jpg");
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }

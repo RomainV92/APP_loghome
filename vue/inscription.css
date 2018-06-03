@@ -11,7 +11,8 @@ body
 
   margin: 0;
   padding: 0;
-  background-image: url("../images/image_fond.jpg");
+  background-image: url("../images/maison17.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: sans-serif;

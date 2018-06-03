@@ -56,10 +56,11 @@
 }
 
 body{
-	background: url("../images/maison10.jpg");
+	background: url("../images/maison19.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
+	background-attachment: fixed;
+}	
 
 /*
 body div ul li:hover{

@@ -96,7 +96,7 @@
                     
             </div>
 
-            <div class= 'type'>
+            <div class= 'typefin'>
                 <h2 class='line' >Questions générales concernant les produits Loghome</h2>
                     
                         <button class="question">Vous avez des suggestions concernant nos produits ?</button>

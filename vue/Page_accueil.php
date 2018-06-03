@@ -9,7 +9,9 @@
 
   <body  class="wrapper">
     
-    
+      <div class="image_dessus">
+      </div>
+      <div class="text">
       <div class="presentation1">
         <!--<img class="picture" src="../images/equipe.jpg" alt="L'équipe" />-->
         <div class="paragraphe1">
@@ -21,7 +23,7 @@
           Nous travaillons en étroite collaboration avec Log.Home afin d'être en
           mesure de répondre à vos attentes. Essayer nos solutions, c'est les adopter!
           </p>
-          <img src="../images/our-team.jpg" alt="team">
+          
         </div>
       </div>
 
@@ -44,7 +46,7 @@
       <div class="presentation3">
         <!--<img class="picture2" src="../images/control.jpg" alt="Le panneau de contrôle" />-->
         <div class="paragraphe3">
-          <img src="../images/maison-connecte.jpg" alt="maison connectée">
+          
           <h2>Contrôler vos appareils</h2>
           <p> Une configuration de base est installée sur notre système,
             mais si vous souhaitez personnaliser votre appareil,
@@ -57,7 +59,8 @@
             au moment où vous vous brossez les dents par exemple.</p>
           </div>
         </div>
-  
-
+        </div>
+        <div class="image_dessous">
+      </div>
   </body>
 </html>
