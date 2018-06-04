@@ -28,5 +28,3 @@ function randompass(){
   }
   return $Password;
 }
-
- ?>

@@ -16,7 +16,3 @@ if($_SESSION != array())  //met une erreur si une personne connectée accède à
 include('../vue/frequent/menu.php');
 include('../vue/Sign_in.php');
 include('../vue/frequent/footer.php');
-
-
-
-?>

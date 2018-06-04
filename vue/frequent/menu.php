@@ -51,37 +51,48 @@
               else
               { ?>
                 <li class="menu-main"><a href="../index.php?cible=Page_connexion">MON COMPTE</a>
-                  
+
                 </li>
                 <?php
               } ?>
-              
-           
+             <?php
+                 if(!empty($_SESSION['id_user']))
+                  {
+                    echo  '<p class=\'menu1\' >UTILISATEUR : ' . $_SESSION['Nom'] . '</p>';
+
+                  }
+                    ?>
+
+
+
+
+
         </div>
 
         <div>
           <li class="menu-main">
           <?php if($_SESSION == array())
           {
-              
+
             echo '<a href="../index.php?cible=CreerCompte">INSCRIPTION</a>';
-            
+
           }
           ?>
           </li>
           <li class="menu-main">
           <?php if($_SESSION == array())
           {
-              
+
             echo '<a href="../index.php?cible=Page_connexion">CONNEXION</a>';
-            
+
+
           }
           else
           {
             echo '<a href="../index.php?cible=deconnexion">DECONNEXION</a>';
           } ?>
           </li>
-         
+
           <img id="logo" src="../images/Logo.png" alt="Logo de Log.home" />
         </div>
       </ul>

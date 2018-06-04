@@ -29,4 +29,4 @@
 
 
    header("Location: ../controleur/Page_pieces.php?cible=$id_maison");
-   ?>
+   
