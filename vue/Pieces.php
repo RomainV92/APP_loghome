@@ -47,7 +47,7 @@
                 </div>
 
 
-              <input type="submit" value="Ajouter une nouvelle piece" />
+              <input type="submit" value="Ajouter une nouvelle piece" id="button_submit"/>
 
 
               </form>

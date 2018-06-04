@@ -3,15 +3,24 @@
 	flex-direction: column;	
 	font-family: sans-serif,'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	margin-top: 5%;
+	margin-bottom: 90px;
+	background-color: rgba(255, 255, 255, 0.918);
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 50px;
 
 }
-.logo{
-	float: right;
+
+body{
+	background-color: rgb(255, 255, 255);
+	background: url("../images/maison20.jpg");
+	background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+	
+
 }
- header >h1 {
- 	float: left;
- 	padding-left: 30px;
-  }
  p{
  	text-align: justify;
  	padding-left: 30px;
@@ -24,17 +33,25 @@
  	list-style-position: inside;
  	padding-left: 23px;
  }
+ 
+ h2{
+	 text-align: center;
+ }
 
  h3,h4 {
  	text-align: left;
  	padding-left: 25px;
 
  }
-
+ h4{
+	 margin-top:45px;
+ }
 .article{
-	background-color:rgb(240,240,240);
+	width: 85%;
+	margin-right:auto;
+	margin-left:auto;
+	background-color:#cecedab6;
 	border: 2px solid rgb(160,160,160);
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-top: 5px;
+	padding: 20px;
+	margin-top: 25px;
 }

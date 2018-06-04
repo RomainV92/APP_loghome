@@ -2,55 +2,81 @@
 	text-align: center;
 	display: flex;
 	flex-direction: column;	
-	font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: rgba(255, 255, 255, 0.918);
 	margin-top: 5%;
+	margin-bottom: 90px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
 }
 
+body{
+	background-color: rgb(255, 255, 255);
+	background: url("../images/maison20.jpg");
+	background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+	font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-
+}
 ul,li{
    list-style-type: none;
 }
-
-.question{
-	margin-top: 8px;
-	margin-bottom: 8px;
-	margin-left: 100px;
-	margin-right: 130px;
-	background-color:rgb(230,230,230);
-	border: 2px solid rgb(160,160,160);
-	padding-top: 20px;
-	padding-bottom: 20px;
-
-} 
-
-.reponse{
-	font-size: 0px;
-	color: transparent;
-}
-
-
-div a{
-	display: inline-block;
-	text-decoration: none;
-	color: rgb(0,128,192);
+h2{
+	padding-top:20px;
+	padding-bottom:20px;
+	
 
 }
 
-
-.question:hover .reponse{
-	margin-top: 8px;
-	z-index: 1000;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	background-color:  rgb(255,255,255);
-	color: black;
-	font-size: 14px;
-
+.line{
+	margin-top:40px; 
+	padding-top:40px;
+	padding-bottom:20px;
+	
+	width: 50%;
+	margin-right:auto;
+	margin-left: auto;
+	border-top: 1px solid black;   /* ligne entre les type */
 }
 
-.question:hover {	
-	padding-bottom:0px;
-	;
-
+/* Style the buttons that are used to open and close the accordion panel */
+.question {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(169, 218, 238);
+	
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+   
+    outline: none;
+	transition: 0.4s;
+	font-size: 17px;
 }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .question:hover {
+    background-color:  rgb(123, 202, 233);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.faq-answer {
+	margin-left: auto;
+	margin-right: auto;
+	
+	width:68%;
+	padding:20px 5px 20px 5px;
+
+    display: none;
+	overflow: hidden;
+	text-align: justify;
+}
+
+.typefin{
+	margin-bottom: 50px;
+}
+
+

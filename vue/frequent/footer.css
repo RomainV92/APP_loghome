@@ -24,22 +24,34 @@ footer div{
 
 footer  nav{
 	width: 100%;
-	background-color: #424558;
+	background-color: #64646881; 
 	padding-bottom: 10px;
  	padding-top: 10px;
 
 }
 
+.footer .footer-mobile{ /*cache bouton affichant le footer mobile*/
+	display: none;
+}
+
+.footer nav input[type=checkbox]{ /*case à cocher invisible*/
+	display: none;
+}
+
+.footer nav label{
+	display: none;
+}
+
+
 footer nav li {
 	list-style-type: none;
 	text-align: center;
  	display:inline;
-
  	padding-left: 30px;
  	padding-right: 30px;
  	padding-bottom: 10px;
- 	padding-top: 10px;
-
+ 	padding-top: 5px;
+	
 
 }
 
@@ -51,6 +63,7 @@ footer nav a{
 footer nav ul {
 	margin: 0px;
 	padding: 0px;
+	
 }
 footer nav  ul li a{
 	
@@ -60,6 +73,37 @@ footer nav  ul li a{
 
 
 footer nav  ul li:hover{
-	border-top: 5px solid RGB(100,128,192);
-	background-color: rgba(100,128,192,0.2);
+	border-top: 5px solid rgb(57, 176, 223);
+	background-color: rgba(57, 176, 223, 0.281);
+}
+
+
+.footer nav input[type=checkbox]:checked ~ ul{ /*case à cocher invisible*/
+	display: block;
+}
+
+@media screen and (max-width: 780px){
+	.footer .footer-mobile{
+		display: block;
+		color: #FFF;
+		background-color: #6464686e; 
+		text-align: center;
+		padding: 10px 0px;
+	}
+
+	.footer nav ul{
+		display: none;
+	}
+
+
+	 .footer nav ul li, nav ul li a{
+		width: 100%;
+		text-align: center;
+		padding: 10px 0px 10px 0px;
+	}
+	.footer nav ul li, nav ul li:hover a{
+		padding: 10px 0px 10px 0px;
+
+	}
+
 }

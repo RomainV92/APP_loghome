@@ -1,113 +1,119 @@
+
 body
 {
-  display: grid;
-  grid-template-rows: 0.5fr 1fr 2fr 0.5fr;
-  grid-template-columns: 2fr 5fr 10fr 5fr 2fr;
+  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
   background-color: #d1ccc0;
-
-  background-image: url("../images/image_fond.jpg");
+  background-image: url("../images/maison19.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-
   background-position: top center;
-  background-size: 100%;
+  background-size: cover;
+
+  
 }
 
-
-
-p
+.mySlides p
 {
-  font-family: monospace,"Trebuchet MS", Impact, Georgia, sans-serif;
-  font-family: Tahoma,  sans-serif;
+  text-indent: 15px;
+  font-size: 18px;
   text-align: justify;
 }
 
-h2
+.mySlides h2
 {
   display: inline;
-  padding-left: 10px;
+  
 }
 
-
-.wrapper
-{
-  grid-row: 2/4;
-  grid-column: 2/5;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
-  text-align: center;
-}
-
-.presentation
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 10px;
-}
-
-
-
-.paragraphe
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.mySlides {
+   
+  padding: 25px;
+  background-color: #fffffff6;
+  
   width: 50%;
-  height: 100%;
-  border-radius: 0px 20px 20px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 1000px;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
   color: white;
-  background-color: rgba(0, 0, 0,0.9);
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: left;
-  box-shadow: 6px 6px 8px black;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 3px;
 }
 
-.paragraphe1
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 50%;
-  height: 100%;
-
-  border-radius: 20px 0px 0px 20px;
-  color: white;
-  background-color: rgba(0, 0, 0,0.9);
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: left;
-  box-shadow: 6px 6px 8px black;
-
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px ;
+  
 }
 
-.picture
-{
-  position: relative;
-  height: 179px;
-  width: 250px;
-  border-radius: 20px 0px 0px 20px;
-  box-shadow: 6px 6px 8px black;
-
-}
-.picture1
-{
-  position: relative;
-  height: 220px;
-  width: 250px;
-  border-radius: 0px 20px 20px 0px;
-  box-shadow: 6px 6px 8px black;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
 }
 
-.picture2
-{
-  position: relative;
-  height: 240px;
-  width: 250px;
-  border-radius: 20px 0px 0px 20px;
-  box-shadow: 6px 6px 8px black;
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(211, 211, 211);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+

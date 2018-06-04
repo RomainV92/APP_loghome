@@ -9,17 +9,17 @@ if ($direction==1)
   $to = $_POST['Mail'];
   $subject = "Confirmation Compte LOG.HOME";
   $txt = "Bienvenue ".$_POST['Prenom'].",\r\n
-  Merci d'avoir créé un compte chez Loghome! \n
-  Vous trouverez ci-dessous votre identifiant et un lien pour vous connecter :\n
-  Votre identifiant :".$_POST['Pseudo']."\n Accéder à votre compte maintenant :https://www.loghome.fr/";
-
+  Merci d'avoir créé un compte chez Loghome! \r\n
+  Vous trouverez ci-dessous votre identifiant et un lien pour vous connecter :\r\n
+  Votre identifiant :".$_POST['Pseudo']."\r\n Accéder à votre compte maintenant :https://www.loghome.fr/";
+  
+  
+  if (mail($to,$subject,$txt))  //(if mail()  )  envoie le mail de comfirmation d'inscription
+    {
+      header('Location:../index.php?cible=Page_Confirmed');
+    }
   header('Location:../index.php?cible=Page_Confirmed');
-  /*
-  if (mail($to,$subject,$txt))
-  {
-    header('Location:../index.php?cible=Page_Confirmed');
-  }
-  */
+  
 }
 
 else

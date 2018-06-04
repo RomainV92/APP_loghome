@@ -1,3 +1,7 @@
+.wrapper{
+	margin-bottom: 30px;
+}
+
 body
 {
   display: grid;
@@ -7,17 +11,19 @@ body
 
   margin: 0;
   padding: 0;
-  background-image: url("../images/image_fond.jpg");
+  background-image: url("../images/maison17.jpg");
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: sans-serif;
+  
 }
 
 .wrapper
 {
   grid-row: 2/5;
   grid-column: 3/4;
-
+  
   display : flex;
   flex-direction: column;
   justify-content: space-around;
@@ -35,7 +41,7 @@ body
 
 .inbox
 {
-  width: 320px;
+  width: 340px;
   height: 100%;
 
   box-sizing: border-box;
@@ -124,4 +130,13 @@ h1
 
 .InBox a:hover{
   color: #ffc107;
+}
+
+#Question{
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    color:black;
 }
