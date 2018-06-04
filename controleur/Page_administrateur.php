@@ -4,6 +4,7 @@ include('../modele/bdd_access.php');
 $bdd= appel_bdd();
 $utilisateurs = All_login($bdd);
 include('../modele/redirection_si_deco.php');
+
 include('../vue/Page_admin.php');?>
 <!DOCTYPE html>
 <html>
