@@ -8,7 +8,7 @@ include('../modele/bdd_access_maison.php');
 
 include('../modele/changementMDP.php');
 $mdp = getPass($_SESSION['id_user']);
-
+include('../modele/redirection_si_deco.php');
 include('../vue/frequent/menu.php');
 include('../vue/pageChangementMDP/changement_mdp.php');
 include('../vue/frequent/footer.php');
