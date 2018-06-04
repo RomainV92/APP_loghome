@@ -16,7 +16,7 @@
 }
 .Menu nav{
 	width: 100%;
-	background-color: #6464686e; 
+	background-color: #6464686e;
 
 }
 
@@ -76,7 +76,7 @@
 .Menu nav ul li a{
 	padding: 20px 30px;
 	color: #FFF;
-	
+
 }
 
 .Menu nav ul li:hover a{
@@ -135,7 +135,7 @@
 	.Menu .menu-mobile{
 		display: block;
 		color: #FFF;
-	background-color: #6464686e; 
+	background-color: #6464686e;
 		text-align: center;
 		padding: 12px 0px;
 	}
@@ -166,6 +166,16 @@
 		position: static;
 		width: 100%;
 	}
+
+}
+.menu1
+{
+	font-size: 16px;
+	color: white;
+	margin-top: 3%;
+	font-family: serif, Verdana, sans-serif;
+	padding: 0px;
+
 }
 
 #logo
