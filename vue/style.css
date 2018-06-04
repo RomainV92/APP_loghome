@@ -2,7 +2,7 @@
 body
 {
   font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  
+
   background-color: #d1ccc0;
   background-image: url("../images/maison19.jpg");
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@ body
   background-position: top center;
   background-size: cover;
 
-  
+
 }
 
 .mySlides p
@@ -23,18 +23,18 @@ body
 .mySlides h2
 {
   display: inline;
-  
+
 }
 
 .mySlides {
-   
+
   padding: 25px;
   background-color: #fffffff6;
   border-radius: 5px;
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  
+
 }
 .mySlides img{
   width: 100%;
@@ -48,7 +48,7 @@ body
   top: 50%;
   transform: translateY(-50%);
   max-width: 1000px;
-  
+
 }
 
 /* Hide the images by default */
@@ -75,7 +75,7 @@ body
 .next {
   right: 0;
   border-radius: 3px ;
-  
+
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -110,12 +110,11 @@ body
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
-
