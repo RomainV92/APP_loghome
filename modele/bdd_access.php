@@ -12,12 +12,44 @@ function appel_bdd()
     die('Erreur : ' . $e->getMessage());
   }
 }
+
+function Ajout_Type_capteurs_bdd($bdd,$Type,$Nom,$AxeX,$AxeY){
+  $ajout= $bdd->prepare('INSERT INTO capteur_type(type,Nom,AxeX,AxeY) VALUES(:Type,:Nom,:AxeX,:AxeY) ');
+  $ajout -> execute(array(
+    'Type'=>$Type,
+    'Nom'=>$Nom,
+    'AxeX'=>$AxeX,
+    'AxeY'=>$AxeY,
+));
+}
+
+function Verif_type_capteurs($bdd,$type)
+{
+  $table = $bdd -> prepare('SELECT type FROM capteur_type');
+  $table -> execute(array());
+  while($e= $table -> fetch()){
+    if($e===$type){
+      return 1;
+    }};
+  return 0;
+
+}
+
+function Trouver_types_capteurs($bdd){
+  $type_capteur = $bdd->prepare('SELECT * FROM capteur_type');
+  $type_capteur -> execute(array());
+  return $type_capteur;
+}
+
+
 function Recup_user($bdd,$pseudo)
 {
   $utilisateurs = $bdd->prepare('SELECT * FROM login WHERE Pseudo=:pseudo');
   $utilisateurs -> execute(array('pseudo'=>$pseudo));
   return $utilisateurs;
 }
+
+
 
 function All_login($bdd)
 {
@@ -26,12 +58,17 @@ function All_login($bdd)
   return $utilisateurs;
 }
 
+
+
+
 function info_user($bdd, $id)
 {
   $table = $bdd -> prepare('SELECT * FROM login WHERE ID=:id');
   $table -> execute(array('id' => $id));
   return ($table -> fetch());
 }
+
+
 
 function majInfosUser($bdd, $id, $champModif, $modif)
 {
@@ -48,6 +85,9 @@ function majInfosUser($bdd, $id, $champModif, $modif)
       'user'=>$id,
   ));
 }
+
+
+
 
 function validation_identifiants($bdd, $login, $mdp)
 {

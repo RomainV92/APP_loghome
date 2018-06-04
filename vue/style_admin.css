@@ -1,0 +1,13 @@
+#form_capteur
+{
+display: none;
+
+}
+
+#utilisateurs{
+  display: none;
+}
+
+.encadrement_capteur{
+  border: 2px solid black;
+}
