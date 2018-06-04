@@ -10,5 +10,3 @@ include('../vue/frequent/menu.php');
 include('../vue/faq.php');
 
 include('../vue/frequent/footer.php');
-
-?>
