@@ -5,4 +5,3 @@ $_SESSION = array();
 session_destroy();
 
 header('Location:../index.php?cible=accueil');
-?>

@@ -7,9 +7,6 @@ body{
 }
 
  
-* {
-    box-sizing: border-box;
-} 
 
 form {
     display: flex;
@@ -20,7 +17,7 @@ form {
 
     justify-content: space-evenly;
   
-	background-color: rgba(85, 100, 124, 0.945);
+	background-color: rgba(114, 113, 113, 0.945);
     color: #fff;
     box-sizing: border-box;
     border-radius: 20px;

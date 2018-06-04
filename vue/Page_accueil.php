@@ -22,7 +22,7 @@
           Nous travaillons en étroite collaboration avec Log.Home afin d'être en
           mesure de répondre à vos attentes. Essayer nos solutions, c'est les adopter!
           </p>
-          
+          <img class='img_1' src='../images/Connected.jpg' alt='connecté'>
         
       </div>
 
@@ -38,7 +38,7 @@
             Vous aurez ainsi la possibilité d'allumer des lumière ou faire tourner
             des moteurs. Sa facilité d'installation vous libérera l'esprit,
             branchez le et il sera prêt à être utilisé.</p>
-          
+          <img class='img_1' src='../images/Connected.jpg' alt='connecté'>
       </div>
 
       <div class="mySlides fade"> 
@@ -52,7 +52,7 @@
             des taches pour le CeMAC pour synchroniser votre réveil avec
             l'allumage des lumières ou encore la mise en route du moteur
             au moment où vous vous brossez les dents par exemple.</p>
-          
+            <img class='img_1' src='../images/Connected.jpg' alt='connecté'>
       </div>
       <br>
       <!-- The dots/circles -->

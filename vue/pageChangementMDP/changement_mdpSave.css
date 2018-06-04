@@ -8,13 +8,6 @@ body {
     height: 100vh;
 }
 
-
-header h1 {
-    position: relative;
-    font-size: 40px;
-    top: 10px;
-}
-
 #nav {
     position: relative;
     margin-top: 100px;

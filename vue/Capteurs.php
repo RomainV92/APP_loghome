@@ -22,6 +22,7 @@
 
         <?php bdd_maisons($capteurs); ?>
         <!-- Script pour popup ajout maison -->
+        
         <div id="popup-box" class="popup-position">
           <div id="popup-wrapper">
             <div  id="popup-container" class="modal-content">
