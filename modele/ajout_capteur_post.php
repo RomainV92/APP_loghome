@@ -28,4 +28,3 @@ $ajout->execute(array(
 
 
 header("Location: ../controleur/Page_capteurs.php?cible=$id_piece");
-?>

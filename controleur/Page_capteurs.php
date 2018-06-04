@@ -22,3 +22,4 @@ function bdd_maisons($capteurs){
    </div><?php
   }
 }
+?>
