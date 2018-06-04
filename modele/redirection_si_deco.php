@@ -1,4 +1,7 @@
 <?php
-if(!isset($_SESSION)){
+if($_SESSION == array())
+{
+
   header('location:../index.php?cible=accueil');
+
 }
