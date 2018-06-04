@@ -66,6 +66,31 @@ background-attachment: fixed;
 display: flex;
 }
 
+.conteneur_nom_maison{
+	
+	margin-left: 30%;
+	margin-right: 30%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	
+	
+}
+.maison .nom_maison {
+	font-size: 23px;
+	font-weight: bolder;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(0, 117, 196, 0.89);
+	border-radius: 3px;
+	border: 2px solid rgba(0, 0, 0, 0.568);
+	padding:15px;
+	color: white;
+
+	text-align: center;
+	
+	
+} 
 .maison li{
    list-style-type: none;
    list-style-position: inside;
@@ -118,12 +143,11 @@ padding-top: 10px;
 padding-bottom:10px;
 font-family: sans-serif, monospace, serif;
 background-color: rgba(0, 0, 0, 0.952);
-margin-top: 7%;
-margin-left: 15px;
-margin-right: 15px;
 width: 20%;
+
 min-width: 250px;
 min-height: 250px;
+margin-bottom:25px;
 
 }
 
@@ -141,9 +165,6 @@ border-radius: 20px;
 color: #FFF;
 font-size: 23px;
 background-color: rgba(0,0,0,0.93);
-margin-top: 7%;
-margin-left: 15px;
-margin-right: 15px;
 width: 20%;
 min-width: 250px;
 min-height: 250px;

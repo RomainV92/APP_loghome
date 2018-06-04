@@ -29,7 +29,7 @@ body
 .mySlides {
    
   padding: 25px;
-  background-color: #fffffff6;
+  background-color: #fffffff3;
   border-radius: 5px;
   width: 60%;
   margin-left: auto;
@@ -45,8 +45,7 @@ body
 .slideshow-container {
   position: relative;
   margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(15%);
   max-width: 1000px;
   
 }
