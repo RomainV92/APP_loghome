@@ -6,6 +6,8 @@
 
     <div class="footer">
         <nav>
+        <label for="footer-mobile" class="footer-mobile">Footer</label>
+        <input type= "checkbox" id="footer-mobile" role="button" />
         <ul>
             <li><a href="../index?cible=page_legal_and_privacy">Condition d'utilisation</a></li>
             <li><a href="../index?cible=page_faq">F.A.Q.</a></li>

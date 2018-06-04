@@ -1,37 +1,44 @@
-
+.wrapper{
+	margin-bottom: 90px;
+}
 /*body {font-family: Arial, Helvetica, sans-serif;}*/
 
 /* The Modal (background) */
 .modal {
-		display: none; /* Hidden by default */
-		position: fixed; /* Stay in place */
-		z-index: 1; /* Sit on top */
-		padding-top: 100px; /* Location of the box */
-		left: 0;
-		top: 0;
-		width: 100%; /* Full width */
-		height: 100%; /* Full height */
-		overflow: auto; /* Enable scroll if needed */
-		background-color: rgb(0,0,0); /* Fallback color */
-		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-		margin: auto;
-		padding: 20px;
-		border-radius: 20px;
-		width: 30%;
-		background-color: rgba(238, 238, 238, 0.9);
-		margin-top: 7%;
-		display: flex;
-		justify-content: center;
-		}
-
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+	padding: 20px;
+	border-radius: 20px;
+	width: 320px;
+	background-color: rgba(206, 205, 205, 0.973);
+	margin-top: 7%;
+	display: flex;
+	justify-content: center;
+	} 
 .row{
 	margin-bottom: 10px;
 	}
 
+#button_submit{
+	margin-top: 10px;
+	padding: 5px 10px 5px 10px;
+}	
 
 
 /* The Close Button */
@@ -49,10 +56,11 @@
 }
 
 body{
-	background: url("../images/maison3.jpg");
+	background: url("../images/maison19.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-}
+	background-attachment: fixed;
+}	
 
 /*
 body div ul li:hover{
@@ -134,12 +142,15 @@ height: 100%;}
 
 .salon{
 	border-radius: 20px;
+	padding-top: 10px;
+	padding-bottom:10px;
 	padding-right: 45px;
 	font-family: sans-serif, monospace, serif;
-	background-color: rgba(0,0,0,0.9);
+	background-color: rgba(0,0,0,0.95);
 	margin-top: 7%;
 	margin-left: 15px;
 	margin-right: 15px;
+	
 	width: 20%;
 	min-width: 250px;
 	min-height: 250px;
