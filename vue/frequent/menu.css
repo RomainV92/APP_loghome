@@ -9,16 +9,20 @@
 	right: 0px;
 }
 
+
 .Menu body{
-	font-family: Verdana, sans-serif;
+	
 	margin: 0px;
 	padding: 0px;
 }
+
+
 .Menu nav{
 	width: 100%;
 	background-color: #6464686e;
 
 }
+
 
 .Menu nav  ul
 {   /* on utilise '>' pour ne cible que la liste ul qui est enfant direct de nav */
@@ -29,6 +33,7 @@
 	padding: 0px;
 }
 
+
 .Menu nav  ul div
 {
 	display: flex;
@@ -36,10 +41,12 @@
 	align-items: flex-start;
 }
 
+
 .Menu nav li{ /* enleve les puces devant tous les li appartenant a nav */
 	list-style-type: none;
 	text-align: center;
 }
+
 
 .Menu nav  ul  li{    /* affiche seulement les li correspondant à nos onglets de menu en ligne*/
 	display: inline-block;
@@ -56,22 +63,27 @@
 }
 */
 
+
 .Menu .submenu{
 	display: none;
 }
+
 
 .Menu nav input[type=checkbox]{ /*case à cocher invisible*/
 	display: none;
 }
 
+
 .Menu nav label{
 	display: none;
 }
+
 
 .Menu nav a{
 	display: inline-block;
 	text-decoration: none;
 }
+
 
 .Menu nav ul li a{
 	padding: 20px 30px;
@@ -79,13 +91,16 @@
 
 }
 
+
 .Menu nav ul li:hover a{
 	padding: 15px 30px 20px 30px;
 }
 
+
 .Menu .menu-mobile{ /*cache bouton affichant le menu mobile*/
 	display: none;
 }
+
 
 .Menu nav li:hover .submenu{
 	display: inline-block;
@@ -96,39 +111,48 @@
 	z-index: 1000;
 }
 
+
 .Menu .submenu li a{
 	padding: 15px 0px 15px 0px;
 	font-size:  15px;
 	color: white;
 	width:100px;
 }
+
+
 .Menu .submenu li{
 	border-bottom: 1px solid #CCC;
 }
+
 
 #droite
 {
 	margin-right: 0px;
 }
 
+
 .Menu .menu-main:hover{
 	border-top: 5px solid rgb(57, 176, 223);
 	background-color: rgba(57, 176, 223, 0.2);
 }
+
 
 .Menu .menu-main .submenu
 {
 	background-color: rgb(92, 186, 223);
 }
 
+
 .Menu .menu-main .submenu li:hover
 {
 	background-color: rgb(57, 176, 223);
 }
 
+
 .Menu nav input[type=checkbox]:checked ~ ul{ /*case à cocher invisible*/
 	display: block;
 }
+
 
 
 @media screen and (max-width: 780px){
@@ -139,6 +163,8 @@
 		text-align: center;
 		padding: 12px 0px;
 	}
+
+
 	.Menu nav  ul div
 	{
 		display: flex;
@@ -147,9 +173,11 @@
 		align-items: flex-start;
 	}
 
+
 	.Menu nav ul{
 		display: none;
 	}
+
 
 
 	 .Menu nav ul li, nav ul li a{
@@ -157,10 +185,14 @@
 		text-align: left;
 		padding: 10px 0px 10px 0px;
 	}
+
+
 	.Menu nav ul li, nav ul li:hover a{
 		padding: 10px 0px 10px 0px;
 
 	}
+
+
 	.Menu nav li:hover .submenu{
 		display: black;
 		position: static;
@@ -168,18 +200,63 @@
 	}
 
 }
-.menu1
+
+
+.utilisateur
 {
-	font-size: 16px;
+
+
 	color: white;
-	margin-top: 3%;
-	font-family: serif, Verdana, sans-serif;
-	padding: 0px;
 
 }
+
+
+.id
+{
+	color: white;
+	margin-left: 60px;
+
+}
+
 
 #logo
 {
 	height: auto;
 	width: 140px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.menu-main
+{
+
+
+
+
+
+
+
+}
+*/

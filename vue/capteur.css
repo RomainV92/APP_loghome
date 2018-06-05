@@ -1,139 +1,191 @@
-body{
-	  background: url("../images/maison3.jpg");
+.wrapper{
+	margin-bottom: 90px;
 }
-#conteneur {
-	display: flex;
 
-
-}
-.popup-position{
-	display: none;
-	position: fixed;
-	top:0;
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
 	left: 0;
-	background-color: rgba(0,0,0,0.7);
-	width: 100%;
-	height: 100%;}
-
-
-#popup-container{
-/*	background-color: rgba(0,0,0,0.9);
-	border-radius: 10px;
-	padding: 20px;
-	position: absolute;
-	width: 50%;
-	margin-left: 20%;
-	/*margin-right: auto;
-	margin-top: 6%;*/
-	/*text-align: center;*/
-	margin: auto;
-	padding: 20px;
-	border-radius: 20px;
-	width: 20%;
-	height: 30%;
-	background-color: rgba(238, 238, 238, 0.9);
-	margin-top: 7%;
-	display: flex;
-	justify-content: center;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-/*
+
 .modal-content {
-	margin: auto;
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 	padding: 20px;
 	border-radius: 20px;
-	width: 30%;
-	background-color: rgba(238, 238, 238, 0.9);
+	width: 320px;
+	background-color: rgba(206, 205, 205, 0.973);
 	margin-top: 7%;
 	display: flex;
 	justify-content: center;
 	}
-	*/
- .maison li{
-	   list-style-type: none;
-	   list-style-position: inside;
-	 }
-
-.maison a
-{
-	 	display: inline-block;
-	 	text-decoration: none;
-	 	color: white;
-	 }
-
-.maison
-{
-	 	display: flex;
-	 	flex-direction: row;
-	 	justify-content: space-evenly;
-	 	flex-wrap : wrap;
-
-	 }
-
-.salon
-{
-				background-image: url("../images/maison3.jpg");
-				border: 2px solid black;
-				display: block;
-				color: #FFF;
-				background-color: rgba(0,0,0,0.9);
-				text-align: center;
-				font-size: 23px;
-				margin-top: 30px;
-				padding-left: 20px;
-				padding-right: 20px;
-				width: 300px;
-				height: 300px;
-				min-width: 250px;
-				min-height: 250px;
-			}
-
-.ajouter_un_capteur
-{
-							display: block;
-							color: white;
-							background-color: rgba(0,0,0,0.9);
-							border-radius: 10px;
-							text-align: center;
-							width: 17%;
-							height: 30%;
-							font-size: 23px;
-							margin-top: 15%;
-							padding-top: 3%;
-							padding-left: 30px;
-							padding-right: 30px;
-						}
-#plus_rouge
-{
-	width: 50px;
-	height: 50px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#popup-container p a
-{
-	color: black;
-	font-size:20px;
-
-}
 
 .row{
 margin-bottom: 10px;
 }
+#button_submit{
+	margin-top: 10px;
+	padding: 5px 10px 5px 10px;
+}		
+
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover,
+.close:focus
+{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+body{
+background: url("../images/maison3.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+
+#conteneur {
+display: flex;
+}
+
+.conteneur_nom_piece{
+	
+	margin-left: 30%;
+	margin-right: 30%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+	
+	
+}
+.maison .nom_piece {
+	font-size: 23px;
+	font-weight: bolder;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(0, 117, 196, 0.89);
+	border-radius: 3px;
+	border: 2px solid rgba(0, 0, 0, 0.568);
+	padding:15px;
+	color: white;
+
+	text-align: center;
+	
+	
+} 
+.maison li{
+   list-style-type: none;
+   list-style-position: inside;
+
+ }
+
+.maison a{
+display: inline-block;
+text-decoration: none;
+color: rgb(0, 0, 0);
+ }
+
+.maison{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap : wrap
+}
+.salon li{
+list-style: none;
+
+
+}
+
+.salon .informations {
+text-align: left;
+color: #FFF;
+
+}
+.salon .informations td {
+vertical-align: baseline;
 
 
 
-	.close {
-		color: #aaaaaa;
-		float: right;
-		font-size: 28px;
-		font-weight: bold;
+}
+.salon .informations tr .label1 {
+width : 80px;
+height: 30px;
+}
+.salon .informations tr .label2 {
+width: 85px;
+height: 30px;
+
+}
+.salon .informations tr .label3 {
+
+width: 85px;
+height: 30px;
+	
 	}
+.salon{
+border-radius: 20px;
 
-	.close:hover,
-	.close:focus
-	{
-		color: #000;
-		text-decoration: none;
-		cursor: pointer;
-	}
+padding-top: 10px;
+padding-bottom:10px;
+font-family: sans-serif, monospace, serif;
+background-color: rgba(0, 0, 0, 0.952);
+width: 45%;
+min-width: 250px;
+min-height: 250px;
+margin-bottom:25px;
+
+}
+
+
+.ajouter_un_capteur{
+
+border-radius: 20px;
+color: #FFF;
+font-size: 23px;
+background-color: rgba(0,0,0,0.93);
+width: 20%;
+min-width: 250px;
+min-height: 250px;
+
+}
+
+#plus_rouge{
+width: 50px;
+height: 50px;
+margin-left: auto;
+margin-right: auto;
+}
+
+body .maison ul li
+{
+						margin-top: 5%;
+						margin-bottom: 5%;
+						margin-left: 10%;
+						margin-right: 10%;
+
+						border-radius: 10px;
+						padding-top: 5%;
+						padding-bottom: 5%;
+						padding-left: 2%;
+						padding-right: 2%;
+						color: white;
+					}
