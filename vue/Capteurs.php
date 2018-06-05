@@ -20,9 +20,9 @@
     <div class="wrapper">
         <div class="maison" id=conteneur>
 
-        <?php bdd_maisons($capteurs); ?>
+        <?php bdd_capteurs($capteurs); ?>
         <!-- Script pour popup ajout maison -->
-        
+
         <div id="popup-box" class="popup-position">
           <div id="popup-wrapper">
             <div  id="popup-container" class="modal-content">
@@ -54,9 +54,8 @@
                     </div>
                     <div class="col-25">
                       <select name="sensortype" id="sensortype">
-                        <option value="Luminosity">Luminosité</option>
-                        <option value="Temperature">Température</option>
-                        <option value="Motor">Moteur</option>
+                        <?php Choix_senseurs($type_capteur) ?>
+
                       </select>
                     </div>
                   </div>
