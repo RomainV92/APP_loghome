@@ -25,10 +25,6 @@
 
           <!-- Script pour popup ajout maison -->
           <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-=======
-
->>>>>>> 7ec12f08e2867d1dc97f9eb35428f2dbed2f8074
           
 
           <!-- Trigger/Open The Modal -->
