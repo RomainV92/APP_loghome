@@ -12,24 +12,21 @@
         <div class="maison" id=conteneur>
           <?php $nom_de_la_maison = $bdd->query('SELECT nom FROM maison WHERE ID_user=\''.$_SESSION['id_user'].'\' AND ID=\''.$_GET['cible'].'\'' );
                 $nom_maison = $nom_de_la_maison->fetch(); ?>
-          
+
           <div class='conteneur_nom_maison'>
                 <p class='nom_maison'><?php echo 'Vous êtes actuellement dans l\'habitation : '.$nom_maison['nom']; ?></P>
           </div>
-          
+
           <?php
            bdd_maisons($pieces); ?>
-      
-          
-          
+
+
+
 
           <!-- Script pour popup ajout maison -->
           <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
-=======
 
->>>>>>> 7ec12f08e2867d1dc97f9eb35428f2dbed2f8074
-          
+
 
           <!-- Trigger/Open The Modal -->
           <button id="myBtn" class="ajouter_une_piece"><p>Ajouter une piece</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
