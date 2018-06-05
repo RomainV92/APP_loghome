@@ -1,12 +1,16 @@
 <html>
+
 <head>
   <meta name="viewport" content="witdh=device-width, initial-scale=1">
   <link rel='stylesheet' href='../vue/frequent/menu.css'>
 </head>
 
 <div class="Menu">
+
   <body>
+
     <nav>
+
       <label for="menu-mobile" class="menu-mobile">Menu</label>
       <input type= "checkbox" id="menu-mobile" role="button" />
       <ul>
@@ -55,16 +59,27 @@
                 </li>
                 <?php
               } ?>
-             <?php
-                 if(!empty($_SESSION['id_user']))
-                  {
-                    echo  '<p class=\'menu1\' >UTILISATEUR : ' . $_SESSION['Nom'] . '</p>';
-
-                  }
-                    ?>
 
 
 
+
+
+
+        </div>
+
+        <div>
+          <?php
+              if(!empty($_SESSION['id_user']))
+               {?>
+                  <li >
+            <?php
+                   echo  '<p class=\'utilisateur\' >UTILISATEUR : ' . $_SESSION['Nom'].'</p>';?>
+                   </li>
+                   <li>
+                   <?php
+                   echo  '<p class=\'id\'> ID : '. $_SESSION['id_user'].'</p>';?>
+                 </li>
+              <?php   } ?>
 
 
         </div>
@@ -95,8 +110,13 @@
 
           <img id="logo" src="../images/Logo.png" alt="Logo de Log.home" />
         </div>
+
       </ul>
+
     </nav>
+
   </body>
+
 </div>
+
 </html>
