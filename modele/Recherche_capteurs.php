@@ -8,5 +8,5 @@ try
     {
     die('Erreur : '.$e->getMessage());
     }
- $capteurs = $bdd->prepare('SELECT * FROM capteurs WHERE ID_piece=?');
+ $capteurs = $bdd->prepare('SELECT * FROM capteur WHERE ID_piece=?');
  $capteurs-> execute(array($_GET['cible']));
