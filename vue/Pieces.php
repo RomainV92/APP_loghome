@@ -21,16 +21,11 @@
            bdd_maisons($pieces); ?>
 
 
-
+          
 
           <!-- Script pour popup ajout maison -->
           <meta name="viewport" content="width=device-width, initial-scale=1">
-<<<<<<< HEAD
           
-=======
-
-
->>>>>>> bfab2b85ccc66f3cd1cc92d59bb511ff363b7ad0
 
           <!-- Trigger/Open The Modal -->
           <button id="myBtn" class="ajouter_une_piece"><p>Ajouter une piece</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>

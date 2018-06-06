@@ -26,11 +26,20 @@ function bdd_maisons($capteurs){
             <td> <?php echo htmlspecialchars($Dif_capteurs['Type']);?> </td>
           <tr>
           <tr>
-            <td class='label3'> Référence :</td>
+            <td class='label3'> N° série :</td>
             <td> <?php echo htmlspecialchars($Dif_capteurs['Num_Serie']);?> </td>
           <tr>
         </table>
+        <div id='switch_capteur_<?php echo $Dif_capteurs['ID']?>'>
+        
+          <!-- Rounded switch -->
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
 
+        <img class="icone_capteur" src="../images/bulb.png" alt="image-capteur">
         
     </ul>
    </div><?php
