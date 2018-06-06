@@ -1,15 +1,15 @@
 body .maison{
 	display: flex;
 	flex-direction: column;
-	
+
 }
 
 <head .logo{
 	float: right;
 }
  body header >h1 {
- 	float: left;
  	padding-left: 30px;
+	float: left;
   }
 
 	body div li{
