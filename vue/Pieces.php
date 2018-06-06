@@ -25,10 +25,14 @@
 
           <!-- Script pour popup ajout maison -->
           <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
           
+=======
+
+>>>>>>> ea4cb527cd8b4cfd52750977106ce59f544602a9
 
           <!-- Trigger/Open The Modal -->
-          <button id="myBtn" class="ajouter_une_piece"><p>Ajouter une piece</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
+          <button id="myBtn" class="ajouter_une_piece"><p>Ajouter un capteur</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
 
           <!-- The Modal -->
           <div id="myModal" class="modal">

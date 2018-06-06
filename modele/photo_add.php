@@ -1,8 +1,12 @@
 <?php
-  // Create database connection
+session_start();
+try {
+  $bdd = new PDO('mysql:host=localhost;dbname=users;charset=utf8','root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+} catch (\Exception $e) {
 
+  die('Erreur : ' . $e->getmessage() );
 
-
+}
   // Initialize message variable
   $msg = "";
 
@@ -15,6 +19,12 @@
 
   	// image file directory
   	$target = "../images/".basename($image);
+    $basename=basename($image);
+    $update=$bdd->prepare('UPDATE login SET Image_url=:Image_url WHERE ID=:id');
+    $update->execute(array(
+      'Image_url' => $basename,
+      'id' => $_SESSION['id_user'],
+    ));
 
   	//$sql = "INSERT INTO images (image, image_text) VALUES ('$image', '$image_text')";
   	//execute query
@@ -26,3 +36,4 @@
   		$msg = "Failed to upload image";
   	}
   }
+header('location:../index.php?cible=InfosCompte');

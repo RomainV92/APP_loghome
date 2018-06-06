@@ -13,13 +13,14 @@ function appel_bdd()
   }
 }
 
-function Ajout_Type_capteurs_bdd($bdd,$Type,$Nom,$AxeX,$AxeY){
-  $ajout= $bdd->prepare('INSERT INTO capteur_type(type,Nom,AxeX,AxeY) VALUES(:Type,:Nom,:AxeX,:AxeY) ');
+function Ajout_Type_capteurs_bdd($bdd,$Type,$Nom,$AxeX,$AxeY,$Image_url){
+  $ajout= $bdd->prepare('INSERT INTO capteur_type(type,Nom,AxeX,AxeY,Image_url) VALUES(:Type,:Nom,:AxeX,:AxeY,:Image_url) ');
   $ajout -> execute(array(
     'Type'=>$Type,
     'Nom'=>$Nom,
     'AxeX'=>$AxeX,
     'AxeY'=>$AxeY,
+    'Image_url'=>$Image_url,
 ));
 }
 
@@ -91,13 +92,14 @@ function majInfosUser($bdd, $id, $champModif, $modif)
 
 function validation_identifiants($bdd, $login, $mdp)
 {
-  $table = $bdd -> prepare('SELECT ID, Password, Nom FROM login WHERE Pseudo=:nom');
+  $table = $bdd -> prepare('SELECT ID, Password, Nom, Image_url FROM login WHERE Pseudo=:nom');
   $table -> execute(array('nom' => $login));
   $data = $table -> fetch();
   if(password_verify($mdp, $data['Password']))
   {
     $_SESSION['id_user']=$data['ID'];
     $_SESSION['Nom']=$data['Nom'];
+    $_SESSION['Image_url']=$data['Image_url'];
     $table->closeCursor();
 		return $data;
   }

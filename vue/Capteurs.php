@@ -4,27 +4,27 @@
         <title>Capteurs</title>
         <meta charset= "utf-8">
         <link rel='stylesheet' href='../vue/capteur.css'>
-        
+
     </head>
 
     <body>
     <div class="wrapper">
         <div class="maison" id=conteneur>
-        
+
           <?php $nom_de_la_piece = $bdd->query('SELECT nom FROM pieces WHERE ID=\''.$_GET['cible'].'\'' );
                 $nom_piece = $nom_de_la_piece->fetch(); ?>
-          
+
           <div class='conteneur_nom_piece'>
                 <p class='nom_piece'><?php echo 'Vous êtes actuellement dans la pièce : '.$nom_piece['nom']; ?></P>
           </div>
-          
 
 
-        <?php bdd_maisons($capteurs); ?>
-        
+
+        <?php bdd_capteurs($capteurs); ?>
+
         <!-- Script pour popup ajout maison -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-          
+
 
         <!-- Trigger/Open The Modal -->
         <button id="myBtn" class="ajouter_un_capteur"><p>Ajouter un capteur</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
@@ -55,22 +55,21 @@
                   </div>
                 </div>
 
-               
+
                   <div class="row">
                     <div class="col-25">
                       <label for="sensortype">Type de capteur</label>
                     </div>
                     <div class="col-25">
                       <select name="sensortype" id="sensortype">
-                        <option value="Luminosity">Luminosité</option>
-                        <option value="Temperature">Température</option>
-                        <option value="Motor">Moteur</option>
+                        <?php Choix_senseurs($type_capteur) ?>
+
                       </select>
                     </div>
                   </div>
 
                 <input type="submit" id="buttun_submit" value="Ajouter capteur" />
-              
+
             </form>
               <span class="close">&times;</span>
             </div>
@@ -79,7 +78,7 @@
 
 
         </div>
-   
+
     <script>
           // Get the modal
           var modal = document.getElementById('myModal');

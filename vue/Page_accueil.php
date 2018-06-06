@@ -9,11 +9,11 @@
 
   <body  class="wrapper">
 
-      
+
       <div class="slideshow-container">
 
       <div class="mySlides fade">
-    
+
           <h2>Qui sommes nous?</h2>
           <p>
             DOMISEP vous apportera la solution à tous vos tracas du quotidien :
@@ -21,13 +21,14 @@
           tout peut maintenant être automatisé grâce à notre savoir-faire.</br></br>
           Nous travaillons en étroite collaboration avec Log.Home afin d'être en
           mesure de répondre à vos attentes. Essayer nos solutions, c'est les adopter!
+          vous allez adorer!
           </p>
           <img class='img_1' src='../images/Connected.jpg' alt='connecté'>
-        
+
       </div>
 
       <div class="mySlides fade">
-        
+
           <h2>Notre système</h2>
           <p> Composé d'un microcontroleur à la pointe de
             la technologie, ainsi que de capteurs d'une qualité inégalée, notre système
@@ -41,7 +42,7 @@
           <img class='img_1' src='../images/Connected.jpg' alt='connecté'>
       </div>
 
-      <div class="mySlides fade"> 
+      <div class="mySlides fade">
           <h2>Contrôler vos appareils</h2>
           <p> Une configuration de base est installée sur notre système,
             mais si vous souhaitez personnaliser votre appareil,
@@ -57,9 +58,9 @@
       <br>
       <!-- The dots/circles -->
       <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -69,10 +70,10 @@
 
 
 
-  
 
- 
-      
+
+
+
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -91,15 +92,15 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
+  if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none"; 
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block"; 
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
 

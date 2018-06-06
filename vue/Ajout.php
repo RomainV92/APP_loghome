@@ -19,6 +19,7 @@
         <p><label>Votre Mot de passe </label><input type="password" name="Password" id="Password" required></p>
         <p><label>Votre Telephone </label><input type="tel" name="Telephone" id="Telephone" placeholder="Ex: 06 95 82 71 60" required></p>
         <p><label>Votre Mail </label><input type="mail" name="Mail" id="Mail" placeholder="Ex: exemple@exemple.com" required></p>
+        <p><input type="hidden" name="Image_url" value="image_Log.png"></p>
         <p><label >Entrez votre question secrète </label>
         <select name="Question" id="Question">
           <option value="type1">Le nom de votre premier animal de compagnie</option>
@@ -35,7 +36,7 @@
       <span class="Error"><?php echo $Error_message; ?></span>
     </div>
   </div>
-  
+
 </body>
 
 </html>
