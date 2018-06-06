@@ -44,8 +44,6 @@
               if(isset($_SESSION['id_user'])){ ?>
             <li class="menu-main"><a href="#">MON COMPTE</a>
               <ul class="submenu">
-                <li><a href="../index.php?cible=deconnexion">Déconnexion</a></li>
-                <li><a href="../index.php?cible=Page_capteurs">Mes capteurs</a></li>
                 <li><a href="../index.php?cible=InfosCompte">Mes informations</a></li>
                 <li><a href="../index.php?cible=Page_aide">Aide</a></li>
               </ul>

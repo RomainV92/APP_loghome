@@ -13,13 +13,14 @@ function appel_bdd()
   }
 }
 
-function Ajout_Type_capteurs_bdd($bdd,$Type,$Nom,$AxeX,$AxeY){
-  $ajout= $bdd->prepare('INSERT INTO capteur_type(type,Nom,AxeX,AxeY) VALUES(:Type,:Nom,:AxeX,:AxeY) ');
+function Ajout_Type_capteurs_bdd($bdd,$Type,$Nom,$AxeX,$AxeY,$Image_url){
+  $ajout= $bdd->prepare('INSERT INTO capteur_type(type,Nom,AxeX,AxeY,Image_url) VALUES(:Type,:Nom,:AxeX,:AxeY,:Image_url) ');
   $ajout -> execute(array(
     'Type'=>$Type,
     'Nom'=>$Nom,
     'AxeX'=>$AxeX,
     'AxeY'=>$AxeY,
+    'Image_url'=>$Image_url,
 ));
 }
 

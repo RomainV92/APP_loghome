@@ -36,16 +36,24 @@
   <?php All_capteurs($type_capteurs)?>
   <form name="ajouter_capteur" method="post" action="../modele/ajouter_type_capteur.php">
     <label>Ajouter un nouveau type de capteur</label>
-      <p><label>Entrer le numero type du capteur: </label><input type="text" name="type_capteur" id="type"></p>
-      <p><label>Nom de votre nouveau capteur: <input type="text" name="Nom_capteur" id="Nom"></p>
-      <p><label>Quelle est l'unité a employé pour votre capteur?</label> <input type="text" name="AxeX" id="AxeX"></p>
-      <p><label>En fonction de quelle unité? (nous recommandons le temps) </label><input type="text" name="AxeY" id="AxeY"></p>
-      <div>
-        <button type="submit" name="Nouveau_type" id="Nouveau_type">Ajouter nouveau type de capteur</button>
+      <p><label>Entrer le numero type du capteur: </label><input type="text" name="type_capteur" id="type" required></p>
+      <p><label>Nom de votre nouveau capteur: <input type="text" name="Nom_capteur" id="Nom" required></p>
+      <p><label>Quelle est l'unité a employé pour votre capteur?</label> <input type="text" name="AxeX" id="AxeX" required></p>
+      <p><label>En fonction de quelle unité? (nous recommandons le temps) </label><input type="text" name="AxeY" id="AxeY" required></p>
+      <p><label>veuillez rentrer une photo pour le capteur</label><input type="hidden" name="size" value="1000000">
+              <input type="file" name="image" required>
+          </form>
+          <div>
+
+            <button type="submit" name="Nouveau_type" id="Nouveau_type">Ajouter nouveau type de capteur</button>
+          </div>
+        </form>
+        <button name="reduire" id="reduire"> Fermer fenetre des capteurs</button>
       </div>
-    </form>
-    <button name="reduire" id="reduire"> Fermer fenetre des capteurs</button>
-  </div>
+        </div>
+      <div>
+
+
 
 <script>
 var form=document.getElementById('form_capteur');
