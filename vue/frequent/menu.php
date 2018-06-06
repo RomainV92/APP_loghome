@@ -47,7 +47,9 @@
                 <li><a href="../index.php?cible=InfosCompte">Mes informations</a></li>
                 <li><a href="../index.php?cible=Page_aide">Aide</a></li>
               </ul>
+
             </li>
+
               <?php
               }
               else
@@ -55,6 +57,7 @@
                 <li class="menu-main"><a href="../index.php?cible=Page_connexion">MON COMPTE</a>
 
                 </li>
+
                 <?php
               } ?>
 
@@ -67,8 +70,17 @@
 
         <div>
           <?php
+          if(isset($_SESSION['Image_url'])){
+            $image_menu=$_SESSION['Image_url'];}
+          else{
+            $image_menu='image_Log.png';
+            }
+           ?>
+            
+          <?php
               if(!empty($_SESSION['id_user']))
                {?>
+                   <img src="../images/<?php echo $image_menu ?>" class="image_profil">
                   <li >
             <?php
                    echo  '<p class=\'utilisateur\' >UTILISATEUR : ' . $_SESSION['Nom'].'</p>';?>
