@@ -1,3 +1,4 @@
+
 .wrapper{
 	margin-bottom: 90px;
 }
@@ -36,7 +37,7 @@ margin-bottom: 10px;
 #button_submit{
 	margin-top: 10px;
 	padding: 5px 10px 5px 10px;
-}		
+}
 
 
 /* The Close Button */
@@ -67,14 +68,14 @@ display: flex;
 }
 
 .conteneur_nom_piece{
-	
+
 	margin-left: 30%;
 	margin-right: 30%;
 	padding-top: 30px;
 	padding-bottom: 30px;
 
-	
-	
+
+
 }
 .maison .nom_piece {
 	font-size: 23px;
@@ -88,9 +89,9 @@ display: flex;
 	color: white;
 
 	text-align: center;
-	
-	
-} 
+
+
+}
 .maison li{
    list-style-type: none;
    list-style-position: inside;
@@ -109,15 +110,25 @@ flex-direction: row;
 justify-content: space-evenly;
 flex-wrap : wrap
 }
+
+.graphes{
+	display: inline-block;
+}
 .salon li{
 list-style: none;
 
 
 }
 
+
 .salon .informations {
 text-align: left;
+float:left;
 color: #FFF;
+display: inline-block;
+margin-right: 12%;
+border: 1px solid white;
+
 
 }
 .salon .informations td {
@@ -139,7 +150,7 @@ height: 30px;
 
 width: 85px;
 height: 30px;
-	
+
 	}
 .salon{
 border-radius: 20px;
@@ -149,8 +160,8 @@ padding-bottom:10px;
 font-family: sans-serif, monospace, serif;
 background-color: rgba(0, 0, 0, 0.952);
 width: 45%;
-min-width: 250px;
-min-height: 250px;
+min-width: 550px;
+min-height: 300px;
 margin-bottom:25px;
 
 }

@@ -21,7 +21,7 @@ $ajout = $bdd->prepare('INSERT INTO capteur(ID_piece,Num_Serie,Valeur,Nom,Type) 
 $ajout->execute(array(
   'ID_piece' => $id_piece,
   'Num_Serie' => $reference,
-  'Valeur' => ' ',
+  'Valeur' => 0,
   'Nom' => $nom,
   'Type' => $type,
 ));
