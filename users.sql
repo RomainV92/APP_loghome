@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.9
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Jun 06, 2018 at 12:47 PM
--- Server version: 5.7.19
--- PHP Version: 5.6.31
+-- Hôte : 127.0.0.1:3306
+-- Généré le :  mer. 06 juin 2018 à 20:51
+-- Version du serveur :  5.7.21
+-- Version de PHP :  5.6.35
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `users`
+-- Base de données :  `urser`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `capteur`
+-- Structure de la table `capteur`
 --
 
 DROP TABLE IF EXISTS `capteur`;
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `capteur` (
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `capteur`
+-- Déchargement des données de la table `capteur`
 --
 
 INSERT INTO `capteur` (`ID`, `ID_piece`, `Num_Serie`, `Valeur`, `Nom`, `Type`) VALUES
@@ -50,7 +50,7 @@ INSERT INTO `capteur` (`ID`, `ID_piece`, `Num_Serie`, `Valeur`, `Nom`, `Type`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `capteur_type`
+-- Structure de la table `capteur_type`
 --
 
 DROP TABLE IF EXISTS `capteur_type`;
@@ -62,20 +62,23 @@ CREATE TABLE IF NOT EXISTS `capteur_type` (
   `AxeY` text NOT NULL,
   `Image_url` text NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `capteur_type`
+-- Déchargement des données de la table `capteur_type`
 --
 
 INSERT INTO `capteur_type` (`ID`, `type`, `Nom`, `AxeX`, `AxeY`, `Image_url`) VALUES
 (10, '', '', '', '', ''),
-(9, '3', 'température', 'Celcius', 'secondes', '');
+(9, '3', 'température', 'Celcius', 'secondes', ''),
+(11, 'température', 'température', '', '', '../images/temperature.png'),
+(12, 'luminosité', 'luminosité', '', '', '../images/bulb.png'),
+(15, 'moteur', 'moteur', '', '', '../images/ventilation.png');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `login`
+-- Structure de la table `login`
 --
 
 DROP TABLE IF EXISTS `login`;
@@ -94,7 +97,7 @@ CREATE TABLE IF NOT EXISTS `login` (
 ) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `login`
+-- Déchargement des données de la table `login`
 --
 
 INSERT INTO `login` (`ID`, `Nom`, `Prenom`, `Pseudo`, `Password`, `Telephone`, `Mail`, `Question`, `Answer`, `Image_url`) VALUES
@@ -108,7 +111,7 @@ INSERT INTO `login` (`ID`, `Nom`, `Prenom`, `Pseudo`, `Password`, `Telephone`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `maison`
+-- Structure de la table `maison`
 --
 
 DROP TABLE IF EXISTS `maison`;
@@ -125,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `maison` (
 ) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `maison`
+-- Déchargement des données de la table `maison`
 --
 
 INSERT INTO `maison` (`ID`, `ID_user`, `adresse`, `Street`, `Postal`, `superficie`, `nom`, `City`) VALUES
@@ -143,7 +146,7 @@ INSERT INTO `maison` (`ID`, `ID_user`, `adresse`, `Street`, `Postal`, `superfici
 -- --------------------------------------------------------
 
 --
--- Table structure for table `pieces`
+-- Structure de la table `pieces`
 --
 
 DROP TABLE IF EXISTS `pieces`;
@@ -156,7 +159,7 @@ CREATE TABLE IF NOT EXISTS `pieces` (
 ) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `pieces`
+-- Déchargement des données de la table `pieces`
 --
 
 INSERT INTO `pieces` (`ID`, `ID_maison`, `Nom`, `Superficie`) VALUES
@@ -167,7 +170,7 @@ INSERT INTO `pieces` (`ID`, `ID_maison`, `Nom`, `Superficie`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `util_maisons`
+-- Structure de la table `util_maisons`
 --
 
 DROP TABLE IF EXISTS `util_maisons`;
@@ -179,7 +182,7 @@ CREATE TABLE IF NOT EXISTS `util_maisons` (
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `util_maisons`
+-- Déchargement des données de la table `util_maisons`
 --
 
 INSERT INTO `util_maisons` (`ID_maison`, `ID_utilisateur`, `ID`) VALUES

@@ -13,7 +13,7 @@ include('../vue/frequent/menu.php');
 include('../vue/Capteurs.php');
 include('../vue/frequent/footer.php');
 
-function bdd_capteurs($capteurs){
+function bdd_capteurs($capteurs,$bdd){
   while($Dif_capteurs=$capteurs->fetch()){?>
     <div class="salon">
     <ul>
@@ -31,8 +31,7 @@ function bdd_capteurs($capteurs){
             <td> <?php echo htmlspecialchars($Dif_capteurs['Num_Serie']);?> </td>
           <tr>
         </table>
-<<<<<<< HEAD
-        <div id='switch_capteur_<?php echo $Dif_capteurs['ID']?>'>
+        <div id='switch_capteur_<?php echo $Dif_capteurs['ID'];?>'>
         
           <!-- Rounded switch -->
           <label class="switch">
@@ -40,11 +39,14 @@ function bdd_capteurs($capteurs){
             <span class="slider round"></span>
           </label>
         </div>
+        <?php 
+                
+                $type = $Dif_capteurs['Type'];
+                $Image_url_capteur=Trouver_image_url_capteurs($bdd,$type);
+                $url= $Image_url_capteur->fetch(); ?>
 
-        <img class="icone_capteur" src="../images/bulb.png" alt="image-capteur">
+        <img class="icone_capteur" src="<?php echo $url['Image_url'];?>" alt="image-capteur">
         
-=======
->>>>>>> ea4cb527cd8b4cfd52750977106ce59f544602a9
     </ul>
    </div><?php
   }

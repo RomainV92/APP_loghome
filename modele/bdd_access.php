@@ -41,7 +41,11 @@ function Trouver_types_capteurs($bdd){
   $type_capteur -> execute(array());
   return $type_capteur;
 }
-
+function Trouver_image_url_capteurs($bdd,$type){
+  $Image_url_capteur = $bdd->prepare('SELECT Image_url FROM capteur_type WHERE type=\''.$type.'\'' );
+  $Image_url_capteur -> execute(array());
+  return $Image_url_capteur;
+}
 
 function Recup_user($bdd,$pseudo)
 {
