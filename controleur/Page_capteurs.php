@@ -13,7 +13,7 @@ include('../vue/frequent/menu.php');
 include('../vue/Capteurs.php');
 include('../vue/frequent/footer.php');
 
-function bdd_capteurs($capteurs){
+function bdd_capteurs($capteurs,$bdd){
   while($Dif_capteurs=$capteurs->fetch()){?>
     <div class="salon">
     <ul>
@@ -27,15 +27,10 @@ function bdd_capteurs($capteurs){
             <td> <?php echo htmlspecialchars($Dif_capteurs['Type']);?> </td>
           <tr>
           <tr>
-            <td class='label3'> Référence :</td>
+            <td class='label3'> N° série :</td>
             <td> <?php echo htmlspecialchars($Dif_capteurs['Num_Serie']);?> </td>
           <tr>
         </table>
-        <p class="text_cocher">activer capteur</p>
-  <label class="switch">
-    <input type="checkbox">
-  <span class="slider round"></span>
-</label>
     </ul>
    </div><?php
   }

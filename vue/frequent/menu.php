@@ -80,8 +80,11 @@
           <?php
               if(!empty($_SESSION['id_user']))
                {?>
+                  <li>
                    <img src="../images/<?php echo $image_menu ?>" class="image_profil">
-                  <li >
+                  </li>
+                  
+                   <li >
             <?php
                    echo  '<p class=\'utilisateur\' >UTILISATEUR : ' . $_SESSION['Nom'].'</p>';?>
                    </li>

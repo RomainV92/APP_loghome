@@ -20,7 +20,7 @@
            <div id="barchart_values" style="width: 900px; height: 500px;"></div>
 
 
-          <?php bdd_capteurs($capteurs); ?>
+        <?php bdd_capteurs($capteurs,$bdd); ?>
 
           <!-- Script pour popup ajout maison -->
           <meta name="viewport" content="width=device-width, initial-scale=1">
