@@ -5,7 +5,7 @@ include('../modele/Recherche_capteurs.php');
 include('../modele/bdd_access.php');
 $bdd=appel_bdd();
 $type_capteur=Trouver_types_capteurs($bdd);
-
+include('../controleur/graphes_capteurs.php');
 include('../modele/bdd_access_maison.php');
 include('../modele/redirection_si_deco.php');
 
@@ -31,6 +31,11 @@ function bdd_capteurs($capteurs){
             <td> <?php echo htmlspecialchars($Dif_capteurs['Num_Serie']);?> </td>
           <tr>
         </table>
+        <p class="text_cocher">activer capteur</p>
+  <label class="switch">
+    <input type="checkbox">
+  <span class="slider round"></span>
+</label>
     </ul>
    </div><?php
   }

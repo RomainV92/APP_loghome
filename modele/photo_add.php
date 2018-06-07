@@ -19,7 +19,8 @@ try {
 
   	// image file directory
   	$target = "../images/".basename($image);
-    $basename=basename($image);
+    $basename=basename($image);;
+    $_SESSION['Image_url']=basename($image);
     $update=$bdd->prepare('UPDATE login SET Image_url=:Image_url WHERE ID=:id');
     $update->execute(array(
       'Image_url' => $basename,
