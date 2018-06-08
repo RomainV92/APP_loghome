@@ -18,7 +18,7 @@ try {
 
 
   	// image file directory
-  	$target = "../images/".basename($image);
+  	$target = "../images/Profil/".basename($image);
     $basename=basename($image);;
     $_SESSION['Image_url']=basename($image);
     $update=$bdd->prepare('UPDATE login SET Image_url=:Image_url WHERE ID=:id');
