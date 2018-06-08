@@ -59,10 +59,20 @@ function bdd_maisons($Infos_maisons){
 
 
         <div>
-          <a class=ajouter_un_utilisateur href="javascript:void(0)" onclick="toggle_visibility('popup_ajout<?php echo $Dif_maisons['ID']?>')">Ajouter un utilisateur</a>
+        <!--  <a class=ajouter_un_utilisateur href="javascript:void(0)" onclick="toggle_visibility('popup_ajout<?php echo $Dif_maisons['ID']?>')">Ajouter un utilisateur</a>
+        -->
+          <a class="ajouter_un_utilisateur" href="javascript:void(0)" onclick="valiDelete(<?php echo $Dif_maisons['ID'] ?>)">Supprimer</a>
         </div>
       </ul>
     </div><?php
   }
 }
+
+if(isset($_POST['idMaison']) AND !empty($_POST['idMaison']))
+{
+  $id = $_POST['idMaison'];
+  $maisons = $bdd->prepare('DELETE from maison WHERE ID=:id');
+  $maison->execute(array('id'=>$id));
+}
+
 ?>

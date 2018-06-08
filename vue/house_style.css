@@ -17,6 +17,11 @@
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+#msg
+{
+	display: none;
+}
+
 /* Modal Content */
 .modal-content {
 	margin-left: auto;
@@ -30,7 +35,7 @@
 	margin-top: 7%;
 	display: flex;
 	justify-content: center;
-	} 
+	}
 .row{
 	margin-bottom: 10px;
 	}
@@ -38,7 +43,7 @@
 #button_submit{
 	margin-top: 10px;
 	padding: 5px 10px 5px 10px;
-}	
+}
 
 
 /* The Close Button */
@@ -60,7 +65,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 	background-attachment: fixed;
-}	
+}
 
 /*
 body div ul li:hover{
@@ -150,7 +155,7 @@ height: 100%;}
 	margin-top: 7%;
 	margin-left: 15px;
 	margin-right: 15px;
-	
+
 	width: 20%;
 	min-width: 250px;
 	min-height: 250px;
