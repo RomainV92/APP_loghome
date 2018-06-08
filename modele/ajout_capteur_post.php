@@ -16,7 +16,7 @@ $reference=$_POST['reference'];
 $id_piece=$_GET['cible'];
 
 //$id_user=$_SESSION['id_user'];
-$ajout = $bdd->prepare('INSERT INTO capteur(ID_piece,Num_Serie,Valeur,Nom,Type) VALUES(:ID_piece,:Num_Serie,:Valeur,:Nom,:Type)');
+$ajout = $bdd->prepare('INSERT INTO capteur(ID_piece,Num_Serie,Valeur,Nom,Type,Status) VALUES(:ID_piece,:Num_Serie,:Valeur,:Nom,:Type,:Status)');
 // Requête d'insertion,
 $ajout->execute(array(
   'ID_piece' => $id_piece,
@@ -24,6 +24,7 @@ $ajout->execute(array(
   'Valeur' => 0,
   'Nom' => $nom,
   'Type' => $type,
+  'Status'=>0,
 ));
 
 
