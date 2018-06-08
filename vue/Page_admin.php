@@ -9,7 +9,9 @@
 
 
   <body>
+    <h1>Administrateur</h1><img src="../images/Logo" alt="logo" class="logo">
   <div id="content">
+    <h3>Ajouter une image</h3>
     <form method="POST" action="../modele/photo_add.php" enctype="multipart/form-data">
     	<input type="hidden" name="size" value="1000000">
     	<div>
@@ -24,34 +26,39 @@
         	placeholder="Say something about this image..."></textarea>
     	</div>
     	<div>
-    		<button type="submit" name="upload">POST</button>
+    		<button type="submit" name="upload">Poster</button>
     	</div>
     </form>
   </div>
 
   <!-- Formulaire avec tous les types de capteurs et le pouvoir d'en ajouter ou supprimer !-->
-
-  <button name="capteur" id="capteurs">Types:Capteurs</button>
+</br>
+  <button name="capteur" id="capteurs">Types de capteurs</button></br>
 <div id="form_capteur">
   <?php All_capteurs($type_capteurs)?>
-  <form name="ajouter_capteur" method="post" action="../modele/ajouter_type_capteur.php">
-    <label>Ajouter un nouveau type de capteur</label>
-      <p><label>Entrer le numero type du capteur: </label><input type="text" name="type_capteur" id="type" required></p>
-      <p><label>Nom de votre nouveau capteur: <input type="text" name="Nom_capteur" id="Nom" required></p>
-      <p><label>Quelle est l'unité a employé pour votre capteur?</label> <input type="text" name="AxeX" id="AxeX" required></p>
-      <p><label>En fonction de quelle unité? (nous recommandons le temps) </label><input type="text" name="AxeY" id="AxeY" required></p>
-      <p><label>veuillez rentrer une photo pour le capteur</label><input type="hidden" name="size" value="1000000">
+</br>
+  <div class="ajout_capteur">
+    <form name="ajouter_capteur" method="post" action="../modele/ajouter_type_capteur.php">
+      <label>Ajouter un nouveau type de capteur</label>
+          <p><label>Entrer le type du capteur: </label><input type="text" name="type_capteur" id="type" required></p>
+          <p><label>Nom du nouveau capteur: <input type="text" name="Nom_capteur" id="Nom" required></p>
+          <p><label>Quelle est l'unité a employer pour votre capteur?</label> <input type="text" name="AxeX" id="AxeX" required></p>
+          <p><label>En fonction de quelle unité ? (temps recommandé) </label><input type="text" name="AxeY" id="AxeY" required></p>
+          <p><label>veuillez rentrer une photo pour le capteur</label><input type="hidden" name="size" value="1000000">
               <input type="file" name="image" required>
-          </form>
-          <div>
+    </form>
+    <div>
 
-            <button type="submit" name="Nouveau_type" id="Nouveau_type">Ajouter nouveau type de capteur</button>
-          </div>
-        </form>
-        <button name="reduire" id="reduire"> Fermer fenetre des capteurs</button>
+            <button type="submit" name="Nouveau_type" id="Nouveau_type">Ajouter ce nouveau type de capteur</button>
+    </div>
+  </div>
+
+  <button name="reduire" id="reduire"> Fermer la fenêtre des capteurs</button></br>
       </div>
-        </div>
-      <div>
+
+
+
+      </br>
 
 
 
@@ -145,14 +152,17 @@ capteurs.onclick = function(){
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
   </body>
   </html>
-
+</br>
   <a id="delete-button" href="../index.php?cible=deconnexion">Disconnect</a>
-
+</br>
+</br>
   <button id="voir_util">Voir utilisateurs</button>
+</br>
 <div id="utilisateurs">
 <?php Trouver_users($utilisateurs); ?>
+</br>
 <button id="fermer_util"> Fermer deroulant utilisateurs </button>
-
+</br>
 </div>
 
 <script>
