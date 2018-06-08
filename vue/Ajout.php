@@ -16,8 +16,8 @@
         <p>Votre Nom </p>
         <input id="Nom" type="text" name="Nom" id="Nom" required>
         <p><label>Votre Identifiant </label><input type="text" name="Pseudo" id="Pseudo" required></p>
-        <p><label>Votre Mot de passe </label><input type="password" name="Password" id="Password" required></p>
-        <p><label>Votre Telephone </label><input type="tel" name="Telephone" id="Telephone" placeholder="Ex: 06 95 82 71 60" required></p>
+        <p><label>Votre Mot de passe </label><input type="password" name="Password" id="Password"  placeholder="Min. 7 caratères dont une maj. et un chiffre" required></p>
+        <p><label>Votre Telephone </label><input type="tel" name="Telephone" id="Telephone" placeholder="Ex: 0695827150" required></p>
         <p><label>Votre Mail </label><input type="mail" name="Mail" id="Mail" placeholder="Ex: exemple@exemple.com" required></p>
         <p><input type="hidden" name="Image_url" value="image_Log.png"></p>
         <p><label >Entrez votre question secrète </label>
