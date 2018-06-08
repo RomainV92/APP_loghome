@@ -120,7 +120,9 @@ list-style: none;
 
 }
 
-
+.delete{
+	color:white;
+}
 .salon .informations {
 text-align: left;
 float:left;

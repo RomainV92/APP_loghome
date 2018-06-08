@@ -32,7 +32,7 @@ function bdd_capteurs($capteurs,$bdd){
           <tr>
         </table>
     </ul>
-    <a href="../controleur/Supprimer_capteur.php?cible=<?php echo $Dif_capteurs['ID'] ?>">Supprimer</a>
+    <a href="../controleur/Supprimer_capteur.php?cible=<?php echo $Dif_capteurs['ID']?>" class='delete' ?>">Supprimer</a>
    </div><?php
   }
 }
