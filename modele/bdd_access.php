@@ -1,4 +1,4 @@
-<?php
+ro<?php
 
 function appel_bdd()
 {
@@ -42,7 +42,7 @@ function Trouver_types_capteurs($bdd){
   return $type_capteur;
 }
 function Trouver_image_url_capteurs($bdd,$type){
-  $Image_url_capteur = $bdd->prepare('SELECT Image_url FROM capteur_type WHERE type=\''.$type.'\'' );
+  $Image_url_capteur = $bdd->prepare('SELECT Image_url FROM capteur_type WHERE Nom=\''.$type.'\'' );
   $Image_url_capteur -> execute(array());
   return $Image_url_capteur;
 }

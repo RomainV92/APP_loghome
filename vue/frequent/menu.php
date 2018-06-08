@@ -76,14 +76,14 @@
             $image_menu='image_Log.png';
             }
            ?>
-            
+
           <?php
               if(!empty($_SESSION['id_user']))
                {?>
                   <li>
-                   <img src="../images/<?php echo $image_menu ?>" class="image_profil">
+                   <img src="../images/Profil/<?php echo $image_menu ?>" class="image_profil">
                   </li>
-                  
+
                    <li >
             <?php
                    echo  '<p class=\'utilisateur\' >UTILISATEUR : ' . $_SESSION['Nom'].'</p>';?>
