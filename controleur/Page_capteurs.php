@@ -31,7 +31,25 @@ function bdd_capteurs($capteurs,$bdd){
             <td> <?php echo htmlspecialchars($Dif_capteurs['Num_Serie']);?> </td>
           <tr>
         </table>
+        <div id='switch_capteur_<?php echo $Dif_capteurs['ID']?>'>
+        
+          <!-- Rounded switch -->
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <?php 
+                
+               $type = $Dif_capteurs['Type'];
+               $Image_url_capteur=Trouver_image_url_capteurs($bdd,$type);
+               $url= $Image_url_capteur->fetch(); ?>
+ 
+        <img class="icone_capteur" src="<?php echo $url['Image_url']?>" alt="image-capteur">
+
+
     </ul>
+
    </div><?php
   }
 }
