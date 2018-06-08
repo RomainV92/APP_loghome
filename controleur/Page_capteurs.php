@@ -49,7 +49,11 @@ function bdd_capteurs($capteurs,$bdd){
 
 
     </ul>
+<<<<<<< HEAD
 
+=======
+    <a href="../controleur/Supprimer_capteur.php?cible=<?php echo $Dif_capteurs['ID'] ?>">Supprimer</a>
+>>>>>>> 95627cb9fbd0b8b2bd1ff23f044f36aded781b0a
    </div><?php
   }
 }
