@@ -2,6 +2,11 @@
 .wrapper{
 	margin-bottom: 90px;
 }
+.delete{
+
+	background-color: blue;
+	color: #FFF	;
+}
 
 /* The Modal (background) */
 .modal {
@@ -120,7 +125,6 @@ list-style: none;
 
 }
 
-
 .salon .informations {
 text-align: left;
 float:left;
@@ -200,7 +204,7 @@ body .maison ul li
 						color: white;
 					}
 
-				
+
 /* The switch - the box around the slider */
 .switch {
 	  position: relative;
@@ -209,10 +213,10 @@ body .maison ul li
 	  height: 34px;
 	  margin-left: 15px;
 	}
-	
+
 	/* Hide default HTML checkbox */
 	.switch input {display:none;}
-	
+
 	/* The slider */
 	.slider {
 	  position: absolute;
@@ -225,7 +229,7 @@ body .maison ul li
 	  -webkit-transition: .4s;
 	  transition: .4s;
 	}
-	
+
 	.slider:before {
 	  position: absolute;
 	  content: "";
@@ -237,29 +241,29 @@ body .maison ul li
 	  -webkit-transition: .4s;
 	  transition: .4s;
 	}
-	
-	
-	
-	
+
+
+
+
 	input:checked + .slider {
 	  background-color: rgb(0, 201, 10);
 	}
-	
+
 	input:focus + .slider {
 	  box-shadow: 0 0 1px rgb(0, 201, 10);
 	}
-	
+
 	input:checked + .slider:before {
 	  -webkit-transform: translateX(50px);
 	  -ms-transform: translateX(50px);
 	  transform: translateX(50px);
 	}
-	
+
 	/* Rounded sliders */
 	.slider.round {
 	  border-radius: 34px;
 	}
-	
+
 	.slider.round:before {
 	  border-radius: 50%;
 	}

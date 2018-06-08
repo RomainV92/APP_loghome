@@ -29,31 +29,28 @@ function bdd_capteurs($capteurs,$bdd){
           <tr>
             <td class='label3'> N° série :</td>
             <td> <?php echo htmlspecialchars($Dif_capteurs['Num_Serie']);?> </td>
+
           <tr>
         </table>
         <div id='switch_capteur_<?php echo $Dif_capteurs['ID']?>'>
-        
+<div><a href="../controleur/Supprimer_capteur.php?cible=<?php echo $Dif_capteurs['ID']?>" class="delete">Supprimer</a></div>
           <!-- Rounded switch -->
           <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
           </label>
         </div>
-        <?php 
-                
+        <?php
+
                $type = $Dif_capteurs['Type'];
                $Image_url_capteur=Trouver_image_url_capteurs($bdd,$type);
                $url= $Image_url_capteur->fetch(); ?>
- 
-        <img class="icone_capteur" src="<?php echo $url['Image_url']?>" alt="image-capteur">
+
+        <img class="icone_capteur" src="../images/<?php echo $url['Image_url']?>" alt="image-capteur">
 
 
     </ul>
-<<<<<<< HEAD
 
-=======
-    <a href="../controleur/Supprimer_capteur.php?cible=<?php echo $Dif_capteurs['ID'] ?>">Supprimer</a>
->>>>>>> 95627cb9fbd0b8b2bd1ff23f044f36aded781b0a
    </div><?php
   }
 }
