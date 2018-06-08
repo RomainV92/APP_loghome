@@ -36,6 +36,7 @@
   <button name="capteur" id="capteurs">Types de capteurs</button></br>
 <div id="form_capteur">
   <?php All_capteurs($type_capteurs)?>
+<<<<<<< HEAD
 </br>
   <div class="ajout_capteur">
     <form name="ajouter_capteur" method="post" action="../modele/ajouter_type_capteur.php">
@@ -54,6 +55,24 @@
   </div>
 
   <button name="reduire" id="reduire"> Fermer la fenêtre des capteurs</button></br>
+=======
+  <form name="ajouter_capteur" method="post" action="../modele/ajouter_type_capteur.php" enctype="multipart/form-data">
+    <label>Ajouter un nouveau type de capteur</label>
+      <p><label>Entrer le numero type du capteur: </label><input type="text" name="type_capteur" id="type" required></p>
+      <p><label>Nom de votre nouveau capteur: <input type="text" name="Nom_capteur" id="Nom" required></p>
+      <p><label>Quelle est l'unité a employé pour votre capteur?</label> <input type="text" name="AxeX" id="AxeX" required></p>
+      <p><label>En fonction de quelle unité? (nous recommandons le temps) </label><input type="text" name="AxeY" id="AxeY" required></p>
+      <p><label>veuillez rentrer une photo pour le capteur</label><input type="hidden" name="size" value="1000000">
+              <input type="file" name="image" required>
+                <button type="submit" name="upload" id="Nouveau_type">Ajouter nouveau type de capteur</button>
+          </form>
+          <div>
+
+
+          </div>
+        </form>
+        <button name="reduire" id="reduire"> Fermer fenetre des capteurs</button>
+>>>>>>> 4011d57f341005d6b0b1b7cba8417918dcc584f6
       </div>
 
 
