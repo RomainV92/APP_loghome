@@ -2,10 +2,9 @@
 session_start();
 include('../modele/AjoutBDD.php');
 $direction=Ajout($bdd);
-$Direction='"CreerCompte_Erreur.php"';
 
-if ($direction==1)
-{
+
+
   $to = $_POST['Mail'];
   $subject = "Confirmation Compte LOG.HOME";
   $txt = "Bienvenue ".$_POST['Prenom'].",\r\n
@@ -22,9 +21,6 @@ if ($direction==1)
   
 }
 
-else
-{
-  header('Location:../index.php?cible=CreerCompte_Erreur');
-}
+
 
 include('../vue/frequent/footer.php');
