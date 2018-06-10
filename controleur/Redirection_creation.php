@@ -3,6 +3,7 @@ session_start();
 include('../modele/AjoutBDD.php');
 $direction=Ajout($bdd);
 
+if ($direction == 1){
 
 
   $to = $_POST['Mail'];
@@ -21,6 +22,9 @@ $direction=Ajout($bdd);
   
 }
 
+else {
+  header('Location:../index.php?cible=CreerCompte_Erreur');
+}
 
 
-include('../vue/frequent/footer.php');
+

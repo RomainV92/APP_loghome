@@ -13,7 +13,7 @@
 
 
 
-      <form method="post" action=<?php echo $redirection; ?> id="myForm">
+      <form method="post" action='<?php echo $redirection?>' id="myForm">
         
         <label>Votre Prenom</label>
         <input type="text" name="Prenom" id="Prenom" required/>
@@ -24,8 +24,8 @@
         <span class="tooltip">Un nom ne peut pas faire moins de 2 caractères.</span>
 
 
-        <label>Votre Identifiant </label>
-        <input type="text" name="sseudo" id="Pseudo" required>
+        <label>Votre Identifiant </label> <span class="Error"><?php echo $Error_message; ?></span>
+        <input type="text" name="Pseudo" id="Pseudo" required>
         <span class="tooltip">Le pseudo ne peut pas faire moins de 4 caractères.</span>
 
 
@@ -40,7 +40,7 @@
 
 
         <label>Votre Téléphone </label>
-        <input type="tel" name="Telephone" id="Telephone" placeholder="Ex: 0695827150" required  >
+        <input type="text" name="Telephone" id="Telephone" placeholder="Ex: 0695827150" required  >
         <span class="tooltip">Le numéro de téléphone doit être composé de dix chiffres.</span>
 
 
@@ -71,7 +71,7 @@
     
     
       </form>
-      <span class="Error"><?php echo $Error_message; ?></span>
+      
     </div>
   </div>
 
@@ -168,7 +168,7 @@ check['Password'] = function() {
 
 var Password = document.getElementById('Password'),
     tooltipStyle = getTooltip(Password).style,
-    regex = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/;
+    regex = /(?=.*[A-Z])(?=.*[0-9])/;
     
 
 if (regex.test(Password.value) && (Password.value.length >= 7)){
@@ -241,7 +241,7 @@ check['Mail'] = function() {
 (function() { // Utilisation d'une IIFE pour éviter les variables globales.
 
 var myForm = document.getElementById('myForm'),
-    inputs = document.querySelectorAll('input[type=text], input[type=password],input[type=mail],input[type=tel]'),
+    inputs = document.querySelectorAll('input[type=text], input[type=password],input[type=mail]'),
     inputsLength = inputs.length;
 
 for (var i = 0; i < inputsLength; i++) {
@@ -249,32 +249,30 @@ for (var i = 0; i < inputsLength; i++) {
         check[e.target.id](e.target.id); // "e.target" représente l'input actuellement modifié
     });
 }
-
 myForm.addEventListener('submit', function(e) {
 
-    var result = true;
+var result = true;
 
-    for (var i in check) {
-        result = check[i](i) && result;
-    }
+for (var i in check) {
+    result = check[i](i) && result;
+}
 
-    if (result) {
-        alert('Le formulaire est bien rempli.');
-    }
+if (result) {
+    
 
-    e.preventDefault();
+    myForm.submit(); // Le formulaire est expédié
 
-});
+    
+}
+else{
+    alert('Le formulaire n\'est pas bien rempli.');
+}
 
-myForm.addEventListener('reset', function() {
-
-    for (var i = 0; i < inputsLength; i++) {
-        inputs[i].className = '';
-    }
-
-    deactivateTooltips();
+e.preventDefault();
 
 });
+
+
 
 })();
 
