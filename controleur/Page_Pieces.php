@@ -28,7 +28,8 @@ function bdd_maisons($pieces){
           <tr>
        </table>
 
-        <a class="capteurs" href="../controleur/Page_capteurs.php?cible=<?php echo $Dif_pieces['ID']?>">Capteurs</a></li>
+        <a class="voir_capteurs" href="../controleur/Page_capteurs.php?cible=<?php echo $Dif_pieces['ID']?>">Capteurs</a></li>
+        <<a class="supprimer_capteur" href="../controleur/Page_capteurs.php?cible=<?php echo $Dif_pieces['ID']?>">Supprimer</a></li>
   </ul>
    </div><?php
   }
