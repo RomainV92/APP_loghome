@@ -30,7 +30,7 @@
 	margin-top: 7%;
 	display: flex;
 	justify-content: center;
-	} 
+	}
 .row{
 	margin-bottom: 10px;
 	}
@@ -38,7 +38,7 @@
 #button_submit{
 	margin-top: 10px;
 	padding: 5px 10px 5px 10px;
-}	
+}
 
 
 /* The Close Button */
@@ -60,7 +60,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 	background-attachment: fixed;
-}	
+}
 
 /*
 body div ul li:hover{
@@ -150,7 +150,7 @@ height: 100%;}
 	margin-top: 7%;
 	margin-left: 15px;
 	margin-right: 15px;
-	
+
 	width: 20%;
 	min-width: 250px;
 	min-height: 250px;
@@ -160,12 +160,33 @@ height: 100%;}
 .salon .piece{
 	text-align: center;
 	width: 100%;
-	background-color:rgb(230,230,230);
+	background-color:red;
+	color: white;
 
 	margin-top: 15px;
 	padding: 15px 0px 15px;
+	border-radius: 20px;
 
 }
+.salon .piece:hover{
+	background-color: orange;
+
+}
+.salon .ajouter_un_utilisateur{
+	text-align: center;
+	width: 100%;
+	background-color:red;
+	color: white;
+
+	margin-top: 15px;
+	padding: 15px 0px 15px;
+	border-radius: 20px;
+
+}
+.salon .ajouter_un_utilisateur:hover{
+		background-color: orange;
+}
+
 .ajouter_une_maison{
 	border-radius: 20px;
 	color: #FFF;

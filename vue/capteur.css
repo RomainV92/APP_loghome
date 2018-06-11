@@ -4,10 +4,14 @@
 }
 .delete{
 
-	background-color: blue;
+	background-color: white;
 	color: #FFF	;
+	border: 1px solid white;
 }
-
+.icone_capteur{
+	width: 200px;
+	height: 200px;
+}
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
