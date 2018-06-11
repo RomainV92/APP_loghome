@@ -111,5 +111,5 @@ function Trouver_users($utilisateurs){
                   echo '<div class=encadrement_capteur><h3>Nom capteur : '.$capteur['Nom'].'</h3>
                   <p>Numero type : '.$capteur['type'].'</p>
                   <p>Unité de mesure : '.$capteur['AxeY'].'</p>
-                  <a href="../modele/Supprimer_type_capteur.php?cible='.$capteur['ID'].'"> Supprimer ce type de capteur pour tous les utilisateurs</a></div>';
+                  <a href="../modele/Supprimer_type_capteur.php?cible='.$capteur['ID'].'"> Supprimer ce type de capteur pour tous les utilisateurs</a></div></br>';
                 }}

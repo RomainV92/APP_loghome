@@ -1,7 +1,7 @@
 <?php
 session_start();
 $Error_message='';
-$Direction='../controleur/Redirection_creation.php';
+$redirection='../controleur/Redirection_creation.php';
 /*$to = "tissotm@hotmail.com";
 $subject = "Confirmation Compte LOG.HOME";
 $txt = "Votre compte a bien été creé";

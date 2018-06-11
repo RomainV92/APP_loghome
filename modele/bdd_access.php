@@ -1,4 +1,4 @@
-ro<?php
+<?php
 
 function appel_bdd()
 {

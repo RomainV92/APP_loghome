@@ -1,13 +1,92 @@
+body
+{
+  background-image: url("../images/maison19.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  margin: 0px;
+}
+
+
+body h1    /*Titre de la page: Administrateur*/
+{
+  text-align: center;
+  font-family: verdana, sans-serif, serif;
+  color: white;
+  background-color: #6464686e;
+  padding-top:  20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+.logo  /*position logo*/
+{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  margin: 0px;
+  height: 12%;
+}
+
+
+#content  /* contenu du bloc poster image*/
+{
+/*  display: flex;*/
+  position: relative;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  height: 10%;
+  width: 30%;
+  margin-left: 30%;
+  margin-top: 5%;
+  padding: 2%;
+  color: white;
+
+}
+
+#content h3   /* titre du bloc poster image*/
+{
+  color: white;
+  padding: 0px;
+  margin: 2px;
+}
+
+#capteurs /*css du bouton capteur*/
+{
+  text-align: center;
+  margin-left: 50%¨;
+}
+
+
 #form_capteur
 {
 display: none;
 
 }
 
+.ajout_capteur
+{
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  padding:10px;
+  margin-left: 10%;
+  width: 50%;
+}
+
 #utilisateurs{
   display: none;
 }
 
-.encadrement_capteur{
+.encadrement_capteur
+{
   border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(218,223,232,0.9);
+  margin-left: 10%;
+  width: 30%;
+  padding: 5px;
+
 }

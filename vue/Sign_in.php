@@ -11,7 +11,7 @@
     <img src="../images/image_Log.png" class="avatar">
     <div class="loginbox">
       <h1> Connexion </h1>
-      <form method="post" action="../controleur/check_identifiants.php">
+      <form method="post" action="../controleur/check_identifiants.php" >
         <p> Pseudo </p>
         <input id="Pseudo" type="text" name="Pseudo" placeholder="Pseudo" required />
         <p> Mot de passe </p>

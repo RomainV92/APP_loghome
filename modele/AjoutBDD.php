@@ -8,18 +8,19 @@ try {
 }
 
 function Ajout($bdd){
+
+    
   $password = $_POST['Password'];
-  $test=preg_match("#[A-Z]#", $password) + preg_match("#[a-z]#", $password) + preg_match("#[0-9]#", $password);
-  if($test==3 AND strlen($password)>7)
-  {
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-  }
-  else
-  {
-    header('Location:../index.php?cible=erreur');
-  }
-  if(preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $_POST['Mail']) && preg_match("#^0[1-68]([-. ]?[0-9]{2}){4}$#", $_POST['Telephone']))
-  {
+  $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+
+   $pseudo = $_POST['Pseudo'];
+    
+   $requete = $bdd->query("SELECT count(*) as nb FROM login WHERE Pseudo = '".$pseudo."'");
+   $resultat = $requete->fetch();         // donne le nombre de personne ayant le même pseudo  qui celui envoyé dans le formulaire
+  
+   if (isset($resultat['nb']) && $resultat['nb'] == 0) 
+         /* Résultat du comptage = 0 pour ce pseudo, on peut donc l'enregistrer */
+         {
     $ajout = $bdd->prepare('INSERT INTO login(Nom,Prenom,Pseudo,Password,Telephone,Mail,Question,Answer,Image_url) VALUES(:Nom,:Prenom,:Pseudo,:Password,:Telephone,:Mail,:Question,:Answer,:Image_url)');
     $ajout->execute(array(
       'Nom' => $_POST['Nom'],
@@ -34,5 +35,8 @@ function Ajout($bdd){
     ));
     return 1;
   }
-  return 0;
-}
+  else {
+    return 0;
+  }
+
+  }
