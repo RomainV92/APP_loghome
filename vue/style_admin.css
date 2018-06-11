@@ -9,26 +9,6 @@ body
 }
 
 
-body h1    /*Titre de la page: Administrateur*/
-{
-  text-align: center;
-  font-family: verdana, sans-serif, serif;
-  color: white;
-  background-color: #6464686e;
-  padding-top:  20px;
-  padding-bottom: 20px;
-  margin-top: 0px;
-}
-
-.logo  /*position logo*/
-{
-  position: absolute;
-  top: 1px;
-  right: 1px;
-  margin: 0px;
-  height: 12%;
-}
-
 
 #content  /* contenu du bloc poster image*/
 {
@@ -36,9 +16,9 @@ body h1    /*Titre de la page: Administrateur*/
   position: relative;
   background-color: rgba(0,0,0,0.9);
   border-radius: 10px;
-  height: 10%;
-  width: 30%;
-  margin-left: 30%;
+
+  width: 24%;
+  margin-left: 35%;
   margin-top: 5%;
   padding: 2%;
   color: white;
@@ -50,6 +30,49 @@ body h1    /*Titre de la page: Administrateur*/
   color: white;
   padding: 0px;
   margin: 2px;
+}
+
+
+
+#utilisateurs{
+  display: none;
+}
+
+
+#entree
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.tab  /*cadres noir redirigeant vers pages capteurs, utilisateurs et donnees*/
+{
+  text-align: center;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  width: 13%;
+  height: 20%;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.tab h2
+{
+  color: white;
+  text-decoration: none;
+}
+
+/* CSS CAPTEUR*/
+.encadrement_capteur
+{
+
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(218,223,232,0.9);
+  margin-left: 10%;
+  width: 30%;
+  padding: 5px;
+
 }
 
 #capteurs /*css du bouton capteur*/
@@ -75,18 +98,7 @@ display: none;
   margin-left: 10%;
   width: 50%;
 }
-
-#utilisateurs{
-  display: none;
-}
-
-.encadrement_capteur
+h1
 {
-  border: 2px solid black;
-  border-radius: 5px;
-  background-color: rgba(218,223,232,0.9);
-  margin-left: 10%;
-  width: 30%;
-  padding: 5px;
-
+  color: white;
 }

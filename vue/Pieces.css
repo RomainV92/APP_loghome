@@ -15,7 +15,34 @@
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+.supprimer_capteur{
+	text-align: center;
+	width: 100%;
+	background-color:red;
+	color: white;
 
+	margin-top: 15px;
+	padding: 15px 0px 15px;
+	border-radius: 20px;
+
+}
+.supprimer_capteur:hover{
+	background-color: orange;
+}
+.voir_capteurs{
+	text-align: center;
+	width: 100%;
+	background-color:red;
+	color: white;
+
+	margin-top: 15px;
+	padding: 15px 0px 15px;
+	border-radius: 20px;
+
+}
+.voir_capteurs:hover{
+	background-color: orange;
+}
 .modal-content {
 	margin-left: auto;
     margin-right: auto;
@@ -36,7 +63,7 @@ margin-bottom: 10px;
 #button_submit{
 	margin-top: 10px;
 	padding: 5px 10px 5px 10px;
-}		
+}
 
 
 /* The Close Button */
@@ -67,14 +94,14 @@ display: flex;
 }
 
 .conteneur_nom_maison{
-	
+
 	margin-left: 30%;
 	margin-right: 30%;
 	padding-top: 30px;
 	padding-bottom: 30px;
 
-	
-	
+
+
 }
 .maison .nom_maison {
 	font-size: 23px;
@@ -88,9 +115,9 @@ display: flex;
 	color: white;
 
 	text-align: center;
-	
-	
-} 
+
+
+}
 .maison li{
    list-style-type: none;
    list-style-position: inside;
