@@ -1,0 +1,43 @@
+body
+{
+  background-image: url("../images/maison19.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  margin: 0px;
+}
+
+.entete
+{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: #6464686e;
+  padding-top:  3px;
+  padding-bottom: 3px;
+  margin-top: 0px;
+  font-family: verdana, sans-serif, serif;
+
+}
+
+
+#delete-button  /*bouton déconnection*/
+{
+
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+  padding-left: 3%;
+}
+
+#delete-button:hover
+{
+  color: rgb(122,228,232);
+}
+
+
+.logo
+{
+  height: 80px;
+}
