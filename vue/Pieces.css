@@ -29,10 +29,23 @@
 	justify-content: center;
 	}
 
-.row{
-margin-bottom: 10px;
+.col-25 label{ 
+	margin-left: 20px;
+	
+	text-align: center;
+	
+}
+.col-55 input{
+	padding: 5px;
+	outline: none;
+	margin-left: 20px;
+	margin-bottom: 10px;
+
+
+	
 }
 #button_submit{
+	margin-left: 20px;
 	margin-top: 10px;
 	padding: 5px 10px 5px 10px;
 }
@@ -40,6 +53,7 @@ margin-bottom: 10px;
 
 /* The Close Button */
 .close {
+	margin-left: 30px;
 	color: #aaaaaa;
 	float: right;
 	font-size: 28px;
@@ -224,4 +238,33 @@ body .maison ul li
 	border-radius: 10px;
 	border: 2px solid rgb(131, 131, 131);
 					}
-					
+
+
+	.correct {
+  
+		border:1px solid rgba(68, 191, 68, 0.75);
+	}
+		
+	.correct:focus {
+		border:1px solid rgba(68, 191, 68, 0.75);
+		box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+	}
+		
+	.incorrect {
+		border:1px solid rgba(191, 68, 68, 0.75);
+	}
+		
+	.incorrect:focus {
+		border:1px solid rgba(191, 68, 68, 0.75);
+		box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+	}
+	
+	.tooltip {
+		display: inline-block;
+	  	margin-bottom: 10px;
+		padding: 2px 4px;
+		margin-top: 5px;
+		background-color: #ffffff;
+		border-radius: 4px;
+	}
+	

@@ -31,13 +31,26 @@
 	justify-content: center;
 	}
 
-.row{
-margin-bottom: 10px;
-}
-#button_submit{
-	margin-top: 10px;
-	padding: 5px 10px 5px 10px;
-}
+	.col-25 label{ 
+		
+		text-align: center;
+		
+	}
+	.col-55 input{
+		padding: 5px;
+		outline: none;
+		margin-bottom: 10px;
+	
+	
+		
+	}
+	
+	#button_submit{
+		
+		margin-top: 10px;
+		padding: 5px 10px 5px 10px;
+	}
+
 
 
 /* The Close Button */
@@ -321,4 +334,31 @@ body .maison ul li
 	padding: 15px 0px 15px;
 	border-radius: 10px;
 	border: 2px solid rgb(131, 131, 131);
+}
+.correct {
+  
+	border:1px solid rgba(68, 191, 68, 0.75);
+}
+	
+.correct:focus {
+	border:1px solid rgba(68, 191, 68, 0.75);
+	box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+}
+	
+.incorrect {
+	border:1px solid rgba(191, 68, 68, 0.75);
+}
+	
+.incorrect:focus {
+	border:1px solid rgba(191, 68, 68, 0.75);
+	box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+
+.tooltip {
+	display: inline-block;
+	  margin-bottom: 10px;
+	padding: 2px 4px;
+	margin-top: 5px;
+	background-color: #ffffff;
+	border-radius: 4px;
 }
