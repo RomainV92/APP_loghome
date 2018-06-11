@@ -1,4 +1,4 @@
-ro<?php
+<?php
 
 function appel_bdd()
 {
@@ -104,6 +104,7 @@ function validation_identifiants($bdd, $login, $mdp)
     $_SESSION['id_user']=$data['ID'];
     $_SESSION['Nom']=$data['Nom'];
     $_SESSION['Image_url']=$data['Image_url'];
+    $_SESSION['Mail']=$data['Mail'];
     $table->closeCursor();
 		return $data;
   }

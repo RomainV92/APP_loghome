@@ -29,7 +29,7 @@
                     <label for="email">Votre adresse e-mail :</label>
 
 
-                    <input type="email" placeholder="mon_email@exemple.com" name="email" id="email" />
+                    <input type="email" placeholder="mon_email@exemple.com" name="email" id="email" value="<?php echo $_SESSION['Mail']; ?>" />
                     <p>Parlez nous de votre problème :</p>
                     <textarea name="message" rows="8" cols="50"></textarea>
 

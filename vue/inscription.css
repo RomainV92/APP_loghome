@@ -7,7 +7,7 @@ body
   display: grid;
   grid-template-rows: 0.3fr 0.3fr 2fr 0.5fr;
   grid-template-columns: 2fr 5fr 10fr 5fr 2fr;
-  background-color: #d1ccc0;
+  
 
   margin: 0;
   padding: 0;
@@ -45,7 +45,7 @@ body
   width: 340px;
   height: 100%;
 
-  box-sizing: border-box;
+  
   background: #000;
   color: #fff;
 
@@ -72,7 +72,7 @@ h1
 
 }
 
-.InBox p{
+.InBox label{
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -80,7 +80,9 @@ h1
 .InBox input{
   width: 100%;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
+
 .InBox input[type="text"], input[type="password"], input[type="tel"], input[type="mail"]
 {
   border: none;
@@ -140,4 +142,36 @@ h1
     background-color: rgb(255, 255, 255);
     border-radius: 2%;
     color:black;
+}
+
+.correct {
+  
+	border:1px solid rgba(68, 191, 68, 0.75);
+}
+	
+.correct:focus {
+	border:1px solid rgba(68, 191, 68, 0.75);
+	box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+}
+	
+.incorrect {
+	border:1px solid rgba(191, 68, 68, 0.75);
+}
+	
+.incorrect:focus {
+	border:1px solid rgba(191, 68, 68, 0.75);
+	box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+
+.tooltip {
+	display: inline-block;
+  margin-bottom: 10px;
+	padding: 2px 4px;
+
+	background-color: #fb2525;
+	border-radius: 4px;
+}
+
+.condition{
+  font-size: 13px;
 }

@@ -16,7 +16,7 @@
 
   <body>
     <div class="wrapper">
-      <img src="../images/<?php echo $image ?>" class="avatar">
+      <img src="../images/profil/<?php echo $image ?>" class="avatar">
       <div class="infobox">
         <table>
       <?php
