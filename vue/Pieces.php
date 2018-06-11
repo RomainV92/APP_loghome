@@ -67,6 +67,19 @@
           </div>
         </div>
     </div>
+
+    
+    <div id="msg" class="Modal">
+            <div class="modal-content-2">
+              <p>
+                Etes-vous sûr de vouloir supprimer cette pièce? <br />
+                Cette action est irréversible.</p>
+                <a id ='valider' class="confirmer" >Confirmer</a>
+                <button id="retour" class="confirmer">Retour</button>
+              
+            </div>
+          </div>
+
           <script>
           // Get the modal
           var modal = document.getElementById('myModal');
@@ -88,6 +101,34 @@
                   modal.style.display = "none";
               }
           }
+
+
+          
+          var retour = document.getElementById('retour');
+         
+
+          retour.onclick = function()
+          {
+            msg.style.display = "none";
+          }
+
+
+          function valiDelete(id,id2)
+          {
+            var id_piece = id,
+                id_maison = id2,
+                link="../modele/supprimer_piece.php?cible=",
+                link2="&cible2=";
+
+            var valider = document.getElementById('valider');
+            valider.href=link+id_piece+link2+id_maison;
+
+
+            var msg = document.getElementById('msg');
+            msg.style.display = "block";
+
+          }
+
           </script>
       </body>
     </html>

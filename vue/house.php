@@ -92,19 +92,20 @@
           </div>
 
           <div id="msg" class="Modal">
-            <div class="modal-content">
+            <div class="modal-content-2">
               <p>
                 Etes-vous sûr de vouloir supprimer cette maison? <br />
-                Cette action est irréversible.
-                <button id="valider" class="ajouter_un_utilisateur">Confirmer</button>
-                <button id="retour" class="ajouter_un_utilisateur">Retour</button>
-              </p>
+                Cette action est irréversible.</p>
+                <a id ='valider' class="confirmer" >Confirmer</a>
+                
+                <button id="retour" class="confirmer">Retour</button>
+              
             </div>
           </div>
-
+          
+         
           <script>
-          var retour = document.getElementById('retour');
-          var valider = document.getElementById('valider');
+    
           // Get the modal
           var modal = document.getElementById('myModal');
           // Get the button that opens the modal
@@ -120,23 +121,31 @@
               modal.style.display = "none";
           }
 
+          
+        
+
+          var retour = document.getElementById('retour');
+         
+
           retour.onclick = function()
           {
             msg.style.display = "none";
           }
 
+
           function valiDelete(id)
           {
-            //var id = id;
+            var id_maison = id,
+                link="../modele/supprimer_maison.php?cible=";
+        
+
+            var valider = document.getElementById('valider');
+            valider.href=link+id_maison;
+
+
             var msg = document.getElementById('msg');
             msg.style.display = "block";
 
-            valider.onclick = function()
-            {
-              var xhr = new XMLHttpRequest();
-              xhr.open('POST', 'Page_logement.php');
-              xhr.send('idMaison='+id);
-            }
           }
 
 

@@ -2,16 +2,7 @@
 .wrapper{
 	margin-bottom: 90px;
 }
-.delete{
 
-	background-color: white;
-	color: #FFF	;
-	border: 1px solid white;
-}
-.icone_capteur{
-	width: 200px;
-	height: 200px;
-}
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -117,7 +108,8 @@ color: rgb(0, 0, 0);
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
-flex-wrap : wrap
+
+flex-wrap : wrap;
 }
 
 .graphes{
@@ -131,10 +123,12 @@ list-style: none;
 
 .salon .informations {
 text-align: left;
-float:left;
+float: left;
+width: 80%;
 color: #FFF;
-display: inline-block;
-margin-right: 7%;
+
+
+
 border: 1px solid white;
 padding: 10px;
 
@@ -145,11 +139,11 @@ vertical-align: baseline;
 
 }
 .salon .informations tr .label1 {
-
+width: 30%;
 height: 30px;
 }
 .salon .informations tr .label2 {
-
+	width: 30%;
 height: 30px;
 
 }
@@ -160,19 +154,33 @@ height: 30px;
 
 	}
 .salon{
-border-radius: 20px;
+min-width: 320px;
+border-radius: 15px;
+padding: 30px;
 
-padding-top: 10px;
-padding-bottom:10px;
 font-family: sans-serif, monospace, serif;
 background-color: rgba(0, 0, 0, 0.952);
-width: 45%;
-max-width: 400px;
-min-height: 200px;
-margin-bottom:25px;
-
+width: 40%;
+margin:20px;
+display: grid;
+grid-template-columns: 70% auto;
 }
 
+
+.salon .ajouter_un_utilisateur{
+	text-align: center;
+	width: 120px	;
+	background-color:red;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	padding: 15px 0px 15px;
+	border-radius: 20px;
+
+}
+.salon .ajouter_un_utilisateur:hover{
+		background-color: orange;
+}
 
 .ajouter_un_capteur{
 
@@ -181,8 +189,8 @@ color: #FFF;
 font-size: 23px;
 background-color: rgba(0,0,0,0.93);
 width: 20%;
-min-width: 250px;
 min-height: 250px;
+min-width: 250px;
 
 }
 
@@ -213,7 +221,7 @@ body .maison ul li
 .switch {
 	  position: relative;
 	  display: inline-block;
-	  width: 84px;
+	  width: 60px;
 	  height: 34px;
 	  margin-left: 15px;
 	}
@@ -258,9 +266,9 @@ body .maison ul li
 	}
 
 	input:checked + .slider:before {
-	  -webkit-transform: translateX(50px);
-	  -ms-transform: translateX(50px);
-	  transform: translateX(50px);
+	  -webkit-transform: translateX(26px);
+	  -ms-transform: translateX(26px);
+	  transform: translateX(26px);
 	}
 
 	/* Rounded sliders */
@@ -272,10 +280,45 @@ body .maison ul li
 	  border-radius: 50%;
 	}
 	.icone_capteur{
-		padding:10px;
-		margin-left: 15px;
+		width: 32px;
+		height: 32px;
+		
 	}
 
 .text_cocher{
 	color: white;
 				}
+
+/*graphique*/
+#barchart_values{
+	width: 100%;
+	margin-bottom: 25px;
+	padding-left:30%; 
+}
+
+
+.modal-content-2 {
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+	padding: 20px;
+	border-radius: 20px;
+	width: 320px;
+	background-color: rgba(206, 205, 205, 0.973);
+	margin-top: 7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+.confirmer{
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+	width: 100%;
+	margin-top: 15px;
+	background-color:rgb(230,230,230);
+	padding: 15px 0px 15px;
+	border-radius: 10px;
+	border: 2px solid rgb(131, 131, 131);
+}

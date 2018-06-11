@@ -17,7 +17,8 @@
       <div class='conteneur_nom_piece'>
         <p class='nom_piece'><?php echo 'Vous êtes actuellement dans la pièce : '.$nom_piece['nom']; ?></P>
         </div>
-           <div id="barchart_values" style="width: 900px; height: 500px;"></div>
+
+        <div id="barchart_values" ></div>
 
 
         <?php bdd_capteurs($capteurs,$bdd); ?>
@@ -78,6 +79,17 @@
 
 
       </div>
+      
+      <div id="msg" class="Modal">
+            <div class="modal-content-2">
+              <p>
+                Etes-vous sûr de vouloir supprimer ce capteur? <br />
+                Cette action est irréversible. </p>
+                <a id ='valider' class="confirmer" >Confirmer</a>
+                <button id="retour" class="confirmer">Retour</button>
+             
+            </div>
+          </div>
 
       <script>
       // Get the modal
@@ -100,6 +112,33 @@
           modal.style.display = "none";
         }
       }
+
+
+         var retour = document.getElementById('retour');
+         
+
+         retour.onclick = function()
+         {
+           msg.style.display = "none";
+         }
+
+
+         function valiDelete(id,id2)
+         {
+           var id_capteur = id,
+               id_piece = id2,
+               link="../modele/supprimer_capteur.php?cible=",
+               link2="&cible2=";
+
+           var valider = document.getElementById('valider');
+           valider.href=link+id_capteur+link2+id_piece;
+
+
+           var msg = document.getElementById('msg');
+           msg.style.display = "block";
+
+         }
+
       </script>
     </body>
     </html>
