@@ -31,7 +31,7 @@
                     <label for="nom">Nom</label>
                   </div>
                   <div class="col-55">
-                    <input type="text" name="nom" id="nom" />
+                    <input type="text" name="nom" id="nom" required/>
                     <span class="tooltip">Le nom ne peut pas faire moins de 2 caractères.</span>
                     <br/>
 
@@ -44,7 +44,7 @@
                     <label for="adresse">Numéro de rue</label>
                   </div>
                   <div class="col-55">
-                    <input type="text" name="adresse" id="adresse" />
+                    <input type="text" name="adresse" id="adresse" required/>
                     <span class="tooltip">Le numéro ne doit pas contenir de lettre.</span>
                     <br />
                   </div>
@@ -55,7 +55,7 @@
                     <label for="adresse">Rue</label>
                   </div>
                   <div class="col-55">
-                    <input type="text" name="Street" id="Street" />
+                    <input type="text" name="Street" id="Street" required/>
                     <span class="tooltip">Le libellé de la voie ne doit pas contenir de chiffre et doit ne peut pas faire moins de 4 caractères.</span>
                     <br />
                   </div>
@@ -67,7 +67,7 @@
 
                   </div>
                   <div class="col-55">
-                    <input type="text" name="City" id="City" />
+                    <input type="text" name="City" id="City" required/>
                     <span class="tooltip">La ville ne peut pas contenir moins de 2 caractères.</span>
                     <br />
                   </div>
@@ -78,7 +78,7 @@
                     <label for="adresse">Code Postal</label>
                   </div>
                   <div class="col-55">
-                    <input type="text" name="Postal" id="Postal" />
+                    <input type="text" name="Postal" id="Postal" required/>
                     <span class="tooltip">Le code postal ne peut pas contenir de lettres.</span>
                     <br />
                   </div>
@@ -89,7 +89,7 @@
                     <label for="superficie">Superficie (m²)</label>
                   </div>
                   <div class="col-55">
-                    <input type="number" name="superficie" id="superficie"/>
+                    <input type="number" name="superficie" id="superficie"required/>
                     <span class="tooltip">La superficie ne peut pas contenir de lettres.</span>
                     <br/>
                   </div>

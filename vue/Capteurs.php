@@ -43,7 +43,7 @@
                     <label for="namesensor">Nom du capteur</label>
                   </div>
                   <div class="col-55">
-                    <input type="text" name="namesensor" id="namesensor" placeholder="ex: Luminos" size="30" maxlength="30"/>
+                    <input type="text" name="namesensor" id="namesensor" placeholder="ex: Luminos" size="30" maxlength="30" required/>
                     <span class="tooltip">Le nom ne peut pas faire moins de 2 caractères.</span>
                     </br>
                   </div>
@@ -54,7 +54,7 @@
                     <label for="reference">Référence</label>
                   </div>
                   <div class="col-55">
-                    <input type="text" name="reference" id="reference" placeholder="ex: XX265 136 A" size="30" maxlength="30"/>
+                    <input type="text" name="reference" id="reference" placeholder="ex: XX265 136 A" size="30" maxlength="30" required/>
                     <span class="tooltip">La reference ne peut pas faire moins de 2 caractères.</span>
                     </br>
                   </div>

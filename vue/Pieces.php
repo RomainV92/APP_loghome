@@ -43,7 +43,7 @@
                     <label for="nom">Nom</label>
                   </div>
                   <div class="col-55">
-                    <input type="text" name="nom" id="nom" />
+                    <input type="text" name="nom" id="nom" required/>
                     <span class="tooltip">Le nom ne peut pas faire moins de 2 caractères.</span>
 <br />
                   </div>
@@ -54,7 +54,7 @@
                     <label for="superficie">Superficie (m²)</label>
                   </div>
                   <div class="col-55">
-                    <input type="number" name="superficie" id="superficie" />
+                    <input type="number" name="superficie" id="superficie" required/>
                     <span class="tooltip">La superficie ne peut pas contenir de lettres.</span>
 <br />
                   </div>
