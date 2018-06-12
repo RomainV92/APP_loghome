@@ -5,6 +5,8 @@ include('../modele/Recherche_capteurs.php');
 include('../modele/bdd_access.php');
 $bdd=appel_bdd();
 $type_capteur=Trouver_types_capteurs($bdd);
+
+
 include('../controleur/graphes_capteurs.php');
 include('../modele/bdd_access_maison.php');
 include('../modele/redirection_si_deco.php');
@@ -38,7 +40,11 @@ function bdd_capteurs($capteurs,$bdd){
 
           <a class="ajouter_un_utilisateur" href="javascript:void(0)" onclick="valiDelete(<?php echo $Dif_capteurs['ID'] ?>,<?php echo $_GET['cible']?>)">Supprimer</a>
         </div>
+        <?php
+        $type=$Dif_capteurs['Type'];
 
+
+        ?>
         <img class="icone_capteur" src="../images/<?php echo $url['Image_url']?>" alt="image-capteur">
         <label class="label_capteur_post">Valeur voulu du capteur</label>
         <input type="text" id="value<?php echo $Dif_capteurs['ID']; ?>">

@@ -34,24 +34,24 @@
 	background-color: rgba(206, 205, 205, 0.973);
 	margin-top: 7%;
 	display: flex;
-	justify-content: center;
+	justify-content: right;
 	}
-.col-25 label{ 
+.col-25 label{
 	margin-left: 70px;
-	
+
 	text-align: center;
-	
+
 }
 .col-55 input{
 	padding: 5px;
 	outline: none;
 	margin-left: 70px;
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
 }
 
 .col-55 #sensortype{
 	padding: 5px;
-	
+
 }
 
 #button_submit{
@@ -63,7 +63,7 @@
 
 /* The Close Button */
 .close {
-	margin-left: 300px;
+	margin-left: 15px;
 		color: #aaaaaa;
 		float: right;
 		font-size: 28px;
@@ -77,7 +77,7 @@
 }
 
 body{
-	background: url("../images/maison19.jpg");
+	background: url("../images/maison21.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -273,26 +273,26 @@ body .maison ul li
 	flex-direction: column;
 	justify-content: center;
 	}
-		
+
 	.correct {
-  
+
 		border:1px solid rgba(68, 191, 68, 0.75);
 	}
-		
+
 	.correct:focus {
 		border:1px solid rgba(68, 191, 68, 0.75);
 		box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
 	}
-		
+
 	.incorrect {
 		border:1px solid rgba(191, 68, 68, 0.75);
 	}
-		
+
 	.incorrect:focus {
 		border:1px solid rgba(191, 68, 68, 0.75);
 		box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
 	}
-	
+
 	.tooltip {
 		display: inline-block;
 	  	margin-bottom: 10px;
@@ -301,4 +301,3 @@ body .maison ul li
 		background-color: #ffffff;
 		border-radius: 4px;
 	}
-	

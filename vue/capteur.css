@@ -78,7 +78,7 @@ margin-bottom: 10px;
 }
 
 body{
-background: url("../images/maison3.jpg");
+background: url("../images/maison8.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -293,5 +293,5 @@ body .maison ul li
 	color: white;
 				}
 #myBtn:hover{
-	cursor: pointer;	
+	cursor: pointer;
 }
