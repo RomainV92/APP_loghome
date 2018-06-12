@@ -8,36 +8,30 @@ body
   margin: 0px;
 }
 
-.entete
+.graph script
 {
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  background-color: #6464686e;
+  background-color: white;
+}
+
+.footer
+{
+  background-color: #64646881;
+  text-align: center;
   padding-top:  3px;
   padding-bottom: 3px;
-  margin-top: 0px;
+  margin-bottom: 0px;
   font-family: verdana, sans-serif, serif;
-
 }
 
-
-#delete-button  /*bouton déconnection*/
+.footer h3 a
 {
-
   color: white;
-  font-size: 25px;
+  text-align: center;
+  font-family: verdana, sans-serif, serif;
   text-decoration: none;
-  padding-left: 3%;
 }
 
-#delete-button:hover
+.footer h3 a:hover
 {
-  color: rgb(122,228,232);
-}
-
-
-.logo
-{
-  height: 80px;
+    color: rgb(122,228,232);
 }
