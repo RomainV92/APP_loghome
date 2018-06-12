@@ -68,11 +68,4 @@ function bdd_maisons($Infos_maisons){
   }
 }
 
-if(isset($_POST['idMaison']) AND !empty($_POST['idMaison']))
-{
-  $id = $_POST['idMaison'];
-  $maisons = $bdd->prepare('DELETE from maison WHERE ID=:id');
-  $maison->execute(array('id'=>$id));
-}
-
 ?>

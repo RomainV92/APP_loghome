@@ -7,6 +7,8 @@ $bdd=appel_bdd();
 
 include('../modele/bdd_access_maison.php');
 include('../modele/redirection_si_deco.php');
+include('../modele/redirection_si_mauvais_utilisateur_maison.php');
+
 
 include('../vue/frequent/menu.php');
 include('../vue/Pieces.php');
@@ -28,8 +30,12 @@ function bdd_maisons($pieces){
           <tr>
        </table>
 
-        <a class="voir_capteurs" href="../controleur/Page_capteurs.php?cible=<?php echo $Dif_pieces['ID']?>">Capteurs</a></li>
-        <<a class="supprimer_capteur" href="../controleur/Page_capteurs.php?cible=<?php echo $Dif_pieces['ID']?>">Supprimer</a></li>
+        <a class="ajouter_un_utilisateur" href="../controleur/Page_capteurs.php?cible=<?php echo $Dif_pieces['ID']?>">Capteurs</a></li>
+        
+        <div>
+      
+          <a class="ajouter_un_utilisateur" href="javascript:void(0)" onclick="valiDelete(<?php echo $Dif_pieces['ID'] ?>,<?php echo $_GET['cible']?>)">Supprimer</a>
+        </div>
   </ul>
    </div><?php
   }

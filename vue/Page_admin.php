@@ -145,11 +145,136 @@
     </script>
 
 
+  ?>
+  <!DOCTYPE HTML>
+  <html>
+  <head>
+  <script>
+  window.onload = function () {
 
+  var dps = []; // dataPoints
+  var chart = new CanvasJS.Chart("chartContainer", {
+  	title :{
+  		text: "Dynamic Data"
+  	},
+  	axisY: {
+  		includeZero: false
+  	},
+  	data: [{
+  		type: "line",
+  		dataPoints: dps
+  	}]
+  });
 
-    </body>
+  var xVal = 0;
+  var yVal = 100;
+  var updateInterval = 1000;
+  var dataLength = 20; // number of dataPoints visible at any point
 
+  var updateChart = function (count) {
 
-    </body>
+  	count = count || 1;
 
-    </html>
+  	for (var j = 0; j < count; j++) {
+  		yVal = yVal +  Math.round(5 + Math.random() *(-5-5));
+  		dps.push({
+  			x: xVal,
+  			y: yVal
+  		});
+  		xVal++;
+  	}
+
+  	if (dps.length > dataLength) {
+  		dps.shift();
+  	}
+
+  	chart.render();
+  };
+
+  updateChart(dataLength);
+  setInterval(function(){updateChart()}, updateInterval);
+
+  }
+  </script>
+  </head>
+  <body>
+  <div id="chartContainer" style="height: 370px; width:100%;"></div>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </body>
+  </html>
+</br>
+  <a id="delete-button" href="../index.php?cible=deconnexion">Disconnect</a>
+  <a href="../vue/trames.php">voir trames</a>
+</br>
+</br>
+  <button id="voir_util">Voir utilisateurs</button>
+</br>
+<div id="utilisateurs">
+<?php Trouver_users($utilisateurs); ?>
+</br>
+<button id="fermer_util"> Fermer deroulant utilisateurs </button>
+</br>
+</div>
+
+<script>
+var page_util=document.getElementById('utilisateurs');
+var voir=document.getElementById('voir_util');
+var span2=document.getElementById("fermer_util");
+
+voir.onclick = function(){
+  page_util.style.display = "block";
+}
+ span2.onclick = function(){
+   page_util.style.display= "none";
+ }
+
+ window.onclick =  function(event){
+   if(event.target == form){
+     page_util.style.display= "none";
+   }
+ }
+</script>
+
+<!-- Script pour affichage graphique -->
+<canvas id = "schema" height="181" width="300" style="border:1px solid">
+ Votre navigateur ne supporte pas la balise canvas
+</canvas>
+<script>
+var zone_dessin = document.getElementById("schema");
+var graphe= zone_dessin.getContext("2d");
+var compteur=0;
+graphe.strokeStyle = "#0098f8";
+graphe.lineWidth=3;
+graphe.beginPath();
+  graphe.moveTo(0,f(0));
+  while(compteur<10) {
+    graphe.lineTo(30*(compteur-(0)),181-(f(compteur)-(-1))*90.5);
+    compteur=(compteur+0.05);
+  }
+graphe.stroke();
+function f(x) {
+  var y=Math.sin(x);
+  return (y);
+}
+graphe.beginPath();
+  graphe.lineWidth="1";
+  graphe.strokeStyle="black";
+  graphe.moveTo(0,zone_dessin.height/2);
+  graphe.lineTo(zone_dessin.width,zone_dessin.height/2);
+  graphe.lineTo(zone_dessin.width-5,(zone_dessin.height/2)-5);
+  graphe.moveTo(zone_dessin.width,zone_dessin.height/2);
+  graphe.lineTo(zone_dessin.width-5,(zone_dessin.height/2)+5);
+  graphe.moveTo(zone_dessin.width/2,zone_dessin.height);
+  graphe.lineTo(zone_dessin.width/2,0);
+  graphe.lineTo((zone_dessin.width/2)-5,5);
+  graphe.moveTo(zone_dessin.width/2,0);
+  graphe.lineTo((zone_dessin.width/2)+5,5);
+graphe.stroke();
+graphe.fillText("0",0,10+zone_dessin.height/2);
+graphe.fillText("10",zone_dessin.width-20,10+zone_dessin.height/2);
+graphe.fillText("-1",5+zone_dessin.width/2,-8+zone_dessin.height);
+graphe.fillText("1",5+zone_dessin.width/2,8);
+</script>
+
+</body>
+</html>
