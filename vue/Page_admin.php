@@ -38,10 +38,6 @@
   <button name="capteur" id="capteurs">Types de capteurs</button></br>
 <div id="form_capteur">
   <?php All_capteurs($type_capteurs)?>
-<<<<<<< HEAD
-=======
-
->>>>>>> cdebc68e076f6a7256d2dfe69f94b9d3c79dc170
 </br>
   <div class="ajout_capteur">
     <form name="ajouter_capteur" method="post" action="../modele/ajouter_type_capteur.php">
@@ -60,7 +56,6 @@
   </div>
 
   <button name="reduire" id="reduire"> Fermer la fenêtre des capteurs</button></br>
-<<<<<<< HEAD
 
   <form name="ajouter_capteur" method="post" action="../modele/ajouter_type_capteur.php" enctype="multipart/form-data">
     <label>Ajouter un nouveau type de capteur</label>
@@ -79,8 +74,6 @@
         </form>
         <button name="reduire" id="reduire"> Fermer fenetre des capteurs</button>
 
-=======
->>>>>>> cdebc68e076f6a7256d2dfe69f94b9d3c79dc170
       </div>
 
 
@@ -180,12 +173,8 @@ capteurs.onclick = function(){
   </body>
   </html>
 </br>
-<<<<<<< HEAD
   <a id="delete-button" href="../index.php?cible=deconnexion">Disconnect</a>
   <a href="../vue/trames.php">voir trames</a>
-=======
-  <a id="delete-button" href="../index.php?cible=deconnexion">Déconnexion</a>
->>>>>>> cdebc68e076f6a7256d2dfe69f94b9d3c79dc170
 </br>
 </br>
   <button id="voir_util">Voir utilisateurs</button>

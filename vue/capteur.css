@@ -48,6 +48,19 @@ margin-bottom: 10px;
 	padding: 5px 10px 5px 10px;
 }
 
+.id_post{
+		display: none;
+}
+
+.label_capteur_post{
+	color: white;
+	background-color: blue;
+
+}
+.valeur_capteur{
+	color: white;
+	background-color: blue;
+}
 
 /* The Close Button */
 .close {
@@ -279,3 +292,6 @@ body .maison ul li
 .text_cocher{
 	color: white;
 				}
+#myBtn:hover{
+	cursor: pointer;
+}

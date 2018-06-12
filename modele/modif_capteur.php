@@ -7,10 +7,12 @@ catch (Exception $e)
 {
   die('Erreur : ' . $e->getMessage());
 }
-$conn = new mysqli('localhost', 'root', '', 'insert');
 $value=$_POST['value'];
-
-$ajout= $bdd->prepare('UPDATE capteur SET Valeur=:value');
-$ajout -> execute(array('value'=> $value))
+$ID=$_POST['capteur_id'];
+$ajout= $bdd->prepare('UPDATE capteur SET Valeur=:value WHERE ID=:id');
+$ajout -> execute(array(
+  'value'=> $value,
+  'id' => $ID,
+));
 
 ?>

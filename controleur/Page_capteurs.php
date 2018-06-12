@@ -47,7 +47,30 @@ function bdd_capteurs($capteurs,$bdd){
                $url= $Image_url_capteur->fetch(); ?>
 
         <img class="icone_capteur" src="../images/<?php echo $url['Image_url']?>" alt="image-capteur">
-
+        <label class="label_capteur_post">Valeur voulu du capteur</label>
+        <input type="text" id="value<?php echo $Dif_capteurs['ID']; ?>">
+        <input type="text" class="id_post" id="capteur_id<?php echo $Dif_capteurs['ID'];?>" value="<?php echo $Dif_capteurs['ID']; ?>">
+        <button type="submit" id="button<?php echo $Dif_capteurs['ID']; ?>">Changer valeur</button>
+        <p><label class="valeur_capteur">La valeur actuelle du capteur est : <?php echo $Dif_capteurs['Valeur'] ?></label>
+        <script>
+            $(document).ready(function(){
+                $("#button<?php echo $Dif_capteurs['ID']; ?>").click(function(){
+                    var value=$("#value<?php echo $Dif_capteurs['ID']; ?>").val();
+                    var capteur_id=$("#capteur_id<?php echo $Dif_capteurs['ID']; ?>").val();
+                    $.ajax({
+                        url:'../modele/modif_capteur.php',
+                        method:'POST',
+                        data:{
+                            value:value,
+                            capteur_id:capteur_id,
+                        },
+                       success:function(data){
+                           alert("Changement de la valeur voulue avec succés");
+                       }
+                    });
+                });
+            });
+        </script>
 
     </ul>
 
