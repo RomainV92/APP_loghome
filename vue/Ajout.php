@@ -59,10 +59,10 @@
           <option value="type4">Votre boisson préférée</option>
           <option value="type5">Votre nourriture préférée</option>
         </select>
-        <span class="tooltip">Vous devez sélectionner votre question secrète.</span>
+        
 
         <input type="text" name="Answer" id="Answer" placeholder="Réponse" required>
-
+        <span class="tooltip">Champ vide</span>
 
       
         <input type="submit" value="Valider" class="Submit_button">
@@ -133,9 +133,9 @@ check['Telephone'] = function() {
 
 var Telephone = document.getElementById('Telephone'),
     tooltipStyle = getTooltip(Telephone).style,
-    TelephoneValue = parseInt(Telephone.value);
+    regex = /(?=.*[^0-9])/;
 
-if (!isNaN(TelephoneValue) && (Telephone.value.length == 10)) {
+if (!regex.test(Telephone.value) && (Telephone.value.length == 10)) {
     Telephone.className = 'correct';
     tooltipStyle.display = 'none';
     return true;
@@ -201,13 +201,14 @@ if (Password.value == Password2.value && Password2.value != '') {
 
 };
 
-check['Question'] = function() {
+check['Answer'] = function() {
 
-var Question = document.getElementById('Question'),
-    tooltipStyle = getTooltip(Question).style;
+var Answer = document.getElementById('Answer'),
+    tooltipStyle = getTooltip(Answer).style;
 
-if (Question.options[Question.selectedIndex].value != 'none') {
+if (Answer.value.length > 0){
     tooltipStyle.display = 'none';
+    Answer.className = 'correct';
     return true;
 } else {
     tooltipStyle.display = 'inline-block';
@@ -222,7 +223,7 @@ check['Mail'] = function() {
       tooltipStyle = getTooltip(Mail).style,
       regex = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/;
 
-   if(regex.test(Mail.value))
+   if(regex.test(Mail.value) && (Mail.value.length > 0))
    {
     Mail.className = 'correct';
     tooltipStyle.display = 'none';

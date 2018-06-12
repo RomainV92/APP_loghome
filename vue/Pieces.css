@@ -15,34 +15,6 @@
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.supprimer_capteur{
-	text-align: center;
-	width: 100%;
-	background-color:red;
-	color: white;
-
-	margin-top: 15px;
-	padding: 15px 0px 15px;
-	border-radius: 20px;
-
-}
-.supprimer_capteur:hover{
-	background-color: orange;
-}
-.voir_capteurs{
-	text-align: center;
-	width: 100%;
-	background-color:red;
-	color: white;
-
-	margin-top: 15px;
-	padding: 15px 0px 15px;
-	border-radius: 20px;
-
-}
-.voir_capteurs:hover{
-	background-color: orange;
-}
 .modal-content {
 	margin-left: auto;
     margin-right: auto;
@@ -57,10 +29,23 @@
 	justify-content: center;
 	}
 
-.row{
-margin-bottom: 10px;
+.col-25 label{ 
+	margin-left: 20px;
+	
+	text-align: center;
+	
+}
+.col-55 input{
+	padding: 5px;
+	outline: none;
+	margin-left: 20px;
+	margin-bottom: 10px;
+
+
+	
 }
 #button_submit{
+	margin-left: 20px;
 	margin-top: 10px;
 	padding: 5px 10px 5px 10px;
 }
@@ -68,6 +53,7 @@ margin-bottom: 10px;
 
 /* The Close Button */
 .close {
+	margin-left: 30px;
 	color: #aaaaaa;
 	float: right;
 	font-size: 28px;
@@ -127,7 +113,7 @@ display: flex;
 .maison a{
 display: inline-block;
 text-decoration: none;
-color: rgb(0, 0, 0);
+
  }
 
 .maison{
@@ -178,15 +164,7 @@ margin-bottom:25px;
 
 }
 
-.salon .capteurs{
-text-align: center;
-width: 100%;
-background-color:rgb(230,230,230);
 
-margin-top: 15px;
-padding: 15px 0px 15px;
-
-}
 .ajouter_une_piece{
 border-radius: 20px;
 color: #FFF;
@@ -206,14 +184,19 @@ margin-right: auto;
 }
 
 .ajouter_un_utilisateur{
-text-align: center;
-width: 100%;
-margin-top: 15px;
-background-color:rgb(230,230,230);
-padding: 15px 0px 15px;
+	text-align: center;
+	width: 100%	;
+	background-color:red;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding: 15px 0px 15px;
+	border-radius: 20px;
 
 }
-
+.salon .ajouter_un_utilisateur:hover{
+	background-color: orange;
+}
 body .maison ul li
 {
 						margin-top: 5%;
@@ -228,3 +211,60 @@ body .maison ul li
 						padding-right: 2%;
 						color: white;
 					}
+				
+.modal-content-2 {
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+	padding: 20px;
+	border-radius: 20px;
+	width: 320px;
+	background-color: rgba(206, 205, 205, 0.973);
+	margin-top: 7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+					
+	.confirmer{
+	text-decoration: none;
+	color: #000;
+	text-align: center;
+	width: 100%;
+	margin-top: 15px;
+	background-color:rgb(230,230,230);
+	padding: 15px 0px 15px;
+	border-radius: 10px;
+	border: 2px solid rgb(131, 131, 131);
+					}
+
+
+	.correct {
+  
+		border:1px solid rgba(68, 191, 68, 0.75);
+	}
+		
+	.correct:focus {
+		border:1px solid rgba(68, 191, 68, 0.75);
+		box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+	}
+		
+	.incorrect {
+		border:1px solid rgba(191, 68, 68, 0.75);
+	}
+		
+	.incorrect:focus {
+		border:1px solid rgba(191, 68, 68, 0.75);
+		box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+	}
+	
+	.tooltip {
+		display: inline-block;
+	  	margin-bottom: 10px;
+		padding: 2px 4px;
+		margin-top: 5px;
+		background-color: #ffffff;
+		border-radius: 4px;
+	}
+	
