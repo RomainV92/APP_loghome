@@ -34,15 +34,14 @@ body
 
 
 
-#utilisateurs{
-  display: none;
-}
+
 
 
 #entree
 {
   display: flex;
   justify-content: space-around;
+  text-decoration: none;
 }
 
 .tab  /*cadres noir redirigeant vers pages capteurs, utilisateurs et donnees*/
@@ -56,49 +55,70 @@ body
   text-decoration: none;
 }
 
-.tab h2
+#entree #graphe button a
 {
-  color: white;
   text-decoration: none;
+  color: black;
 }
+
+
+
+
+
 
 /* CSS CAPTEUR*/
 .encadrement_capteur
 {
 
+
   border: 2px solid black;
   border-radius: 5px;
   background-color: rgba(218,223,232,0.9);
-  margin-left: 10%;
+  margin-left: 3%;
   width: 30%;
-  padding: 5px;
+  height: 100%;
+  padding: 5px 20px 20px 20px;
 
 }
 
-#capteurs /*css du bouton capteur*/
+#pos_capteur  /*ensemble des cadres capteurs*/
 {
-  text-align: center;
-  margin-left: 50%¨;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 
-#form_capteur
+/*#form_capteur
 {
-display: none;
+display: inline-block;
+justify-content: space-around;
 
-}
 
-.ajout_capteur
+}*/
+
+.ajout_capteur /*cadre de rajout de capteur*/
 {
   background-color: rgba(0,0,0,0.9);
   border-radius: 5px;
   color: white;
   font-size: 15px;
-  padding:10px;
-  margin-left: 10%;
-  width: 50%;
+  padding:20px 10px 20px 20px;
+  margin-left: 5%;
+  width: 40%;
 }
-h1
-{
-  color: white;
+
+
+/*CSS UTILISATEUR*/
+#utilisateurs{
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  background-color: rgba(218,223,232,0.9);
+  border-radius: 10px;
+  width: 10%;
+  margin-left: 3%;
+  padding: 20px 20px 20px 20px;
+
+
 }
