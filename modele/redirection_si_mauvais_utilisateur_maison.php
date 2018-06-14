@@ -9,21 +9,17 @@
      {
          die('Erreur : '.$e->getMessage());
      }
- 
+
+
 $id_user=$_SESSION['id_user'];
 $id_maison=$_GET['cible'];
- 
+
     $maison= $bdd ->query('SELECT *
-                     FROM maison 
+                     FROM maison
                      WHERE ID =\''.$id_maison.'\'');
-    
+
     $resultat =$maison->fetch();
 
     if($resultat['ID_user']!=$id_user){
         header("Location: ../index.php?cible=erreur");
     }
-    
- 
-   
- 
-    

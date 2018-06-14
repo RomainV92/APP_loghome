@@ -46,4 +46,22 @@ list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
 sscanf($trame,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
 echo("$t,$o,$r,$c,$n,$v,$a,$x,$year,$month,$day,$hour,$min,$sec<br />");
 }
+
+
+function post_data($site,$data){
+    $datapost = curl_init();  // ouvre la session curl
+    $headers = array("Expect:"); // Format du header, mais ici ca n'est pas necessaire il me semble
+    curl_setopt($datapost, CURLOPT_URL, $site); //url auquel on poste la trame
+    curl_setopt($datapost, CURLOPT_TIMEOUT, 40000); //Timestamp: temps que mets la requete avant d'arreter
+    curl_setopt($datapost, CURLOPT_HEADER, FALSE); // pas de header
+    curl_setopt($datapost, CURLOPT_HTTPHEADER, $headers); // type de header, et quel formattage utilisé
+    curl_setopt($datapost, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']); // No idea
+    curl_setopt($datapost, CURLOPT_POST, TRUE); // Type de trame, celle-ci va etre postée
+    curl_setopt($datapost, CURLOPT_POSTFIELDS, $data); // quelles données vont ëtre envoyés au site
+    ob_start(); //Creer les données tampon de sortie
+    return curl_exec ($datapost); // execute le transfert
+    ob_end_clean(); // Détruit les données du tampon de sortie et éteint la temporisation de sortie
+    curl_close ($datapost); // ferme la session curl
+    unset($datapost); //détruit la variable detapost
+}
 ?>
