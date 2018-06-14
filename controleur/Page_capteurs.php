@@ -10,6 +10,9 @@ $type_capteur=Trouver_types_capteurs($bdd);
 include('../controleur/graphes_capteurs.php');
 include('../modele/bdd_access_maison.php');
 include('../modele/redirection_si_deco.php');
+include('../modele/redirection_si_mauvais_utilisateur_piece.php');
+
+
 
 include('../vue/frequent/menu.php');
 include('../vue/Capteurs.php');
