@@ -57,16 +57,10 @@
 .id_post{
 		display: none;
 }
+input[type=number] {
+	width: 50px;
+  }
 
-.label_capteur_post{
-	color: white;
-	background-color: blue;
-
-}
-.valeur_capteur{
-	color: white;
-	background-color: blue;
-}
 
 /* The Close Button */
 .close {
@@ -163,12 +157,12 @@ vertical-align: baseline;
 
 }
 .salon .informations tr .label1 {
-		width: 30%;
+		width: 40%;
 
 height: 30px;
 }
 .salon .informations tr .label2 {
-		width: 30%;
+		width: 40%;
 
 height: 30px;
 
