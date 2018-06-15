@@ -34,6 +34,10 @@ function bdd_capteurs($capteurs,$bdd){
              <td class='label3'> N° série :</td>
              <td> <?php echo htmlspecialchars($Dif_capteurs['Num_Serie']);?> </td>
           </tr>
+          <tr>
+             <td class='label3'> Valeur :</td>
+             <td id='<?php echo $Dif_capteurs['ID'] ?>' class='show'  ><?php echo $Dif_capteurs['ID'] ?></td>
+          </tr>
         </table>
       </div>
 

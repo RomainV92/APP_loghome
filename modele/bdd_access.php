@@ -96,7 +96,7 @@ function majInfosUser($bdd, $id, $champModif, $modif)
 
 function validation_identifiants($bdd, $login, $mdp)
 {
-  $table = $bdd -> prepare('SELECT ID, Password, Nom, Image_url FROM login WHERE Pseudo=:nom');
+  $table = $bdd -> prepare('SELECT ID, Password, Nom, Image_url,Mail FROM login WHERE Pseudo=:nom');
   $table -> execute(array('nom' => $login));
   $data = $table -> fetch();
   if(password_verify($mdp, $data['Password']))

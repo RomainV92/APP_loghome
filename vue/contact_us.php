@@ -8,6 +8,8 @@
     </head>
 
     <body>
+
+
     <div class="wrapper">
          <!--Formulaire-->
 
@@ -27,9 +29,18 @@
 
 
                     <label for="email">Votre adresse e-mail :</label>
+                    <?php
+if($_SESSION != array())
+{
+   
+   echo "<input type='email' placeholder='mon_email@exemple.com' name='email' id='email' value=".$_SESSION['Mail']."  required />";
 
+}
+else{
+    echo "<input type='email' placeholder='mon_email@exemple.com' name='email' id='email' required />";
 
-                    <input type="email" placeholder="mon_email@exemple.com" name="email" id="email" value="<?php echo $_SESSION['Mail']; ?>" required />
+}?>
+
                     <p>Parlez nous de votre problème :</p>
                     <textarea name="message" rows="8" cols="50" required ></textarea>
 

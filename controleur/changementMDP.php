@@ -11,7 +11,7 @@ $mdp = getPass($_SESSION['id_user']);
 
 include('../modele/redirection_si_deco.php');
 include('../vue/frequent/menu.php');
-include('../vue/pageChangementMDP/changement_mdp.php');
+include('../vue/changement_mdp.php');
 include('../vue/frequent/footer.php');
 
 if (isset($_POST["nouveauPass"]) && isset($_POST["nouveauPass2"]) && isset($_POST["ancienPass"])){

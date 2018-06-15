@@ -244,5 +244,32 @@ e.preventDefault();
 
 deactivateTooltips();
       </script>
+
+     <script type="text/javascript" src='jquery.js'> </script>
+     <script type="text/javascript">
+
+        var shows = document.querySelectorAll('.show'), 
+            showsLength = shows.length;
+           
+        $(document).ready(function(){
+            
+            var  
+            id_capteur = shows[0].id,
+            link = "../modele/data.php?cible=";
+           
+            
+            setInterval(function(){
+              for (var i = 0; i < showsLength; i++) {
+                id_capteur = shows[i].id;
+                $('#'+id_capteur).load(link+id_capteur);
+               
+              } 
+            }, 1000);
+            
+        } );
+        
+      
+
+   </script>
     </body>
     </html>

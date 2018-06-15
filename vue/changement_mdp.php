@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>Change password</title>
-    <link rel="stylesheet" href="../vue/pageChangementMDP/changement_mdp.css"/>
+    <link rel="stylesheet" href="../vue/changement_mdp.css"/>
 </head>
 <body>
 
-<h1>CHANGE PASSWORD</h1>
 
 <div id="edit">
     <form action="changementMDP.php" method="post">
