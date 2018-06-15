@@ -4,11 +4,11 @@
   google.charts.setOnLoadCallback(drawChart);
   function drawChart() {
     var data = google.visualization.arrayToDataTable([
-      ["Element", "Density", { role: "style" } ],
-      ["Copper", 8.94, "#b87333"],
-      ["Silver", 10.49, "silver"],
-      ["Gold", 19.30, "gold"],
-      ["Platinum", 21.45, "color: #e5e4e2"]
+      ["Capteur", "kwh", { role: "style" } ],
+      ["Luminosité", 18.94, "#b87333"],
+      ["Température", 13.49, "silver"],
+      ["Moteur", 19.30, "gold"],
+     
     ]);
 
     var view = new google.visualization.DataView(data);
@@ -20,9 +20,9 @@
                      2]);
 
     var options = {
-      title: "Density of Precious Metals, in g/cm^3",
-      width: 600,
-      height: 400,
+      title: "Consomation des capteurs (en kwh)",
+      width: 500,
+      height: 300,
       bar: {groupWidth: "95%"},
       legend: { position: "none" },
     };

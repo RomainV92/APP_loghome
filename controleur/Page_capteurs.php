@@ -64,7 +64,7 @@ function bdd_capteurs($capteurs,$bdd){
                                 capteur_id:capteur_id,
                             },
                            success:function(data){
-                               alert("Changement de la valeur voulue avec succés");
+                               alert("Changement de la valeur voulue avec succès");
                            }
                         });
                     });
