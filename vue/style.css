@@ -9,8 +9,11 @@ body
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
+  transition: background 1.5s;
 
-
+}
+#switch{
+  background;
 }
 
 .mySlides p

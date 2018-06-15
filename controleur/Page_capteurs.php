@@ -5,6 +5,8 @@ include('../modele/Recherche_capteurs.php');
 include('../modele/bdd_access.php');
 $bdd=appel_bdd();
 $type_capteur=Trouver_types_capteurs($bdd);
+
+
 include('../controleur/graphes_capteurs.php');
 include('../modele/bdd_access_maison.php');
 include('../modele/redirection_si_deco.php');
@@ -19,7 +21,7 @@ include('../vue/frequent/footer.php');
 function bdd_capteurs($capteurs,$bdd){
   while($Dif_capteurs=$capteurs->fetch()){?>
     <div class="salon">
-  
+
       <div class='grille'>
         <table class='informations'>
           <tr>
@@ -38,20 +40,45 @@ function bdd_capteurs($capteurs,$bdd){
       </div>
 
       <div class="grille">
-        
+
          <div>
-      
+
           <a class="ajouter_un_utilisateur" href="javascript:void(0)" onclick="valiDelete(<?php echo $Dif_capteurs['ID'] ?>,<?php echo $_GET['cible']?>)">Supprimer</a>
          </div>
-        
+
         <?php
- 
+
         $type = $Dif_capteurs['Type'];
         $Image_url_capteur=Trouver_image_url_capteurs($bdd,$type);
         $url= $Image_url_capteur->fetch(); ?>
         <table>
           <tr>
-            <td>    <img class="icone_capteur" src="../images/<?php echo $url['Image_url']?>" alt="image-capteur"> </td> 
+            <td>    <img class="icone_capteur" src="../images/<?php echo $url['Image_url']?>" alt="image-capteur"> </td>
+            <label class="label_capteur_post">Valeur voulu du capteur</label>
+            <input type="text" id="value<?php echo $Dif_capteurs['ID']; ?>">
+            <input type="text" class="id_post" id="capteur_id<?php echo $Dif_capteurs['ID'];?>" value="<?php echo $Dif_capteurs['ID']; ?>">
+            <button type="submit" id="button<?php echo $Dif_capteurs['ID']; ?>">Changer valeur</button>
+            <p><label class="valeur_capteur">La valeur actuelle du capteur est : <?php echo $Dif_capteurs['Valeur'] ?></label>
+            <script>
+                $(document).ready(function(){
+                    $("#button<?php echo $Dif_capteurs['ID']; ?>").click(function(){
+                        var value=$("#value<?php echo $Dif_capteurs['ID']; ?>").val();
+                        var capteur_id=$("#capteur_id<?php echo $Dif_capteurs['ID']; ?>").val();
+                        $.ajax({
+                            url:'../modele/modif_capteur.php',
+                            method:'POST',
+                            data:{
+                                value:value,
+                                capteur_id:capteur_id,
+                            },
+                           success:function(data){
+                               alert("Changement de la valeur voulue avec succés");
+                           }
+                        });
+                    });
+                });
+            </script>
+
             <td>
                     <div id='switch_capteur_<?php echo $Dif_capteurs['ID']?>'>
                     <!-- Rounded switch -->
@@ -59,7 +86,7 @@ function bdd_capteurs($capteurs,$bdd){
                         <input type="checkbox">
                         <span class="slider round"></span>
                         </label>
-            
+
                     </div></td>
           </tr>
         </table>
