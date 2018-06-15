@@ -1,11 +1,12 @@
 body
 {
-  background-image: url("../images/maison19.jpg");
+  background-image: url("../images/maison5.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
   margin: 0px;
+  font-family: verdana;
 }
 
 
@@ -34,21 +35,20 @@ body
 
 
 
-#utilisateurs{
-  display: none;
-}
+
 
 
 #entree
 {
   display: flex;
   justify-content: space-around;
+  text-decoration: none;
 }
 
 .tab  /*cadres noir redirigeant vers pages capteurs, utilisateurs et donnees*/
 {
   text-align: center;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(255,255,255,0.9);
   border-radius: 10px;
   width: 13%;
   height: 20%;
@@ -56,49 +56,137 @@ body
   text-decoration: none;
 }
 
-.tab h2
+#entree #graphe button a
 {
-  color: white;
   text-decoration: none;
+  color: black;
 }
+
+#Users img
+{
+  height: 40%;
+  width: 40%;
+  border-radius: 50px;
+}
+
+#graphe img
+{
+  height: 40%;
+  width: 40%;
+  border-radius: 50px;
+}
+
+
+
+
+
 
 /* CSS CAPTEUR*/
 .encadrement_capteur
 {
 
-  border: 2px solid black;
+  color: white;
   border-radius: 5px;
-  background-color: rgba(218,223,232,0.9);
-  margin-left: 10%;
-  width: 30%;
-  padding: 5px;
-
-}
-
-#capteurs /*css du bouton capteur*/
-{
-  text-align: center;
-  margin-left: 50%¨;
-}
-
-
-#form_capteur
-{
-display: none;
-
-}
-
-.ajout_capteur
-{
   background-color: rgba(0,0,0,0.9);
-  border-radius: 5px;
-  color: white;
-  font-size: 15px;
-  padding:10px;
-  margin-left: 10%;
-  width: 50%;
+  margin-left: 3%;
+  width: 30%;
+  height: 100%;
+  padding: 5px 20px 20px 20px;
+
 }
-h1
+
+.encadrement_capteur a
 {
   color: white;
+  text-decoration: none;
+  background-color: #fb2525;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+.encadrement_capteur a:hover
+{
+  color: black;
+  background: #ffc107;
+  color: black;
+}
+
+#pos_capteur  /*ensemble des cadres capteurs*/
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: verdana;
+}
+
+
+/*#form_capteur
+{
+display: inline-block;
+justify-content: space-around;
+
+
+}*/
+
+.ajout_capteur /*cadre de rajout de capteur*/
+{
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+  padding:20px 10px 20px 20px;
+  margin-left: 5%;
+  width: 40%;
+  font-family: verdana;
+}
+
+
+/*CSS UTILISATEUR*/
+#utilisateurs{
+  font-family: verdana;
+
+
+}
+#utilisateurs .lien_trame a
+{
+  color: black;
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.9);
+  margin: 40px;
+  padding: 10px;
+
+}
+
+
+.salon
+{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  width: 15%;
+  margin-left: 3%;
+  padding: 20px 20px 20px 20px;
+
+}
+
+.salon h2
+{
+  font-family: verdana, sans-serif, serif;
+}
+.salon a
+{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: #fb2525;
+  border-radius: 20px;
+  padding: 10px;
+}
+.salon a:hover
+{
+  background: #ffc107;
+  color: black;
 }

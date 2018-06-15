@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="../vue/donnees.css" />
   </head>
 
+<?php
+include('../vue/frequent/entete.php');
+ ?>
   <body>
     <h3> Consommation </h3>
     <canvas id = "schema" height="300" width="300" style="border:1px solid">
@@ -13,6 +16,7 @@
       </canvas>
 
       <input type="range" id="parametre" min="0.1" max="1" step="0.01" value="0.4">
+      <div class="graph">
 <script>
 var zone_dessin = document.getElementById("schema");
 var graphe= zone_dessin.getContext("2d");
@@ -33,7 +37,9 @@ function f(x) {
   var y=50*Math.sin(Math.pow(x,a.value));
   return (y);
 }
+
 </script>
+</div>
 
 <!-- Exemple de generation aléatoire de graphique !-->
 
@@ -104,5 +110,11 @@ setInterval(function(){updateChart()}, updateInterval);
 <body>
 <div id="chartContainer" style="height: 370px; width:100%;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</br>
+</br>
+
+<div class="footer">
+  <h3><a href="../controleur/Page_administrateur.php">Accueil admninistrateur</a></h3>
+</div>
 </body>
 </html>
