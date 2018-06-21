@@ -10,7 +10,7 @@ include('../vue/Page_admin.php');
 ?>
 
 
-<!--  CE CODE NE SERT A RIEN
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,11 +60,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </head>
 <body>
 
-
+<!--
 position du code pour modal s'il faut le remettre
-
+-->
 </body>
-</html> -->
+</html>
+
 <?php
 function Trouver_users($utilisateurs){
      while($user=$utilisateurs->fetch()){
