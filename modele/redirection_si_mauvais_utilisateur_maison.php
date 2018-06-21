@@ -18,8 +18,15 @@ $id_maison=$_GET['cible'];
                      FROM maison
                      WHERE ID =\''.$id_maison.'\'');
 
-    $resultat =$maison->fetch();
+    $maison_secondaire= $bdd ->query('SELECT *
+                     FROM  utilisateurs_maison 
+                     WHERE ID_maison =\''.$id_maison.'\' 
+                     AND ID_user =\''.$id_user.'\'');
 
-    if($resultat['ID_user']!=$id_user){
+
+    $resultat =$maison->fetch();
+    $resultat_secondaire =$maison_secondaire->fetch();
+
+    if($resultat['ID_user']!=$id_user AND $resultat_secondaire['ID_user']!=$id_user ){
         header("Location: ../index.php?cible=erreur");
     }

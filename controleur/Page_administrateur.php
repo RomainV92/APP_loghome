@@ -72,7 +72,7 @@ function Trouver_users($utilisateurs){
          echo '<div class="salon"><h2> ID User :'. $user["ID"].'</h2>
          <a href="../modele/Supprimer_utilisateur.php?cible='.$user['ID'].'
          " class="supprimer" id="delete-button'.$user['ID'].'" onclick="return confirm(\'êtes-vous sûr de vouloir supprimer cet utilisateur?\');"> Supprimer </br></a> </br>
-         </br><a href="../controleur/Modifier_utilisateur.php?cible='.$user["ID"].' class="modifier" id="modifier">Modifer</a></div></br>';}}}
+         </br><a href="../controleur/Modifier_utilisateur.php?cible='.$user["ID"].'" class="modifier" id="modifier">Modifer</a></div></br>';}}}
 
 
  function All_capteurs($type_capteurs){

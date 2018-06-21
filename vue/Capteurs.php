@@ -22,7 +22,12 @@
         <div id="barchart_values" ></div>
 
 
-        <?php bdd_capteurs($capteurs,$bdd); ?>
+        <?php bdd_capteurs($capteurs,$bdd); 
+        $maison= $bdd ->query('SELECT * FROM maison INNER JOIN pieces ON maison.ID = pieces.ID_maison WHERE pieces.ID =\''.$_GET['cible'].'\'');
+        $id_user_principal= $maison ->fetch();
+        
+        if($_SESSION['id_user']==$id_user_principal['ID_user']){?>
+        
 
           <!-- Script pour popup ajout maison -->
           <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,7 +35,7 @@
 
           <!-- Trigger/Open The Modal -->
           <button id="myBtn" class="ajouter_un_capteur"><p>Ajouter un capteur</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
-
+          <?php }?>
           <!-- The Modal -->
           <div id="myModal" class="modal">
 
