@@ -86,6 +86,8 @@ background: url("../images/maison11.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
+font-family: sans-serif;
+
 }
 
 
@@ -108,7 +110,7 @@ display: flex;
 	font-weight: bolder;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: rgba(0, 0, 0, 0.842);
+	background-color: rgba(255, 0, 0, 0.842);
 	border-radius: 3px;
 	border: 2px solid rgba(0, 0, 0, 0.568);
 	padding:15px;
@@ -166,9 +168,9 @@ height: 50px;
 .salon{
 border-radius: 20px;
 padding-right: 45px;
-padding-top: 10px;
-padding-bottom:10px;
-font-family: sans-serif, monospace, serif;
+padding-top: 15px;
+padding-bottom:15px;
+font-family: sans-serif;
 background-color: rgba(0, 0, 0, 0.952);
 width: 20%;
 
@@ -209,7 +211,7 @@ margin-right: auto;
 
 }
 .salon .ajouter_un_utilisateur:hover{
-	background-color: orange;
+	background-color: #ffc107;
 }
 body .maison ul li
 {
