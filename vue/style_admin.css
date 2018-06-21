@@ -62,6 +62,9 @@ body
   color: black;
 }
 
+
+
+
 #Users img
 {
   height: 40%;
@@ -77,6 +80,14 @@ body
 }
 
 
+#form_capteur /*affichage en ligne des capteurs et remise à la ligne si dépassement taille écran*/
+{
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 
 
 
@@ -88,10 +99,11 @@ body
   color: white;
   border-radius: 5px;
   background-color: rgba(0,0,0,0.9);
-  margin-left: 3%;
+  /*margin-left: 3%;*/
   width: 30%;
   height: 100%;
   padding: 5px 20px 20px 20px;
+  margin-bottom: 25px;
 
 }
 
@@ -105,7 +117,7 @@ body
 
 }
 
-.encadrement_capteur a:hover
+.encadrement_capteur a:hover /*apparence au survol pour suppression*/
 {
   color: black;
   background: #ffc107;
@@ -121,13 +133,7 @@ body
 }
 
 
-/*#form_capteur
-{
-display: inline-block;
-justify-content: space-around;
 
-
-}*/
 
 .ajout_capteur /*cadre de rajout de capteur*/
 {
@@ -136,8 +142,9 @@ justify-content: space-around;
   color: black;
   font-size: 15px;
   padding:20px 10px 20px 20px;
-  margin-left: 5%;
-  width: 40%;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
   font-family: verdana;
 }
 
@@ -145,6 +152,10 @@ justify-content: space-around;
 /*CSS UTILISATEUR*/
 #utilisateurs{
   font-family: verdana;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
 
 }
@@ -159,10 +170,8 @@ justify-content: space-around;
 }
 
 
-.salon
+.salon  /* cadre des utilisateurs*/
 {
-  display: flex;
-  flex-wrap: wrap;
   color: white;
   background-color: rgba(0,0,0,0.9);
   border-radius: 10px;

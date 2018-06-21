@@ -12,6 +12,13 @@
 
 }
 
+.entete h1 a:hover
+{
+  	padding: 26px 0px 26px 5px;
+    border-top: 5px solid rgb(57, 176, 223);
+  	background-color: rgba(57, 176, 223, 0.2);
+
+}
 
 #delete-button  /*bouton déconnection*/
 {
@@ -21,12 +28,12 @@
   text-decoration: none;
   padding-left: 3%;
 }
-
+/*
 #delete-button:hover
 {
   color: rgb(122,228,232);
 }
-
+*/
 
 .logo
 {
