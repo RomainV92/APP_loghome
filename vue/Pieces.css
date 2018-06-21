@@ -1,7 +1,21 @@
 .wrapper{
 	margin-bottom: 90px;
 }
+.message_erreur {
+	font-size: 23px;
+	font-weight: bolder;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: rgba(0, 0, 0, 0.842);
+	border-radius: 3px;
+	border: 2px solid rgba(0, 0, 0, 0.568);
+	padding:15px;
+	color: rgb(255, 0, 0);
 
+	text-align: center;
+
+
+}
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -94,11 +108,11 @@ display: flex;
 	font-weight: bolder;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: rgba(0, 117, 196, 0.89);
+	background-color: rgba(0, 0, 0, 0.842);
 	border-radius: 3px;
 	border: 2px solid rgba(0, 0, 0, 0.568);
 	padding:15px;
-	color: white;
+	color: rgb(253, 253, 253);
 
 	text-align: center;
 

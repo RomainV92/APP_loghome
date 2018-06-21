@@ -1,7 +1,8 @@
 <?php
 session_start();
-$Error_message= "";
 include('../modele/Recherches_pieces.php');
+$Error_message= "La pièce n'as pas pu être ajoutée. La pièce ajoutée prend trop de place.";
+
 
 include('../modele/bdd_access.php');
 $bdd=appel_bdd();

@@ -15,8 +15,21 @@
    $nom=$_POST['nom'];
    $superficie=$_POST['superficie'];
    $id_maison=$_GET['cible'];
+   
+   $requete = $bdd->query("SELECT SUM(Superficie) AS surface_utilisee FROM pieces WHERE ID_maison = '".$id_maison."'");
+   $requete2 = $bdd->query("SELECT superficie FROM maison WHERE ID = '".$id_maison."'");
+   $resultat = $requete->fetch();         // donne la surface utilisée dans la maison
+   $resultat2 = $requete2->fetch();         // donne la superficie de la maison
+   
+   $surface_utilisee =$resultat['surface_utilisee'];
 
+   if (is_null($surface_utilisee)){
+    $surface_utilisee=0;
+   }
 
+   if (($surface_utilisee+$superficie) <= $resultat2['superficie'] ) 
+         /* Résultat du comptage = 0 pour ce pseudo, on peut donc l'enregistrer */
+         {
    $ajout = $bdd->prepare('INSERT INTO pieces(ID_maison,Nom,Superficie) VALUES(:ID_maison,:Nom,:Superficie)');
    // Requête d'insertion,
    $ajout->execute(array(
@@ -30,3 +43,7 @@
 
    header("Location: ../controleur/Page_pieces.php?cible=$id_maison");
    
+    }
+    else{
+        header("Location: ../controleur/AjoutPiece_Erreur.php?cible=$id_maison");
+    }

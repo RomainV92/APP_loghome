@@ -3,19 +3,28 @@
 }
 /*body {font-family: Arial, Helvetica, sans-serif;}*/
 .message_erreur {
-	position: absolute;
-	width: 100%;
 	font-size: 23px;
 	font-weight: bolder;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 4%;
+	background-color: rgba(0, 0, 0, 0.842);
 	border-radius: 3px;
-
-
+	border: 2px solid rgba(0, 0, 0, 0.568);
+	padding:15px;
 	color: rgb(255, 0, 0);
 
 	text-align: center;
+
+
+
+}
+.conteneur_nom_maison{
+
+	margin-left: 30%;
+	margin-right: 30%;
+	padding-top: 30px;
+
+
 
 
 }
@@ -57,7 +66,7 @@
 	text-align: center;
 
 }
-.col-55 input{
+.col-55 input, .col-55 select {
 	padding: 5px;
 	outline: none;
 	margin-left: 70px;
@@ -192,9 +201,9 @@ height: 100%;}
 
 
 }
-.salon .informations tr .label1 {
+.salon .informations tr .label1 , .salon .informations tr .label0  {
 	width : 80px;
-	height: 50px;
+	height: 40px;
 }
 .salon .informations tr .label2 {
 	width: 80px;
@@ -202,6 +211,11 @@ height: 100%;}
 
 }
 
+.type_maison {
+	vertical-align: middle;
+	margin-right: 10px;
+	border-radius: 50%;
+}
 .salon{
 	border-radius: 20px;
 	padding-top: 10px;
@@ -209,7 +223,7 @@ height: 100%;}
 	padding-right: 45px;
 	font-family: sans-serif, monospace, serif;
 	background-color: rgba(0,0,0,0.95);
-	margin-top: 7%;
+	margin-top: 5%;
 	margin-left: 15px;
 	margin-right: 15px;
 

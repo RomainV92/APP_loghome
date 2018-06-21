@@ -8,13 +8,23 @@
     </head>
 
     <body>
+    
     <div class="wrapper">
         <div class="maison" id=conteneur>
           <?php $nom_de_la_maison = $bdd->query('SELECT ID_user,nom FROM maison WHERE  ID=\''.$_GET['cible'].'\'' );
-                $nom_maison = $nom_de_la_maison->fetch(); ?>
+                $nom_maison = $nom_de_la_maison->fetch();
+                $nom= $nom_maison['nom'];?>
 
           <div class='conteneur_nom_maison'>
-                <p class='nom_maison'><?php echo 'Vous êtes actuellement dans l\'habitation : '.$nom_maison['nom']; ?></P>
+                <?php if(!empty($Error_message)){
+                 echo  "<p class='message_erreur' >$Error_message</p> ";
+                }
+                else{         
+                 echo  "<p class='nom_maison'>Vous êtes actuellement dans l'habitation : $nom</P>";
+                
+                }?>
+
+
           </div>
 
           <?php

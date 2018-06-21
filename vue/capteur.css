@@ -105,11 +105,11 @@ display: flex;
 	font-weight: bolder;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: rgba(0, 117, 196, 0.89);
+	background-color: rgba(0, 0, 0, 0.842);
 	border-radius: 3px;
 	border: 2px solid rgba(0, 0, 0, 0.568);
 	padding:15px;
-	color: white;
+	color: rgb(253, 253, 253);
 
 	text-align: center;
 

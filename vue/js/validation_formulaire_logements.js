@@ -58,7 +58,7 @@
                 tooltipStyle = getTooltip(adresse).style,
                 regex = /(?=.*[^0-9])/;   
             
-            if (!regex.test(adresse.value) && (adresse.value.length > 0)) {
+            if (!regex.test(adresse.value) && (adresse.value.length > 0) && (adresse.value.length < 6)) {
                 adresse.className = 'correct';
                 tooltipStyle.display = 'none';
                 return true;
