@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 06 juin 2018 à 20:51
+-- Généré le :  jeu. 21 juin 2018 à 11:58
 -- Version du serveur :  5.7.21
 -- Version de PHP :  5.6.35
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données :  `urser`
+-- Base de données :  `users`
 --
 
 -- --------------------------------------------------------
@@ -36,16 +36,25 @@ CREATE TABLE IF NOT EXISTS `capteur` (
   `Valeur` int(11) NOT NULL,
   `Nom` text NOT NULL,
   `Type` text NOT NULL,
+  `Status` int(11) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `capteur`
 --
 
-INSERT INTO `capteur` (`ID`, `ID_piece`, `Num_Serie`, `Valeur`, `Nom`, `Type`) VALUES
-(3, 3, 'XX5646 464', 0, 'luminos', 'température'),
-(5, 3, 'XX5646 464', 0, 'luminos', 'température');
+INSERT INTO `capteur` (`ID`, `ID_piece`, `Num_Serie`, `Valeur`, `Nom`, `Type`, `Status`) VALUES
+(3, 3, 'XX5646 464', 0, 'luminos', 'température', 0),
+(5, 3, 'XX5646 464', 0, 'luminos', 'température', 0),
+(6, 4, 'aze 265 zae5', 0, 'Température', 'température', 0),
+(7, 4, 'aze 265 zae5', 0, 'Température', 'luminosité', 0),
+(8, 4, 'aze 265 zae5', 5, 'Nom du capteur', 'moteur', 0),
+(23, 10, 'azeazeaz', 528282, 'azeaze', 'température', 0),
+(22, 10, 'azeaze', 456, 'azeaze', 'température', 0),
+(25, 10, 'azee', 42563, 'azee', 'luminosité', 0),
+(26, 10, 'zae', 0, 'azee', 'moteur', 0),
+(27, 11, '151', 0, 'qsdqd5151', 'température', 0);
 
 -- --------------------------------------------------------
 
@@ -69,8 +78,6 @@ CREATE TABLE IF NOT EXISTS `capteur_type` (
 --
 
 INSERT INTO `capteur_type` (`ID`, `type`, `Nom`, `AxeX`, `AxeY`, `Image_url`) VALUES
-(10, '', '', '', '', ''),
-(9, '3', 'température', 'Celcius', 'secondes', ''),
 (11, 'température', 'température', '', '', '../images/temperature.png'),
 (12, 'luminosité', 'luminosité', '', '', '../images/bulb.png'),
 (15, 'moteur', 'moteur', '', '', '../images/ventilation.png');
@@ -94,7 +101,7 @@ CREATE TABLE IF NOT EXISTS `login` (
   `Answer` text NOT NULL,
   `Image_url` text NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=48 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=56 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `login`
@@ -106,7 +113,13 @@ INSERT INTO `login` (`ID`, `Nom`, `Prenom`, `Pseudo`, `Password`, `Telephone`, `
 (0, 'admin', 'admin', 'Admin0', '$2y$10$AbTDsuVYGWoMu2mBP/ea2uzrFoye2ozybem/mhTcdyD3Sh9Yu/55e', '0695827160', 'a@a.com', '0', '', ''),
 (41, 'mael', 'mael', 'Mael', '$2y$10$8g.tigJheoI/hrw9a2LWeumm53/5XYKissK/EJLpL7.iBc/IvFUU6', '0695827160', 'tissotm@hotmail.com', 'type2', 'Maman', ''),
 (47, 'André', 'mael', 'André', '$2y$10$LBy3a0L7YJPmXcC3.2rLZOBn.k.rWUbMY.JOV26EAyXonB7fK4wnC', '0685746128', 'ati@gmail.com', 'type4', 'tchoupi', 'image_Log.png'),
-(46, 'Tissot', 'mael', 'mael', '$2y$10$XxMYVl9kyjKSt4YZ8sd9rudXS/nLQd90YkvKEjKi4HY2lbEmoccxm', '0695827160', 'tissotm@hotmail.com', 'type2', 'Maman', '');
+(46, 'Tissot', 'mael', 'mael', '$2y$10$XxMYVl9kyjKSt4YZ8sd9rudXS/nLQd90YkvKEjKi4HY2lbEmoccxm', '0695827160', 'tissotm@hotmail.com', 'type2', 'Maman', ''),
+(48, 'truong', 'jonathan', 'jonathan', '$2y$10$g/SIMUsNAV.o0Rxzu.B7o.bV58gPolSf6GLslSkhJk/g54pXxL7ru', '0686311198', 'jonathan_truong@hotmail.fr', 'type2', 'truong', 'image_Log.png'),
+(49, 'truong', 'jonathan', 'jonathantest', '$2y$10$N8Gmt1o7VcyAwukFxE9.jOjWDtAdQykEzOWkMNUW43Ka19jUSS2Hm', '0686311198', 'jonathan_truong@hotmail.fr', 'type1', 'truong', 'image_Log.png'),
+(50, 'Jonathan', 'TRUONG', 'jonathan2', '$2y$10$.UKGYaVU15h8YQ4RxePZiuXtAeMCTLMEThoEvWOgjJI9FlKojy0ci', '0652322252', 'jonathan_truong@hotmail.fr', 'type2', 'truong', 'image_Log.png'),
+(52, 'Jonathan', 'TRUONG', 'jonathan3', '$2y$10$rn4nt62BcCm8deg1lz0KH.963szN.6fpQX942Ze2J8bIFSeBOlzc6', '065232225', 'jonathan_truong@hotmail.fr', 'type1', 'aze', 'image_Log.png'),
+(53, 'q', 'q', 'a', '$2y$10$tm983OPoEwCZPa1UAodcKOxcH6j8Z/NX.MvPMEwiuFeub3UJe/d/2', '0652322252', 'frite.manaa@hotmail.fr', 'type1', 'truong', 'image_Log.png'),
+(55, 'Jonathan', 'TRUONG', 'test', '$2y$10$it8Y/5fzcjhzPfXQBMsGhe4vlPcQa2NEjAF4kmLWFICe0HP6lNIHu', '0652322251', 'jonathan_truong@hotmail.fr', 'type1', 'truong', 'image_Log.png');
 
 -- --------------------------------------------------------
 
@@ -125,7 +138,7 @@ CREATE TABLE IF NOT EXISTS `maison` (
   `nom` text NOT NULL,
   `City` text NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `maison`
@@ -141,7 +154,10 @@ INSERT INTO `maison` (`ID`, `ID_user`, `adresse`, `Street`, `Postal`, `superfici
 (11, 36, '', 'hey', 75015, 6, 'a', ''),
 (12, 36, 'az', 'hey', 75015, 23, 'azer', ''),
 (14, 38, 'ISEP', '3 rue des mouettes', 75015, -9, 'maison ', ''),
-(15, 38, 'a', '3 rue des mouettes', 75015, 3, 'a', 'ville');
+(15, 38, 'a', '3 rue des mouettes', 75015, 3, 'a', 'ville'),
+(21, 48, '25', 'test', 25, 325, 'TEST', 'test'),
+(22, 55, '15', 'ezrzerezr', 15151, 15, 'sdffds', 'ezrezr'),
+(23, 48, '25', 'ezrezr', 543543, 422, 'dsfsdf', 'zerrr');
 
 -- --------------------------------------------------------
 
@@ -156,7 +172,7 @@ CREATE TABLE IF NOT EXISTS `pieces` (
   `Nom` text NOT NULL,
   `Superficie` int(11) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `pieces`
@@ -165,7 +181,36 @@ CREATE TABLE IF NOT EXISTS `pieces` (
 INSERT INTO `pieces` (`ID`, `ID_maison`, `Nom`, `Superficie`) VALUES
 (1, 10, '2', 300),
 (2, 15, 'chambre', 5),
-(3, 14, 'Salon', 32);
+(3, 14, 'Salon', 32),
+(4, 16, 'zae', 543),
+(10, 21, 'truong', 153),
+(11, 22, 'zaeaze', 2626);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `utilisateurs_maison`
+--
+
+DROP TABLE IF EXISTS `utilisateurs_maison`;
+CREATE TABLE IF NOT EXISTS `utilisateurs_maison` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `ID_user` int(11) NOT NULL,
+  `ID_maison` int(11) NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `utilisateurs_maison`
+--
+
+INSERT INTO `utilisateurs_maison` (`ID`, `ID_user`, `ID_maison`) VALUES
+(1, 48, 14),
+(2, 48, 15),
+(3, 49, 21),
+(4, 49, 22),
+(5, 49, 21),
+(6, 49, 23);
 
 -- --------------------------------------------------------
 

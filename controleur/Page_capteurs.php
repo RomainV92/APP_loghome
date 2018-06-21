@@ -76,12 +76,17 @@ function bdd_capteurs($capteurs,$bdd){
       </div>
 
       <div class="grille">
-
+      <?php 
+      
+      $maison= $bdd ->query('SELECT * FROM maison INNER JOIN pieces ON maison.ID = pieces.ID_maison WHERE pieces.ID =\''.$_GET['cible'].'\'');
+      $id_user_principal= $maison ->fetch();
+      
+      if($_SESSION['id_user']==$id_user_principal['ID_user']){?> 
          <div>
 
           <a class="ajouter_un_utilisateur" href="javascript:void(0)" onclick="valiDelete(<?php echo $Dif_capteurs['ID'] ?>,<?php echo $_GET['cible']?>)">Supprimer</a>
          </div>
-
+         <?php }?>
         <?php
 
         $type = $Dif_capteurs['Type'];

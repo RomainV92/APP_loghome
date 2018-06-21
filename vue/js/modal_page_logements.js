@@ -24,6 +24,10 @@
               {
                   msg.style.display = "none";
               }
+              if (event.target == myModal_user)
+              {
+                myModal_user.style.display = "none";
+              }
           }
         
 
@@ -50,5 +54,35 @@
 
             var msg = document.getElementById('msg');
             msg.style.display = "block";
+
+          }
+        
+
+          //ajout utilisateur
+
+          function ajouter_utilisateur(id)
+          
+          {
+    
+                   var Modal_user = document.getElementById('myModal_user');
+                   Modal_user.style.display = "block";
+
+                   var span = document.getElementsByClassName("close")[1];
+
+                   var myForm_user = document.getElementById('myForm_user'),
+                   id_maison = id,
+                   link="../modele/ajouter_utilisateur_post.php?cible=";
+                   myForm_user.action=link+id_maison;
+
+              
+                   // When the user clicks on <span> (x), close the modal
+                   span.onclick = function() {
+                   Modal_user.style.display = "none";
+                   }
+
+                   
+
+                   
+                 
 
           }

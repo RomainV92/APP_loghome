@@ -18,9 +18,17 @@ $id_piece=$_GET['cible'];
                      LEFT JOIN  pieces P ON M.ID = P.ID_maison
                      WHERE P.ID =\''.$id_piece.'\'');
     
-    $resultat =$jointure->fetch();
+    $jointure_seccondaire= $bdd ->query('SELECT *
+    FROM utilisateurs_maison U
+    LEFT JOIN  pieces P ON U.ID_maison = P.ID_maison
+    WHERE P.ID =\''.$id_piece.'\'');
 
-    if($resultat['ID_user']!=$id_user){
+
+
+    $resultat =$jointure->fetch();
+    $resultat_secondaire =$jointure_seccondaire->fetch();
+
+    if($resultat['ID_user']!=$id_user AND $resultat_secondaire['ID_user']!=$id_user ){
         header("Location: ../index.php?cible=erreur");
     }
     

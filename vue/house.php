@@ -7,6 +7,8 @@
     </head>
 
     <body>
+
+    <p class='message_erreur' ><?php echo $Error_message?> </p>
     <div class="wrapper">
         <div class="maison" id=conteneur>
 
@@ -17,6 +19,8 @@
 
           <!-- Trigger/Open The Modal -->
           <button id="myBtn" class="ajouter_une_maison"><p>Ajouter une maison</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
+
+         
 
           <!-- The Modal -->
           <div id="myModal" class="modal">
@@ -96,7 +100,7 @@
                 </div>
 
 
-              <input type="submit" value="Ajouter une nouvelle maison" id="button_submit"/>
+              <input type="submit" value="Ajouter une nouvelle maison" class="button_submit"/>
 
 
               </form>
@@ -104,6 +108,8 @@
             </div>
 
           </div>
+
+      
 
           <div id="msg" class="Modal">
             <div class="modal-content-2">
@@ -116,7 +122,71 @@
               
             </div>
           </div>
-         </div>
+        
+
+
+ 
+
+
+
+        <!-- The Modal -->
+        <div id="myModal_user" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+
+            <form action="" method="post" id='myForm_user'>
+             
+              <div class="row">
+                <div class="col-25">
+                  <label for="Nom_user">Nom</label>
+                </div>
+                <div class="col-55">
+                  <input type="text" name="Nom_user" id="Nom_user" required/>
+                  <span class="tooltip">Un nom ne peut pas faire moins de 2 caractères.</span>
+                  <br/>
+
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="Prenom_user">Prénom</label>
+                </div>
+                <div class="col-55">
+                  <input type="text" name="Prenom_user" id="Prenom_user" required/>
+                  <span class="tooltip">Un prénom ne peut pas faire moins de 2 caractères.</span>
+                  <br />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-25">
+                  <label for="Pseudo_user">Pseudo</label>
+                </div>
+                <div class="col-55">
+                  <input type="text" name="Pseudo_user" id="Pseudo_user" required/>
+                  <span class="tooltip">Le pseudo ne peut pas faire moins de 4 caractères.</span>
+                  <br />
+                </div>
+              </div>
+
+
+            <input type="submit" value="Ajouter un nouvel utilisateur" class="button_submit"/>
+
+
+            </form>
+            <span class="close">&times;</span>
+          </div>
+          
+          </div>
+
+        </div>
+        <div class='maison_secondaire'>
+        <?php bdd_maisons_secondaires($Infos_maisons_secondaires); ?>
+        </div>
+
     </div>
          
     <script type="text/javascript" src='../vue/js/validation_formulaire_logements.js'> </script>

@@ -10,7 +10,7 @@
     <body>
     <div class="wrapper">
         <div class="maison" id=conteneur>
-          <?php $nom_de_la_maison = $bdd->query('SELECT nom FROM maison WHERE ID_user=\''.$_SESSION['id_user'].'\' AND ID=\''.$_GET['cible'].'\'' );
+          <?php $nom_de_la_maison = $bdd->query('SELECT ID_user,nom FROM maison WHERE  ID=\''.$_GET['cible'].'\'' );
                 $nom_maison = $nom_de_la_maison->fetch(); ?>
 
           <div class='conteneur_nom_maison'>
@@ -18,9 +18,8 @@
           </div>
 
           <?php
-           bdd_maisons($pieces); ?>
-
-
+           bdd_maisons($pieces,$bdd); 
+          if($_SESSION['id_user']==$nom_maison['ID_user']){?>
 
 
           <!-- Script pour popup ajout maison -->
@@ -29,7 +28,7 @@
 
           <!-- Trigger/Open The Modal -->
           <button id="myBtn" class="ajouter_une_piece"><p>Ajouter une pièce</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
-
+          <?php }?>
           <!-- The Modal -->
           <div id="myModal" class="modal">
 
@@ -86,5 +85,7 @@
 
           <script type="text/javascript" src='../vue/js/validation_formulaire_pieces.js'> </script>
           <script type="text/javascript" src='../vue/js/modal_page_pieces.js'> </script>
+
+          
       </body>
     </html>

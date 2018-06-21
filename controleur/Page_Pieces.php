@@ -15,7 +15,7 @@ include('../vue/Pieces.php');
 include('../vue/frequent/footer.php');
 
 
-function bdd_maisons($pieces){
+function bdd_maisons($pieces,$bdd){
   while($Dif_pieces=$pieces->fetch()){?>
     <div class="salon">
       <ul>
@@ -31,11 +31,17 @@ function bdd_maisons($pieces){
        </table>
 
         <a class="ajouter_un_utilisateur" href="../controleur/Page_capteurs.php?cible=<?php echo $Dif_pieces['ID']?>">Capteurs</a></li>
-        
-        <div>
+      <?php 
       
+      $maison= $bdd ->query('SELECT ID_user FROM maison WHERE ID =\''.$_GET['cible'].'\'');
+      $id_user_principal= $maison ->fetch();
+      
+      if($_SESSION['id_user']==$id_user_principal['ID_user']){?>
+        <div>
+
           <a class="ajouter_un_utilisateur" href="javascript:void(0)" onclick="valiDelete(<?php echo $Dif_pieces['ID'] ?>,<?php echo $_GET['cible']?>)">Supprimer</a>
         </div>
+        <?php }?>
   </ul>
    </div><?php
   }

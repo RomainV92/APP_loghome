@@ -132,6 +132,90 @@
             
             
             })();
+
+
+
+            
+            var check_user = {}; // On met toutes nos fonctions dans un objet littéral
+            
+            
+            check_user['Nom_user'] = function(id) {
+            
+            var name = document.getElementById(id),
+                tooltipStyle = getTooltip(name).style;
+            
+            if (name.value.length >= 2) {
+                name.className = 'correct';
+                tooltipStyle.display = 'none';
+                return true;
+            } else {
+                name.className = 'incorrect';
+                tooltipStyle.display = 'inline-block';
+                return false;
+            }
+            
+            };
+            
+            check_user['Prenom_user'] = check_user['Nom_user']; // La fonction pour le nom est la même que celle de la ville
+            
+            
+            check_user['Pseudo_user'] = function(id) {
+            
+                var Pseudo = document.getElementById(id),
+                    tooltipStyle = getTooltip(Pseudo).style;
+                
+                if (Pseudo.value.length >= 4) {
+                    Pseudo.className = 'correct';
+                    tooltipStyle.display = 'none';
+                    return true;
+                } else {
+                    Pseudo.className = 'incorrect';
+                    tooltipStyle.display = 'inline-block';
+                    return false;
+                }
+                
+                };
+            
+            
+            // Mise en place des événements
+            
+            (function() { // Utilisation d'une IIFE pour éviter les variables globales.
+            
+            var myForm_user = document.getElementById('myForm_user'),
+                inputs_user = document.querySelectorAll('input[type=text], input[type=number]'),
+                inputs_userLength = inputs_user.length;
+            
+            for (var i = 0; i < inputs_userLength; i++) {
+                inputs_user[i].addEventListener('keyup', function(e) {
+                    check_user[e.target.id](e.target.id); // "e.target" représente l'input actuellement modifié
+                });
+            }
+            myForm_user.addEventListener('submit', function(e) {
+            
+            var result = true;
+            
+            for (var i in check_user) {
+                result = check_user[i](i) && result;
+            }
+            
+            if (result) {
+                
+            
+                myForm_user.submit(); // Le formulaire est expédié
+            
+                
+            }
+            else{
+                alert('Le formulaire n\'est pas bien rempli.');
+            }
+            
+            e.preventDefault();
+            
+            });
+            
+            
+            
+            })();
             
             
             // Maintenant que tout est initialisé, on peut désactiver les "tooltips"
