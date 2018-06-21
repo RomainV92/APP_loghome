@@ -12,8 +12,8 @@
     <div class="loginbox">
       <h1> Connexion </h1>
       <form method="post" action="../controleur/check_identifiants.php" >
-        <p> Pseudo </p>
-        <input id="Pseudo" type="text" name="Pseudo" placeholder="Pseudo" required />
+        <p> Identifiant </p>
+        <input id="Pseudo" type="text" name="Pseudo" placeholder="Identifiant" required />
         <p> Mot de passe </p>
         <input id="Password" type="password" name="Password" placeholder="Mot de passe" required />
         <input type="submit" value="Connexion" />
