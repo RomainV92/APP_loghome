@@ -6,6 +6,9 @@ body
   background-position: top center;
   background-size: cover;
   margin: 0px;
+
+  font-family: sans-serif;
+
 }
 
 .graph script
@@ -20,14 +23,14 @@ body
   padding-top:  3px;
   padding-bottom: 3px;
   margin-bottom: 0px;
-  font-family: verdana, sans-serif, serif;
+  font-family: sans-serif;
 }
 
 .footer h3 a
 {
   color: white;
   text-align: center;
-  font-family: verdana, sans-serif, serif;
+  font-family: sans-serif;
   text-decoration: none;
 }
 

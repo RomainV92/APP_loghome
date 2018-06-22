@@ -6,7 +6,7 @@ body
   background-position: top center;
   background-size: cover;
   margin: 0px;
-  font-family: verdana;
+  font-family: sans-serif;
 }
 
 
@@ -129,7 +129,8 @@ body
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  font-family: verdana;
+  font-family: sans-serif;
+
 }
 
 
@@ -145,13 +146,13 @@ body
   margin-left: 25%;
   margin-right: 25%;
   width: 50%;
-  font-family: verdana;
+  font-family: sans-serif;
 }
 
 
 /*CSS UTILISATEUR*/
 #utilisateurs{
-  font-family: verdana;
+  font-family: sans-serif;
   display: none;
   flex-direction: row;
   flex-wrap: wrap;
@@ -184,7 +185,7 @@ body
 
 .salon h2
 {
-  font-family: verdana, sans-serif, serif;
+  font-family: sans-serif;
 }
 .salon a
 {
