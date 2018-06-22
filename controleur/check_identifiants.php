@@ -22,6 +22,6 @@ if(isset($_POST['Pseudo']) AND isset($_POST['Password']))
   }
   else
   {
-    echo('Erreur d\'identifiant ou de mot de passe');
+    header('Location:../controleur/Connexion_erreur.php');
   }
 }

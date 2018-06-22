@@ -1,8 +1,7 @@
 <?php
 session_start();
 //include('vue/frequent/header.php');
-$Error_message= "";
-
+$Error_message= "Erreur d'identifiant ou de mot de passe.";
 
 include('../modele/bdd_access.php');
 $bdd=appel_bdd();
