@@ -195,6 +195,17 @@ body
   border-radius: 20px;
   padding: 10px;
 }
+.supprimer
+{
+  margin-left: 25%;
+  margin-right: auto;
+}
+.modifier
+{
+  margin-left: 31%;
+  margin-right: auto;
+}
+
 .salon a:hover
 {
   background: #ffc107;
