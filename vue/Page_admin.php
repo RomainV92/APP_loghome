@@ -139,7 +139,7 @@
       var span2=document.getElementById("fermer_util");
 
       voir.onclick = function(){
-        page_util.style.display = "block";
+        page_util.style.display = "flex";
       }
       span2.onclick = function(){
         page_util.style.display= "none";
@@ -220,7 +220,7 @@ var voir=document.getElementById('voir_util');
 var span2=document.getElementById("fermer_util");
 
 voir.onclick = function(){
-page_util.style.display = "block";
+page_util.style.display = "flex";
 }
 span2.onclick = function(){
  page_util.style.display= "none";
