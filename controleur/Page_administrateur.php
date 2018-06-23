@@ -10,7 +10,7 @@ include('../vue/Page_admin.php');
 ?>
 
 
-<!--  CE CODE NE SERT A RIEN
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,18 +60,19 @@ body {font-family: Arial, Helvetica, sans-serif;}
 </head>
 <body>
 
-
+<!--
 position du code pour modal s'il faut le remettre
-
+-->
 </body>
-</html> -->
+</html>
+
 <?php
 function Trouver_users($utilisateurs){
      while($user=$utilisateurs->fetch()){
        if($user['ID']!='0'){
          echo '<div class="salon"><h2> ID User :'. $user["ID"].'</h2>
          <a href="../modele/Supprimer_utilisateur.php?cible='.$user['ID'].'
-         " class="supprimer" id="delete-button'.$user['ID'].'" onclick="return confirm(\'êtes-vous sûr de vouloir supprimer cet utilisateur?\');"> Supprimer </br></a> </br>
+         " class="supprimer" id="delete-button'.$user['ID'].'" onclick="return confirm(\'êtes-vous sûr de vouloir supprimer cet utilisateur?\');"> Supprimer </a> </br> </br>
          </br><a href="../controleur/Modifier_utilisateur.php?cible='.$user["ID"].'" class="modifier" id="modifier">Modifer</a></div></br>';}}}
 
 

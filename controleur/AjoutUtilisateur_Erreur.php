@@ -1,7 +1,8 @@
 
 <?php
 session_start();
-$Error_message= "L'utilisateur n'existe pas.";
+
+$Error_message= "L'utilisateur n'existe pas. L'ajout de l'utilisateur n'a pas fonctionné.";
 
 include('../modele/Recherche_maisons.php');
 include('../modele/Recherche_maisons_secondaires.php');

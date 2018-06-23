@@ -8,10 +8,20 @@
 
     <body>
 
-    <p class='message_erreur' ><?php echo $Error_message?> </p>
+   
     <div class="wrapper">
-        <div class="maison" id=conteneur>
 
+       <div class='conteneur_nom_maison'>
+                <?php if(!empty($Error_message)){
+                 echo  "<p class='message_erreur' >$Error_message</p> ";
+                }
+                ?>
+
+
+        </div>
+        <div class="maison" id=conteneur>
+          
+     
           <?php bdd_maisons($Infos_maisons); ?>
           <!-- Script pour popup ajout maison -->
           <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,6 +39,19 @@
             <div class="modal-content">
 
               <form action="../modele/ajouter_maison_post.php" method="post" id='myForm'>
+              
+              <div class="row">
+                  <div class="col-25">
+                    <label >Type d'habitation</label>
+                  </div>
+                  <div class="col-55">
+                    <select name="type_maison" id="type_maison">
+                      <option value="maison">Maison</option>
+                      <option value="appartement">Appartement</option>
+                    </select>
+                  </div>
+                    
+               </div>
 
                 <div class="row">
                   <div class="col-25">
@@ -94,7 +117,7 @@
                   </div>
                   <div class="col-55">
                     <input type="number" name="superficie" id="superficie"required/>
-                    <span class="tooltip">La superficie ne peut pas contenir de lettres.</span>
+                    <span class="tooltip">La superficie ne peut pas contenir de lettres et ne peut pas faire plus de 10 000m².</span>
                     <br/>
                   </div>
                 </div>

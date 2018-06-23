@@ -22,6 +22,19 @@ function bdd_maisons($Infos_maisons){
       <ul>
         <table class='informations'>
           <tr>
+            <td class='label0'> Type :</td>
+            <td> <?php 
+                if($Dif_maisons['type_maison']== 'maison'){
+                    echo "<img class='type_maison' src='../images/icone_maison.jpg' alt='icone_maison' height='32' width='32' >";
+                }
+                elseif($Dif_maisons['type_maison']== 'appartement'){
+                    echo "<img class='type_maison' src='../images/icone_immeuble.jpg' alt='icone_maison' height='32' width='32' >";
+                }
+                echo htmlspecialchars($Dif_maisons['type_maison']); 
+              
+                ?></td>
+          <tr>
+          <tr>
             <td class='label1'> Nom : </td>
             <td> <?php echo htmlspecialchars($Dif_maisons['nom']);?> </td>
           </tr>
@@ -56,6 +69,20 @@ function bdd_maisons_secondaires($Infos_maisons_secondaires){
 
       <ul>
         <table class='informations'>
+          <tr>
+            <td class='label0'> Type :</td>
+            <td> <?php 
+                if($Dif_maisons_secondaires['type_maison']== 'maison'){
+                    echo "<img class='type_maison' src='../images/icone_maison.jpg' alt='icone_maison' height='32' width='32' >";
+                }
+                elseif($Dif_maisons_secondaires['type_maison']== 'appartement'){
+                    echo "<img class='type_maison' src='../images/icone_immeuble.jpg' alt='icone_maison' height='32' width='32' >";
+                }
+                echo htmlspecialchars($Dif_maisons_secondaires['type_maison']); 
+              
+                ?>
+            </td>
+          <tr>
           <tr>
             <td class='label1'> Nom : </td>
             <td> <?php echo htmlspecialchars($Dif_maisons_secondaires['nom']);?> </td>

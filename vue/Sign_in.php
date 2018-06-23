@@ -12,11 +12,14 @@
     <div class="loginbox">
       <h1> Connexion </h1>
       <form method="post" action="../controleur/check_identifiants.php" >
-        <p> Pseudo </p>
-        <input id="Pseudo" type="text" name="Pseudo" placeholder="Pseudo" required />
+        <p> Identifiant </p>
+        <input id="Pseudo" type="text" name="Pseudo" placeholder="Identifiant" required />
         <p> Mot de passe </p>
         <input id="Password" type="password" name="Password" placeholder="Mot de passe" required />
         <input type="submit" value="Connexion" />
+        <?php if(!empty($Error_message)){
+                 echo  "<p class='message_erreur' >$Error_message</p> ";
+                }?>
       </form>
       <!-- Trigger/Open The Modal -->
       <button id="myBtn" class="button_oublie"><p>Mot de passe perdu/oublié?</p></button>

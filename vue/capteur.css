@@ -105,11 +105,11 @@ display: flex;
 	font-weight: bolder;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: rgba(0, 117, 196, 0.89);
+	background-color: rgba(255, 0, 0, 0.842);
 	border-radius: 3px;
 	border: 2px solid rgba(0, 0, 0, 0.568);
 	padding:15px;
-	color: white;
+	color: rgb(253, 253, 253);
 
 	text-align: center;
 
@@ -181,7 +181,7 @@ width: 40%;
 margin:20px;
 display: grid;
 grid-template-columns: 70% auto;
-font-family: sans-serif, monospace, serif;
+font-family: sans-serif;
 background-color: rgba(0, 0, 0, 0.952);
 
 
@@ -199,7 +199,7 @@ background-color: rgba(0, 0, 0, 0.952);
 	
 	}
 	.salon .ajouter_un_utilisateur:hover{
-			background-color: orange;
+			background-color: #ffc107;
 	}
 	
 .ajouter_un_capteur{
