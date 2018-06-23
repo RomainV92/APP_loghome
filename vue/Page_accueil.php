@@ -22,7 +22,7 @@
             i++;
 
         }
-      },10000);
+      },8000);
         </script>
 
       <div class="slideshow-container">
