@@ -40,8 +40,6 @@ curl_close($ch);
 $data_tab = str_split($data,33);
 echo "Tabular Data:<br />";
 $trametest="";
-$site="http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=011C";
-
 for($i=0, $size=count($data_tab); $i<$size; $i++){
 echo "Trame $i:";
 
@@ -49,18 +47,33 @@ $trame = $data_tab[$i];
 list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
 sscanf($trame,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
 echo("$t,$o,$r,$c,$n,$v,$a,$x,$year,$month,$day,$hour,$min,$sec<br />");
-$trametest=$trame;
 }
-post_data($site,$trametest);
+$trametest="1011C1A01123412346D20180115091801";
+echo $trametest;
+function post_data(){
+  $datapost= curl_init();
+  curl_setopt($datapost,CURLOPT_URL,"http://projets-tomcat.isep.fr:8080/appService?ACTION=COMMAND&TEAM=011C&TRAME=1011CA150100339B");
+  curl_setopt($datapost,CURLOPT_TIMEOUT,40000);
+  curl_setopt($datapost,CURLOPT_POST,TRUE);
+  curl_setopt($datapost,CURLOPT_RETURNTRANSFER,TRUE);
+  curl_setopt($datapost,CURLOPT_HEADER,FALSE);
+  curl_exec ($datapost);
+  curl_close ($datapost);
 
-function post_data($site,$data){
+}
+post_data();
+
+
+
+/*function post_data($data){
     $datapost = curl_init();  // ouvre la session curl
     $headers = array("Expect:"); // Format du header, mais ici ca n'est pas necessaire il me semble
-    curl_setopt($datapost, CURLOPT_URL, $site); //url auquel on poste la trame
+    curl_setopt($datapost, CURLOPT_URL, "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=011C"); //url auquel on poste la trame
     curl_setopt($datapost, CURLOPT_TIMEOUT, 40000); //Timestamp: temps que mets la requete avant d'arreter
     curl_setopt($datapost, CURLOPT_HEADER, FALSE); // pas de header
     //curl_setopt($datapost, CURLOPT_HTTPHEADER, $headers); // type de header, et quel formattage utilisé
     //curl_setopt($datapost, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']); // No idea
+    //curl_setopt($datapost, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($datapost, CURLOPT_POST, TRUE); // Type de trame, celle-ci va etre postée
     curl_setopt($datapost, CURLOPT_POSTFIELDS, $data); // quelles données vont ëtre envoyés au site
     ob_start(); //Creer les données tampon de sortie
@@ -68,5 +81,5 @@ function post_data($site,$data){
     ob_end_clean(); // Détruit les données du tampon de sortie et éteint la temporisation de sortie
     curl_close ($datapost); // ferme la session curl
     unset($datapost); //détruit la variable detapost
-}
+}*/
 ?>

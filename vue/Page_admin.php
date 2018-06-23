@@ -75,10 +75,11 @@
                 <p><label>En fonction de quelle unité ? (temps recommandé) </label><input type="text" name="AxeY" id="AxeY" required></p>
                 <p><label>veuillez rentrer une photo pour le capteur</label><input type="hidden" name="size" value="1000000">
                 <input type="file" name="image" required>
+                <button type="submit" name="Nouveau_type" id="Nouveau_type">Ajouter ce nouveau type de capteur</button>
           </form>
       <div>
 
-              <button type="submit" name="Nouveau_type" id="Nouveau_type">Ajouter ce nouveau type de capteur</button>
+              <!-- <button type="submit" name="Nouveau_type" id="Nouveau_type">Ajouter ce nouveau type de capteur</button> !-->
       </div>
     </br>
     </div>
