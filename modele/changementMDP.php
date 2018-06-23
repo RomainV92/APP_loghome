@@ -12,7 +12,7 @@ function changementMDP($mdp,$id)
     global $bdd;
     $get = $bdd->prepare('UPDATE login SET Password = :nvpass WHERE ID = :ID');
     $get->execute(array(
-        'nvpass' => $mdp,
+        'nvpass' => password_hash($mdp,PASSWORD_DEFAULT),
         'ID' => $id
     ));
 }
@@ -22,3 +22,4 @@ function getPass($id) {
     $get->execute(array($id));
     return $get;
 }
+
