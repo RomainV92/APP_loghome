@@ -29,10 +29,10 @@
         <div class="modal-content">
 
           <form action="../controleur/recup_mail.php" method="post" id="Mailpost">
-                <label for="nom" id="textmail" >Adresse e-mail</label>
-                <input type="mail" name="mail_Ver" id="mail_Ver" required placeholder="mon-email@exemple.com"/><br />
+                <label for="pseudo_Ver" >Pseudo</label>
+                <input type="text" name="pseudo_Ver" id="pseudo_Ver" required /><br />
 
-                <label for="superficie" id="label_question">Entrez votre question secrète</label><br/>
+                <label for="Question_Ver" id="label_question">Entrez votre question secrète</label><br/>
                 <select name="Question_Ver" id="Question_ver">
                   <option value="type1">Le nom de votre premier animal de compagnie</option>
                   <option value="type2">Le nom de jeune fille de votre mère</option>
