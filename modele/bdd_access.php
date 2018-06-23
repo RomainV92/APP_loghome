@@ -51,6 +51,7 @@ function Recup_user($bdd,$pseudo)
 {
   $utilisateurs = $bdd->prepare('SELECT * FROM login WHERE Pseudo=:pseudo');
   $utilisateurs -> execute(array('pseudo'=>$pseudo));
+
   return $utilisateurs;
 }
 
@@ -110,4 +111,17 @@ function validation_identifiants($bdd, $login, $mdp)
   }
   $table->closeCursor();
   return '0';
+}
+
+
+function changement_mot_de_passe($Password,$ID,$bdd)
+{
+  $new_password =password_hash($Password, PASSWORD_DEFAULT);
+  $update = $bdd->prepare('UPDATE login SET Password=:password WHERE ID=:ID');
+  $update->execute(array(
+    'password'=>$new_password,
+    'ID'=>$ID,
+));
+  
+  
 }

@@ -34,9 +34,13 @@
 
     if (mail($to, $subject, $message, $headers)) // Envoi du message
     {
-        echo 'Votre message a bien été envoyé ';
+        header('location:../index.php?cible=Page_contact_us');
+        $subject="Confirmation de réception";
+        $message="Nous avons bien reçu votre requête.\r\nNous allons faire au mieux pour résoudre votre problème.\r\n\r\nCordialement,\r\nL'équipe de Log.home";
+        $to = $_POST['email'];
+        mail($to, $subject, $message);
     }
     else // Non envoyé
     {
-        echo "Votre message n'a pas pu être envoyé";
+        header('location:../index.php?cible=erreur');
     }
