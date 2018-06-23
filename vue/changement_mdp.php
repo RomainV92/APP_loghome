@@ -9,7 +9,7 @@
 
 
 <div id="edit">
-    <form action="changementMDP.php" method="post" onsubmit="return verifMdp()">
+    <form action="../controleur/changementMDP.php" method="post" onsubmit="return verifMdp()">
         <p>Ancien mot de passe</p>
         <input  name="ancienPass" type="password" placeholder="Entrez votre ancien mdp" minlength=8 maxlength=24 required>
         <label for="mdp">Nouveau mot de passe</label>

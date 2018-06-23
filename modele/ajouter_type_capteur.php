@@ -5,7 +5,7 @@ $bdd=appel_bdd();
 $ver=Verif_type_capteurs($bdd,$_POST['type_capteur']);
 if($ver===0){
   if (isset($_POST['image'])) {
-    echo "hello";
+  
     // Get image name
     $image = $_FILES['image']['name'];
     // Get text
@@ -33,5 +33,5 @@ if($ver===0){
 }
   else{
     echo "Ce type de capteur est deja pris veuillez rentrer un nouveau type de capteur";
-    echo "<a href='../controleur/Page_administrateur.php'>retour vers la page administrateur</a>";
+    echo "<br><a href='../controleur/Page_administrateur.php'>retour vers la page administrateur</a>";
   }

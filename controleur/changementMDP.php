@@ -10,16 +10,9 @@ include('../modele/changementMDP.php');
 $mdp = getPass($_SESSION['id_user']);
 
 include('../modele/redirection_si_deco.php');
-<<<<<<< HEAD
-
-
-
-$message = "";
-=======
 include('../vue/frequent/menu.php');
-include('../vue/changement_mdp.php');
-include('../vue/frequent/footer.php');
->>>>>>> 53bde5a903b9b1096ba01aa8ba90259e86a5bab8
+$message="";
+
 
 if (isset($_POST["nouveauPass"]) && isset($_POST["nouveauPass2"]) && isset($_POST["ancienPass"])){
     if ($_POST["nouveauPass"] == $_POST["nouveauPass2"]) {
@@ -35,10 +28,7 @@ if (isset($_POST["nouveauPass"]) && isset($_POST["nouveauPass2"]) && isset($_POS
     }
         
 
-} else {
 }
 
-
-include('../vue/frequent/menu.php');
 include('../vue/changement_mdp.php');
 include('../vue/frequent/footer.php');
