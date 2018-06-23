@@ -5,12 +5,14 @@ body
   grid-template-columns: 2fr 5fr 10fr 5fr 2fr;
   background-color: #d1ccc0;
 
-  background-image: url("../images/maison3.jpg");
+  background-image: url("../images/maison9.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
 
   background-position: top center;
   background-size: 100%;
+  font-family: sans-serif;
+
 }
 
 a
@@ -56,7 +58,7 @@ text-decoration:none;
 .bouton:hover
 {
   cursor: pointer;
-  background: #d8bd0f;
+  background: #ffc107;
   color: #000;
 }
 
@@ -94,7 +96,7 @@ text-decoration:none;
 
 .infobox
 {
-  width: 390px;
+  width: 430px;
   height: 100%;
 
   background: #000;

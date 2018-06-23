@@ -1,6 +1,9 @@
 <?php
 session_start();
 //include('vue/frequent/header.php');
+$Error_message= "";
+
+
 include('../modele/bdd_access.php');
 $bdd=appel_bdd();
 

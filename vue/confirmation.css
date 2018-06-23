@@ -1,10 +1,14 @@
+body {
+	font-family: sans-serif;
+
+}
 body .maison{
 	display: flex;
 	flex-direction: column;
 
 }
 
-<head .logo{
+head .logo{
 	float: right;
 }
  body header >h1 {

@@ -1,4 +1,7 @@
+body{
+	font-family: sans-serif;
 
+}
 
 footer {
 	position: fixed;
@@ -13,7 +16,7 @@ footer div{
   	display:flex;
 
   	justify-content: space-around;
- 	font-family: Verdana, Calibri, sans-serif;
+	font-family: sans-serif;
 	margin: 0px;
 	padding: 0px;
 

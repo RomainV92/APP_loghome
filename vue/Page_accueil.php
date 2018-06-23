@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="../vue/style.css" />
   </head>
 
-  <body  class="wrapper">
+  <body  class="wrapper" id="body">
+<script>
 
+        var images = ["url('../images/maison22.jpg')","url('../images/maison23.jpg')","url('../images/maison24.jpg')","url('../images/maison25.jpg')"];
+        var i = 0;
+        var renew = setInterval(function(){
+            if(images.length == i){
+                i = 0;
+            }
+            else {
+
+            document.body.style.backgroundImage = images[i];
+            i++;
+
+        }
+      },8000);
+        </script>
 
       <div class="slideshow-container">
 

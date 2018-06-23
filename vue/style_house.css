@@ -1,5 +1,7 @@
 body{
 	  background: url("../images/maison3.jpg");
+	  font-family: sans-serif;
+
 }
 #conteneur {
 	display: flex;

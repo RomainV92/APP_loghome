@@ -1,0 +1,213 @@
+body
+{
+  background-image: url("../images/maison19.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+
+
+#content  /* contenu du bloc poster image*/
+{
+/*  display: flex;*/
+  position: relative;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 10px;
+
+  width: 24%;
+  margin-left: 35%;
+  margin-top: 5%;
+  padding: 2%;
+  color: white;
+
+}
+
+#content h3   /* titre du bloc poster image*/
+{
+  color: white;
+  padding: 0px;
+  margin: 2px;
+}
+
+
+
+
+
+
+#entree
+{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+
+.tab  /*cadres noir redirigeant vers pages capteurs, utilisateurs et donnees*/
+{
+  text-align: center;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 10px;
+  width: 13%;
+  height: 20%;
+  padding: 20px;
+  text-decoration: none;
+}
+
+#entree #graphe button a
+{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+#Users img
+{
+  height: 40%;
+  width: 40%;
+  border-radius: 200px;
+}
+
+#graphe img
+{
+  height: 40%;
+  width: 40%;
+  border-radius: 200px;
+}
+
+
+#form_capteur /*affichage en ligne des capteurs et remise à la ligne si dépassement taille écran*/
+{
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+
+
+/* CSS CAPTEUR*/
+.encadrement_capteur
+{
+
+  color: white;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.9);
+  /*margin-left: 3%;*/
+  width: 30%;
+  height: 100%;
+  padding: 5px 20px 20px 20px;
+  margin-bottom: 25px;
+
+}
+
+.encadrement_capteur a
+{
+  color: white;
+  text-decoration: none;
+  background-color: #fb2525;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+
+.encadrement_capteur a:hover /*apparence au survol pour suppression*/
+{
+  color: black;
+  background: #ffc107;
+  color: black;
+}
+
+#pos_capteur  /*ensemble des cadres capteurs*/
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: sans-serif;
+
+}
+
+
+
+
+.ajout_capteur /*cadre de rajout de capteur*/
+{
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+  padding:20px 10px 20px 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  font-family: sans-serif;
+}
+
+
+/*CSS UTILISATEUR*/
+#utilisateurs{
+  font-family: sans-serif;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+
+}
+#utilisateurs .lien_trame a
+{
+  color: black;
+  text-decoration: none;
+  background-color: rgba(255,255,255,0.9);
+  margin: 40px;
+  padding: 10px;
+
+}
+
+
+.salon  /* cadre des utilisateurs*/
+{
+  color: white;
+  background-color: rgba(0,0,0,0.9);
+  border-radius: 10px;
+  width: 15%;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 3%;
+
+}
+
+.salon h2
+{
+  font-family: sans-serif;
+}
+.salon a
+{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: #fb2525;
+  border-radius: 20px;
+  padding: 10px;
+}
+.supprimer
+{
+  margin-left: 25%;
+  margin-right: auto;
+}
+.modifier
+{
+  margin-left: 31%;
+  margin-right: auto;
+}
+
+.salon a:hover
+{
+  background: #ffc107;
+  color: black;
+}

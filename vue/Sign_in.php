@@ -12,11 +12,14 @@
     <div class="loginbox">
       <h1> Connexion </h1>
       <form method="post" action="../controleur/check_identifiants.php" >
-        <p> Pseudo </p>
-        <input id="Pseudo" type="text" name="Pseudo" placeholder="Pseudo" required />
+        <p> Identifiant </p>
+        <input id="Pseudo" type="text" name="Pseudo" placeholder="Identifiant" required />
         <p> Mot de passe </p>
         <input id="Password" type="password" name="Password" placeholder="Mot de passe" required />
         <input type="submit" value="Connexion" />
+        <?php if(!empty($Error_message)){
+                 echo  "<p class='message_erreur' >$Error_message</p> ";
+                }?>
       </form>
       <!-- Trigger/Open The Modal -->
       <button id="myBtn" class="button_oublie"><p>Mot de passe perdu/oublié?</p></button>
@@ -26,10 +29,10 @@
         <div class="modal-content">
 
           <form action="../controleur/recup_mail.php" method="post" id="Mailpost">
-                <label for="nom" id="textmail" >Adresse e-mail</label>
-                <input type="mail" name="mail_Ver" id="mail_Ver" required placeholder="mon-email@exemple.com"/><br />
+                <label for="pseudo_Ver" >Pseudo</label>
+                <input type="text" name="pseudo_Ver" id="pseudo_Ver" required /><br />
 
-                <label for="superficie" id="label_question">Entrez votre question secrète</label><br/>
+                <label for="Question_Ver" id="label_question">Entrez votre question secrète</label><br/>
                 <select name="Question_Ver" id="Question_ver">
                   <option value="type1">Le nom de votre premier animal de compagnie</option>
                   <option value="type2">Le nom de jeune fille de votre mère</option>

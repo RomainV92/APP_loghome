@@ -29,7 +29,7 @@ function Verif_type_capteurs($bdd,$type)
   $table = $bdd -> prepare('SELECT type FROM capteur_type');
   $table -> execute(array());
   while($e= $table -> fetch()){
-    if($e===$type){
+    if($e==$type){
       return 1;
     }};
   return 0;
@@ -51,6 +51,7 @@ function Recup_user($bdd,$pseudo)
 {
   $utilisateurs = $bdd->prepare('SELECT * FROM login WHERE Pseudo=:pseudo');
   $utilisateurs -> execute(array('pseudo'=>$pseudo));
+
   return $utilisateurs;
 }
 
@@ -96,7 +97,7 @@ function majInfosUser($bdd, $id, $champModif, $modif)
 
 function validation_identifiants($bdd, $login, $mdp)
 {
-  $table = $bdd -> prepare('SELECT ID, Password, Nom, Image_url FROM login WHERE Pseudo=:nom');
+  $table = $bdd -> prepare('SELECT ID, Password, Nom, Image_url,Mail FROM login WHERE Pseudo=:nom');
   $table -> execute(array('nom' => $login));
   $data = $table -> fetch();
   if(password_verify($mdp, $data['Password']))
@@ -110,4 +111,17 @@ function validation_identifiants($bdd, $login, $mdp)
   }
   $table->closeCursor();
   return '0';
+}
+
+
+function changement_mot_de_passe($Password,$ID,$bdd)
+{
+  $new_password =password_hash($Password, PASSWORD_DEFAULT);
+  $update = $bdd->prepare('UPDATE login SET Password=:password WHERE ID=:ID');
+  $update->execute(array(
+    'password'=>$new_password,
+    'ID'=>$ID,
+));
+  
+  
 }

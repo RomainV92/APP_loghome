@@ -109,7 +109,28 @@ h1
 
 
 
+.conteneur_nom_maison{
 
+	margin-left: 30%;
+	margin-right: 30%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+
+
+}
+.message_erreur {
+	font-size: 23px;
+	
+
+
+	padding:15px;
+	color: rgb(249, 253, 0);
+
+	text-align: center;
+
+
+}
 
 
 

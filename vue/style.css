@@ -1,7 +1,7 @@
 
 body
 {
-  font-family: 'Sofia Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
 
   background-color: #d1ccc0;
   background-image: url("../images/maison19.jpg");
@@ -9,8 +9,11 @@ body
   background-attachment: fixed;
   background-position: top center;
   background-size: cover;
+  transition: background 1.5s;
 
-
+}
+#switch{
+  
 }
 
 .mySlides p
