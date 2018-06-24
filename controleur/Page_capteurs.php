@@ -18,7 +18,25 @@ include('../vue/frequent/menu.php');
 include('../vue/Capteurs.php');
 include('../vue/frequent/footer.php');
 
+
 function bdd_capteurs($capteurs,$bdd){
+  $ch = curl_init();
+  curl_setopt(
+  $ch,
+  CURLOPT_URL,
+  "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=011C");
+  curl_setopt($ch, CURLOPT_HEADER, FALSE);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+  $data = curl_exec($ch);
+  curl_close($ch);
+
+  $data_tab = str_split($data,33);
+  $size=count($data_tab);
+  $trametest=$data_tab[$size-2];
+  list($t, $o, $r, $c, $n, $v, $a, $x, $z, $year, $month, $day, $hour, $min, $sec) =
+  sscanf($trametest,"%1s%4s%1s%1s%2s%4s%4s%1s%1s%4s%2s%2s%2s%2s%2s");
+  $x=$x*16;
+  $valeur_lumos=$x+$z;
   while($Dif_capteurs=$capteurs->fetch()){?>
     <div class="salon">
 
@@ -37,8 +55,12 @@ function bdd_capteurs($capteurs,$bdd){
              <td> <?php echo htmlspecialchars($Dif_capteurs['Num_Serie']);?> </td>
           </tr>
           <tr>
-             <td class='label3'> Valeur :</td>
-             <td id='<?php echo $Dif_capteurs['ID'] ?>' class='show'  ></td>
+            <?php if($Dif_capteurs['Type']=="luminosité"){
+             echo  "<td class='label3'> Valeur :".$valeur_lumos ." Lux  ".$day."/".$month."/".$year."  ".$hour."h:".$min."min:".$sec."sec"."</td>";
+            // echo  "<td id='".$Dif_capteurs['ID']."' class='show'  ></td>";
+            }else{
+             echo "<td class='label3'> Valeur :</td>";
+             echo"<td id='".$Dif_capteurs['ID']."' class='show'  ></td>";}?>
           </tr>
           <tr>
 

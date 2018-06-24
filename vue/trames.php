@@ -39,7 +39,12 @@ curl_close($ch);
 
 $data_tab = str_split($data,33);
 echo "Tabular Data:<br />";
-$trametest="";
+$size=count($data_tab);
+$trametest=$data_tab[$size-3];
+list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
+sscanf($trametest,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
+echo $x;
+echo "------------------------------";
 for($i=0, $size=count($data_tab); $i<$size; $i++){
 echo "Trame $i:";
 
@@ -48,8 +53,8 @@ list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) =
 sscanf($trame,"%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
 echo("$t,$o,$r,$c,$n,$v,$a,$x,$year,$month,$day,$hour,$min,$sec<br />");
 }
-$trametest="1011C1A01123412346D20180115091801";
-echo $trametest;
+
+
 function post_data(){
   $datapost= curl_init();
   curl_setopt($datapost,CURLOPT_URL,"http://projets-tomcat.isep.fr:8080/appService?ACTION=COMMAND&TEAM=011C&TRAME=1011CA150100339B");
