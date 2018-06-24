@@ -115,23 +115,23 @@ function bdd_capteurs($capteurs,$bdd){
                         <script>
                             $(document).ready(function(){
                                 $("#switch<?php echo $Dif_capteurs['ID']; ?>").click(function(){
-                                  var switch_capteur="0";
+                                  var switch_capteur=null;
                                   if ($("#switch<?php echo $Dif_capteurs['ID'] ?>").is(":checked")) {
                                         var switch_capteur="1";
                                   } else {
                                         var switch_capteur="0";
                                   }
 
-                                    var capteur_id=$("#capteur_id<?php echo $Dif_capteurs['ID']; ?>").val();
+                                    var capteur_id2=$("#capteur_id<?php echo $Dif_capteurs['ID']; ?>").val();
                                     $.ajax({
                                         url:'../modele/etat_capteur.php',
                                         method:'POST',
                                         data:{
                                             switch_capteur:switch_capteur,
-                                            capteur_id:capteur_id,
+                                            capteur_id2:capteur_id2,
                                         },
                                        success:function(data){
-                                           alert("changement d'état du capteur efféctuer avec succés"+switch_capteur+capteur_id);
+                                           alert("changement d'état du capteur efféctuer avec succés"+switch_capteur+capteur_id2);
                                        }
                                     });
                                 });

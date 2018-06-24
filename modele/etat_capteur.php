@@ -7,23 +7,12 @@ catch (Exception $e)
 {
   die('Erreur : ' . $e->getMessage());
 }
-$ID=$_POST['capteur_id'];
+$ID=$_POST['capteur_id2'];
 $switch=$_POST['switch_capteur'];
-if($switch==="0"){
-  $value="1";
-  $ajout= $bdd->prepare('UPDATE capteur SET Status=:Status WHERE ID=:id');
-  $ajout -> execute(array(
-    'Status'=> $value,
-    'id' => $ID,
-  ));
-}
-else{
-  $value="0";
-  $ajout= $bdd->prepare('UPDATE capteur SET Status=:Status WHERE ID=:id');
-  $ajout -> execute(array(
-    'Status'=> $value,
-    'id' => $ID,
-  ));
-}
-}
+$ajout= $bdd->prepare('UPDATE capteur SET Status=:status WHERE ID=:id');
+$ajout -> execute(array(
+  'id' => $ID,
+  'status'=> $switch,
+));
+
 ?>
