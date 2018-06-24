@@ -41,16 +41,16 @@ function bdd_capteurs($capteurs,$bdd){
              <td id='<?php echo $Dif_capteurs['ID'] ?>' class='show'  ></td>
           </tr>
           <tr>
-            
+
             <td class='label4'> Valeur voulue :</td>
-              
-            
-            <td> 
+
+
+            <td>
               <input type="number" id="value<?php echo $Dif_capteurs['ID']; ?>" size="5" >
-              <input type="text" class="id_post" id="capteur_id<?php echo $Dif_capteurs['ID'];?>" value="<?php echo $Dif_capteurs['ID']; ?>"> 
+              <input type="text" class="id_post" id="capteur_id<?php echo $Dif_capteurs['ID'];?>" value="<?php echo $Dif_capteurs['ID']; ?>">
               <button type="submit" id="button<?php echo $Dif_capteurs['ID']; ?>">Changer valeur</button>
             </td>
-          </tr>  
+          </tr>
             <script>
                 $(document).ready(function(){
                     $("#button<?php echo $Dif_capteurs['ID']; ?>").click(function(){
@@ -69,19 +69,20 @@ function bdd_capteurs($capteurs,$bdd){
                         });
                     });
                 });
-          
+
             </script>
-         
+
+
         </table>
       </div>
 
       <div class="grille">
-      <?php 
-      
+      <?php
+
       $maison= $bdd ->query('SELECT * FROM maison INNER JOIN pieces ON maison.ID = pieces.ID_maison WHERE pieces.ID =\''.$_GET['cible'].'\'');
       $id_user_principal= $maison ->fetch();
-      
-      if($_SESSION['id_user']==$id_user_principal['ID_user']){?> 
+
+      if($_SESSION['id_user']==$id_user_principal['ID_user']){?>
          <div>
 
           <a class="ajouter_un_utilisateur" href="javascript:void(0)" onclick="valiDelete(<?php echo $Dif_capteurs['ID'] ?>,<?php echo $_GET['cible']?>)">Supprimer</a>
@@ -95,18 +96,52 @@ function bdd_capteurs($capteurs,$bdd){
         <table>
           <tr>
             <td>    <img class="icone_capteur" src="../images/<?php echo $url['Image_url']?>" alt="image-capteur"> </td>
-            
+
             <td>
-                    <div id='switch_capteur_<?php echo $Dif_capteurs['ID']?>'>
+
+              <div id="switch_capteur_<?php echo $Dif_capteurs['ID'];?>">
+
+
                     <!-- Rounded switch -->
                         <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
+                        <?php if($Dif_capteurs['Status']==="1"){
+                          echo '<input id="switch'.$Dif_capteurs['ID'].'" type="checkbox"  checked>';
+                        }else{
+                          echo '<input id="switch'.$Dif_capteurs['ID'].'" type="checkbox" >';
+                        }?>
+                        <!--<input type="checkbox" >!-->
+                       <span class="slider round"></span>
                         </label>
+                        <script>
+                            $(document).ready(function(){
+                                $("#switch<?php echo $Dif_capteurs['ID']; ?>").click(function(){
+                                  var switch_capteur="0";
+                                  if ($("#switch<?php echo $Dif_capteurs['ID'] ?>").is(":checked")) {
+                                        var switch_capteur="1";
+                                  } else {
+                                        var switch_capteur="0";
+                                  }
+
+                                    var capteur_id=$("#capteur_id<?php echo $Dif_capteurs['ID']; ?>").val();
+                                    $.ajax({
+                                        url:'../modele/etat_capteur.php',
+                                        method:'POST',
+                                        data:{
+                                            switch_capteur:switch_capteur,
+                                            capteur_id:capteur_id,
+                                        },
+                                       success:function(data){
+                                           alert("changement d'état du capteur efféctuer avec succés"+switch_capteur+capteur_id);
+                                       }
+                                    });
+                                });
+                            });
+
+                        </script>
 
                     </div></td>
           </tr>
-          
+
         </table>
   </div>
 

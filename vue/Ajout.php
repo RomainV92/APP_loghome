@@ -14,7 +14,7 @@
 
 
       <form method="post" action='<?php echo $redirection?>' id="myForm">
-        
+
         <label>Votre Prenom</label>
         <input type="text" name="Prenom" id="Prenom" required/>
         <span class="tooltip">Un prénom ne peut pas faire moins de 2 caractères.</span>
@@ -31,7 +31,7 @@
 
         <label>Votre Mot de passe </label>
         <input type="password" name="Password" id="Password"  placeholder="Min. 7 caratères, une maj. et un chiffre" required>
-        <span class="tooltip">Le mot de passe doit contenir au moins 7 caractères ,une majuscule et un chiffre.</span>
+        <span class="tooltip">Le mot de passe doit contenir au moins 7 caractères, une majuscule et un chiffre.</span>
 
 
         <label>Confirmation Mot de passe </label>
@@ -59,19 +59,19 @@
           <option value="type4">Votre boisson préférée</option>
           <option value="type5">Votre nourriture préférée</option>
         </select>
-        
+
 
         <input type="text" name="Answer" id="Answer" placeholder="Réponse" required>
         <span class="tooltip">Champ vide</span>
 
-      
+
         <input type="submit" value="Valider" class="Submit_button">
 
-        <p class='condition'> En cliquant sur valider,vous affirmez avoir lu et accepter les <a href="../index?cible=page_legal_and_privacy">conditions d'utilisations</a>.</p>
-    
-    
+        <p class='condition'> En cliquant sur valider, vous affirmez avoir lu et accepté les <a href="../index?cible=page_legal_and_privacy" target="_blank">conditions d'utilisations</a>.</p>
+
+
       </form>
-      
+
     </div>
   </div>
 

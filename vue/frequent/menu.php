@@ -117,7 +117,11 @@
           }
           else
           {
+            if($_SESSION['Nom']=="admin"){
+            echo '<a href="../index.php?cible=Page_administrateur">DECONNEXION</a>';
+          } else{
             echo '<a href="../index.php?cible=deconnexion">DECONNEXION</a>';
+          }
           } ?>
           </li>
 
