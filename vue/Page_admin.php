@@ -67,7 +67,7 @@
 
       </br>
       <div class="ajout_capteur">
-        <form name="ajouter_capteur" method="post" action="../modele/ajouter_type_capteur.php">
+        <form name="ajouter_capteur" method="post" action="../modele/ajouter_type_capteur.php" enctype="multipart/form-data">
           <label><h2>Ajouter un nouveau type de capteur</h2></label>
               <p><label>Entrer le type du capteur : </label><input type="text" name="type_capteur" id="type" required></p>
               <p><label>Nom du nouveau capteur : <input type="text" name="Nom_capteur" id="Nom" required></p>
@@ -75,7 +75,7 @@
                 <p><label>En fonction de quelle unité ? (temps recommandé) </label><input type="text" name="AxeY" id="AxeY" required></p>
                 <p><label>veuillez rentrer une photo pour le capteur</label><input type="hidden" name="size" value="1000000">
                 <input type="file" name="image" required>
-                <button type="submit" name="Nouveau_type" id="Nouveau_type">Ajouter ce nouveau type de capteur</button>
+                <button type="submit" name="upload" id="Nouveau_type">Ajouter ce nouveau type de capteur</button>
           </form>
       <div>
 

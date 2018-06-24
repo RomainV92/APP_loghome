@@ -4,8 +4,8 @@ include('../modele/bdd_access.php');
 $bdd=appel_bdd();
 $ver=Verif_type_capteurs($bdd,$_POST['type_capteur']);
 if($ver===0){
-  if (isset($_POST['image'])) {
-  
+  if (isset($_POST['upload'])) {
+
     // Get image name
     $image = $_FILES['image']['name'];
     // Get text
@@ -22,12 +22,12 @@ if($ver===0){
 
     if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
       $msg = "Image uploaded successfully";
+        Ajout_Type_capteurs_bdd($bdd,$_POST['type_capteur'],$_POST['Nom_capteur'],$_POST['AxeX'],$_POST['AxeY'],$target);
     }else{
       $msg = "Failed to upload image";
 
     }
 
-  Ajout_Type_capteurs_bdd($bdd,$_POST['type_capteur'],$_POST['Nom_capteur'],$_POST['AxeX'],$_POST['AxeY'],$basename);
   header('location:../controleur/Page_administrateur.php');
 }
 }
