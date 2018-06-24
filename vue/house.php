@@ -28,7 +28,7 @@
 
 
           <!-- Trigger/Open The Modal -->
-          <button id="myBtn" class="ajouter_une_maison"><p>Ajouter une maison</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
+          <button id="myBtn" class="ajouter_une_maison"><p>Ajouter une habitation</p><img id="plus_rouge" src="../images/plus_rouge.png" alt="plus_rouge" /></button>
 
          
 
@@ -123,7 +123,7 @@
                 </div>
 
 
-              <input type="submit" value="Ajouter une nouvelle maison" class="button_submit"/>
+              <input type="submit" value="Ajouter une nouvelle habitation" class="button_submit"/>
 
 
               </form>

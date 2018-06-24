@@ -29,7 +29,7 @@ function Verif_type_capteurs($bdd,$type)
   $table = $bdd -> prepare('SELECT type FROM capteur_type');
   $table -> execute(array());
   while($e= $table -> fetch()){
-    if($e==$type){
+    if($e['type']==$type){
       return 1;
     }};
   return 0;
