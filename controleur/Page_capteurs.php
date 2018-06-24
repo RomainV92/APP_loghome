@@ -131,7 +131,7 @@ function bdd_capteurs($capteurs,$bdd){
                                             capteur_id2:capteur_id2,
                                         },
                                        success:function(data){
-                                           alert("changement d'état du capteur efféctuer avec succés"+switch_capteur+capteur_id2);
+                                          
                                        }
                                     });
                                 });
