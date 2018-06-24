@@ -48,7 +48,7 @@ function bdd_capteurs($capteurs,$bdd){
             <td>
               <input type="number" id="value<?php echo $Dif_capteurs['ID']; ?>" size="5" >
               <input type="text" class="id_post" id="capteur_id<?php echo $Dif_capteurs['ID'];?>" value="<?php echo $Dif_capteurs['ID']; ?>">
-              <button type="submit" id="button<?php echo $Dif_capteurs['ID']; ?>">Changer valeur</button>
+              <button type="submit" class="valeur_voulue" id="button<?php echo $Dif_capteurs['ID']; ?>">Changer valeur</button>
             </td>
           </tr>
             <script>
@@ -131,7 +131,7 @@ function bdd_capteurs($capteurs,$bdd){
                                             capteur_id2:capteur_id2,
                                         },
                                        success:function(data){
-                                          
+
                                        }
                                     });
                                 });

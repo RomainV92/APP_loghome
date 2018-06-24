@@ -10,35 +10,7 @@
 include('../vue/frequent/entete.php');
  ?>
   <body>
-    <h3> Consommation </h3>
-    <canvas id = "schema" height="300" width="300" style="border:1px solid">
-        Votre navigateur ne supporte pas la balise canvas
-      </canvas>
 
-      <input type="range" id="parametre" min="0.1" max="1" step="0.01" value="0.4">
-      <div class="graph">
-<script>
-var zone_dessin = document.getElementById("schema");
-var graphe= zone_dessin.getContext("2d");
- var intervalle=setInterval(rafraichissement_ecran,30);
-function rafraichissement_ecran() {
-  graphe.clearRect(0, 0,300,300);
-  var compteur=0;
-  a=document.getElementById("parametre");
-  graphe.beginPath();
-    graphe.moveTo(0,f(0));
-    while(compteur<300) {
-    graphe.lineTo(compteur,150-f(compteur));
-    compteur=(compteur+0.05);
-  }
-  graphe.stroke();
-}
-function f(x) {
-  var y=50*Math.sin(Math.pow(x,a.value));
-  return (y);
-}
-
-</script>
 </div>
 
 <!-- Exemple de generation aléatoire de graphique !-->
@@ -64,7 +36,7 @@ window.onload = function () {
 var dps = []; // dataPoints
 var chart = new CanvasJS.Chart("chartContainer", {
   title :{
-    text: "Dynamic Data"
+    text: "Exemple consommation watt/s"
   },
   axisY: {
     includeZero: false

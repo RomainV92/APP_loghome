@@ -32,12 +32,12 @@
 	}
 
 
-	
-.col-25 label{ 
+
+.col-25 label{
 	margin-left: 20px;
-	
+
 	text-align: center;
-	
+
 }
 .col-55 input,.col-55 select{
 	padding: 5px;
@@ -46,7 +46,7 @@
 	margin-bottom: 10px;
 
 
-	
+
 }
 #button_submit{
 	margin-left: 20px;
@@ -192,16 +192,33 @@ background-color: rgba(0, 0, 0, 0.952);
 		width: 120px	;
 		background-color:red;
 		color: white;
-	
+
 		margin-bottom: 15px;
 		padding: 15px 0px 15px;
 		border-radius: 20px;
-	
+
 	}
 	.salon .ajouter_un_utilisateur:hover{
 			background-color: #ffc107;
 	}
-	
+
+.valeur_voulue{
+			text-align: center;
+			width: 120px	;
+			height: 40px;
+			background-color:red;
+			color: white;
+
+			margin-bottom: 0px;
+			padding: 10px 0px 10px;
+			border-radius: 10px;
+
+		}
+.valeur_voulue:hover{
+				background-color: #ffc107;
+				cursor:pointer;
+		}
+
 .ajouter_un_capteur{
 
 border-radius: 20px;
@@ -315,13 +332,13 @@ body .maison ul li
 /*graphique*/
 #barchart_values{
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
 	width: 100%;
 		margin-bottom: 25px;
-		
+
 	}
-	
-	
+
+
 	.modal-content-2 {
 		margin-left: auto;
 	    margin-right: auto;
@@ -349,24 +366,24 @@ body .maison ul li
 	}
 
 	.correct {
-  
+
 		border:1px solid rgba(68, 191, 68, 0.75);
 	}
-		
+
 	.correct:focus {
 		border:1px solid rgba(68, 191, 68, 0.75);
 		box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
 	}
-		
+
 	.incorrect {
 		border:1px solid rgba(191, 68, 68, 0.75);
 	}
-		
+
 	.incorrect:focus {
 		border:1px solid rgba(191, 68, 68, 0.75);
 		box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
 	}
-	
+
 	.tooltip {
 		display: inline-block;
 	  	margin-bottom: 10px;
@@ -375,4 +392,3 @@ body .maison ul li
 		background-color: #ffffff;
 		border-radius: 4px;
 	}
-	
