@@ -51,7 +51,7 @@
 
       <div id="graphe" class="tab">
         <img src="../images/graphe_logo.jpg" alt="user" /></br>
-        <button><a href="../vue/donnees_admin.php">Données</a></button>
+        <input type="button" value="Données" onClick="javascript:document.location.href='../vue/donnees_admin.php'" />
       </div>
 
     </div>
