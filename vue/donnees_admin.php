@@ -56,8 +56,7 @@ for($i = 0; $i < 1000; $i++){
 
 ?>
 
-<!DOCTYPE HTML>
-<html>
+
 <head>
 <script>
 window.onload = function () {
