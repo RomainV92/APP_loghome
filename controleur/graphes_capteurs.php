@@ -8,7 +8,7 @@
       ["Luminosité", 18.94, "#b87333"],
       ["Température", 13.49, "silver"],
       ["Moteur", 19.30, "gold"],
-     
+
     ]);
 
     var view = new google.visualization.DataView(data);
@@ -20,7 +20,7 @@
                      2]);
 
     var options = {
-      title: "Consomation des capteurs (en kwh)",
+      title: "Consomation des capteurs (en kwh/h)",
       width: 500,
       height: 300,
       bar: {groupWidth: "95%"},
