@@ -27,7 +27,7 @@
               <ul class="submenu">
                 <!-- <li><a href="../index.php?cible=Ajout_maison">Ajouter une maison</a></li> -->
 
-                <?php while ($donnees = $reponse->fetch())
+                <?php while ($donnees = $reponse->fetch()) 
                 {
                   echo "<li><a href=\"../controleur/Page_Pieces.php?cible=". $donnees['ID'] . "\">" . $donnees['nom'] . "</a></li>";
                 }
