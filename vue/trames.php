@@ -34,7 +34,7 @@ CURLOPT_URL,
 "http://projets-tomcat.isep.fr:8080/appService?ACTION=GETLOG&TEAM=011C");
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-$data = curl_exec($ch);
+$data = curl_exec($ch); 
 curl_close($ch);
 
 $data_tab = str_split($data,33);
